@@ -1,6 +1,7 @@
 {
   "name": "site",
   "version": "0.1.0",
+  "homepage": "christiangracia.com",
   "private": true,
   "dependencies": {
     "react": "^16.9.0",
