@@ -4,24 +4,42 @@ export default class Jumbotron extends Component {
   render() {
     return (
       <div>
-        <div class="jumbotron jumbotron-fluid">
+        <div
+          class="jumbotron jumbotron-fluid"
+          style={{
+            alignItems: "center",
+            justifyContent: "center",
+            alignContent: "center"
+          }}
+        >
           <div>
-            <div class="container">
-              <div>
-                <h1
-                  class="display-4"
-                  style={{ fontWeight: "bold", textAlign: "center" }}
-                >
-                  Christian Gracia
-                </h1>
-              </div>
+            <div class="container" style={{ alignItems: "center" }}>
+              <div class="row">
+                <div class="col-sm">
+                  <div>
+                    <h1
+                      class="display-4"
+                      style={{ fontWeight: "bold", textAlign: "center" }}
+                    >
+                      Christian Gracia
+                    </h1>
+                  </div>
 
-              <p
-                class="lead"
-                style={{ fontWeight: "bold", textAlign: "center" }}
-              >
-                Full stack web developer, RI
-              </p>
+                  <p
+                    class="lead"
+                    style={{ fontWeight: "bold", textAlign: "center" }}
+                  >
+                    Full stack web developer, RI
+                  </p>
+                </div>
+                <div class="col-sm">
+                  <img
+                    src="https://scx2.b-cdn.net/gfx/news/hires/2018/space.jpg"
+                    width="300px"
+                    height="200px"
+                  />
+                </div>
+              </div>
               <p style={{ fontWeight: "bold" }}>
                 Email: christianmgracia@gmail.com
               </p>

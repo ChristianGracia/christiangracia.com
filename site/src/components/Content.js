@@ -16,9 +16,9 @@ export default class Content extends Component {
             </Fade>
           </div>
         ))} */}
-        <div className="container">
-          <div className="row">
-            <div className="col-sm">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm">
               <Fade top>
                 <Skills />
               </Fade>

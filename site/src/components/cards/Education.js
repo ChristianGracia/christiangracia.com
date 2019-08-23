@@ -7,7 +7,6 @@ export default class Education extends Component {
       <div style={{}}>
         <h1 style={{ textAlign: "center" }}>Education</h1>
         <ListGroup style={{}}>
-          <ListGroup.Item></ListGroup.Item>
           <ListGroup.Item>
             Career Devs Computer Science University 2018-2019{"\n"}
             Full Stack Web Development{"\n"}
