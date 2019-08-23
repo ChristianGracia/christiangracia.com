@@ -20,7 +20,7 @@ export default class Jumbotron extends Component {
                 class="lead"
                 style={{ fontWeight: "bold", textAlign: "center" }}
               >
-                Full stack web developer
+                Full stack web developer, RI
               </p>
               <p style={{ fontWeight: "bold" }}>
                 Email: christianmgracia@gmail.com

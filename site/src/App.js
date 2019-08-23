@@ -8,6 +8,7 @@ function App() {
   return (
     <div className="App">
       <Jumbotron />
+
       <Content />
       <p>writing this site when I have time</p>
       <p>@lil_cuffy</p>

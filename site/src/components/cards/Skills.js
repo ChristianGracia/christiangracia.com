@@ -4,20 +4,21 @@ import { ListGroup } from "react-bootstrap";
 export default class Skills extends Component {
   render() {
     return (
-      <div>
-        <ListGroup style={{ width: "20%" }}>
-          <ListGroup.Item>Cras justo odio</ListGroup.Item>
-          <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
-          <ListGroup.Item>Morbi leo risus</ListGroup.Item>
-          <ListGroup.Item>Porta ac consectetur ac</ListGroup.Item>
-          <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
-        </ListGroup>
-        <ListGroup style={{ width: "20%" }}>
-          <ListGroup.Item>Cras justo odio</ListGroup.Item>
-          <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
-          <ListGroup.Item>Morbi leo risus</ListGroup.Item>
-          <ListGroup.Item>Porta ac consectetur ac</ListGroup.Item>
-          <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
+      <div style={{}}>
+        <h1 style={{ textAlign: "center", width: "70%" }}>Skills</h1>
+        <ListGroup style={{}}>
+          <ListGroup.Item>
+            Languages: JavaScript, C, Python, PHP, HTML/CSS
+          </ListGroup.Item>
+          <ListGroup.Item>Frameworks: React Native, VueJS</ListGroup.Item>
+          <ListGroup.Item>Libraries: ReactJS, Redux</ListGroup.Item>
+
+          <ListGroup.Item>
+            MongoDB, MERN Stack apps, REST API, GraphQL
+          </ListGroup.Item>
+          <ListGroup.Item>
+            Agile Development Methodlogy, Linux/ubuntu , Server hosting
+          </ListGroup.Item>
         </ListGroup>
       </div>
     );
