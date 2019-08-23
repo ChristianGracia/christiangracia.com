@@ -5,23 +5,26 @@ export default class Jumbotron extends Component {
     return (
       <div>
         <div class="jumbotron jumbotron-fluid">
-          <div
-            style={{
-              display: "flex",
-
-              justifyContent: "center",
-              alignItems: "center"
-            }}
-          >
+          <div>
             <div class="container">
-              <h1 class="display-4" style={{ fontWeight: "bold" }}>
-                Christian Gracia
-              </h1>
+              <div>
+                <h1
+                  class="display-4"
+                  style={{ fontWeight: "bold", textAlign: "center" }}
+                >
+                  Christian Gracia
+                </h1>
+              </div>
 
-              <p class="lead" style={{ fontWeight: "bold" }}>
+              <p
+                class="lead"
+                style={{ fontWeight: "bold", textAlign: "center" }}
+              >
                 Full stack web developer
               </p>
-              <p>Email: christianmgracia@gmail.com</p>
+              <p style={{ fontWeight: "bold" }}>
+                Email: christianmgracia@gmail.com
+              </p>
               <div>
                 <a href="https://github.com/ChristianGracia">
                   <span style={{ paddingRight: 5 }}>GitHub</span>
