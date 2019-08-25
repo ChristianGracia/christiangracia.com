@@ -44,7 +44,7 @@ export default class Header extends Component {
               About
             </Nav.Link>
             <Nav.Link href="/contact" style={{ color: "white" }}>
-              Contact
+              Other
             </Nav.Link>
           </Nav>
         </Navbar>
