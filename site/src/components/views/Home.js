@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import Jumbotron from "../Jumbotron";
 import Fade from "react-reveal/Fade";
 import ContentCall from "../ContentCall";
-import { Bounce } from "react-reveal/Bounce";
 import { Button } from "react-bootstrap";
 
 export default class Home extends Component {
@@ -32,8 +31,8 @@ export default class Home extends Component {
         {this.state.isShow ? (
           <div>
             <Jumbotron />
-            <div style={{ padding: 50 }}></div>
 
+            <div style={{ padding: 50 }}></div>
             <div
               style={{
                 position: "fixed",
@@ -52,7 +51,7 @@ export default class Home extends Component {
                   }}
                 >
                   Site written in ReactJs{" "}
-                  <span style={{ color: "yellow" }}>
+                  <span style={{ color: "#60DAFB" }}>
                     <i className="fab fa-react fa-spin"></i>
                   </span>
                 </p>
@@ -69,7 +68,7 @@ export default class Home extends Component {
                     onClick={() => this.setState({ isShow: false })}
                     style={{
                       textAlign: "center",
-                      color: "#FFFF00",
+                      color: "white",
                       fontWeight: "bold",
                       backgroundColor: "transparent",
                       border: "none",
@@ -81,7 +80,6 @@ export default class Home extends Component {
                     <span>
                       <i className="fas fa-arrow-down"></i>{" "}
                     </span>
-                    {/* </Bounce> */}
                   </Button>
                 </Fade>
               </div>
