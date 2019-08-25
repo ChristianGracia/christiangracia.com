@@ -5,7 +5,9 @@ export default class Work extends Component {
   render() {
     return (
       <div>
-        <Github />
+        <div>
+          <Github />
+        </div>
       </div>
     );
   }
