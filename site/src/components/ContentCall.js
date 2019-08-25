@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import Fade from "react-reveal/Fade";
 import Content from "./Content";
+import Work from "./views/Work";
+import About from "./views/About";
 
 export default class ContentCall extends Component {
   componentDidMount() {
@@ -9,11 +11,9 @@ export default class ContentCall extends Component {
   render() {
     return (
       <div>
-        <Fade top>
-          <p>@lil_cuffy</p>
-
-          <div style={{ paddingBottom: 600 }}></div>
-        </Fade>
+        <Fade top></Fade>
+        <Work />
+        <About />
       </div>
     );
   }
