@@ -5,28 +5,25 @@ export default class Skills extends Component {
   render() {
     return (
       <div style={{ width: "" }}>
-        <h1 style={{ textAlign: "center", color: "white" }}>Skills</h1>
-        <ListGroup
-          className="bg-transparent"
-          style={{
-            width: "80%",
-            color: "white",
-            backgroundColor: "transparent"
-          }}
-        >
-          <ListGroup.Item>
+        <h1 style={{ textAlign: "center", color: "white", paddingBottom: 20 }}>
+          Skills{" "}
+          <span>
+            <i class="fas fa-hammer"></i>
+          </span>
+        </h1>
+        <div style={{ textAlign: "center" }}>
+          <p style={{ color: "white" }}>
             Languages: JavaScript, C, Python, PHP, HTML/CSS
-          </ListGroup.Item>
-          <ListGroup.Item>Frameworks: React Native, VueJS</ListGroup.Item>
-          <ListGroup.Item>Libraries: ReactJS, Redux</ListGroup.Item>
-
-          <ListGroup.Item>
+          </p>
+          <p style={{ color: "white" }}>Frameworks: React Native, VueJS</p>
+          <p style={{ color: "white" }}>Libraries: ReactJS, Redux</p>
+          <p style={{ color: "white" }}>
             MongoDB, MERN Stack apps, REST API, GraphQL
-          </ListGroup.Item>
-          <ListGroup.Item>
+          </p>
+          <p style={{ color: "white" }}>
             Agile Development Methodogy, Linux/ubuntu , Server hosting
-          </ListGroup.Item>
-        </ListGroup>
+          </p>
+        </div>
       </div>
     );
   }
