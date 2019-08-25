@@ -3,8 +3,6 @@ import Fade from "react-reveal/Fade";
 import Skills from "./cards/Skills";
 import Education from "./cards/Education";
 
-// const animateList = [1, 2, 3, 5];
-
 export default class Content extends Component {
   componentDidMount() {
     window.scrollTo(0, 0);
@@ -22,7 +20,7 @@ export default class Content extends Component {
                 <Skills />
               </Fade>
             </div>
-            <div style={{ padding: 20 }}></div>
+            <div style={{ padding: 10 }}></div>
             <div className="col-sm">
               <Fade top>
                 <Education />

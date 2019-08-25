@@ -51,7 +51,7 @@ export default class Work extends Component {
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            paddingTop: 30
+            paddingTop: 40
           }}
         >
           <Fade when={this.state.showGithub}>
