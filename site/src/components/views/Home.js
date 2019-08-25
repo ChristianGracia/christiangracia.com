@@ -45,7 +45,7 @@ export default class Home extends Component {
               <Fade top>
                 <p
                   style={{
-                    color: "black",
+                    color: "#FFFF00",
                     textAlign: "center",
                     fontSize: 20,
                     fontWeight: "bold"
@@ -69,7 +69,7 @@ export default class Home extends Component {
                     onClick={() => this.setState({ isShow: false })}
                     style={{
                       textAlign: "center",
-                      color: "black",
+                      color: "#FFFF00",
                       fontWeight: "bold",
                       backgroundColor: "transparent",
                       border: "none",

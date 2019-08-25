@@ -62,6 +62,48 @@ export default class Content extends Component {
                   </p>
                 </div>
               </LightSpeed>
+              <LightSpeed left>
+                <div
+                  style={{
+                    padding: 20
+                  }}
+                >
+                  <div
+                    className="row"
+                    style={{
+                      flex: 1,
+                      flexDirection: "row",
+                      margin: "auto",
+                      padding: 2,
+                      justifyContent: "space-around"
+                    }}
+                  >
+                    <div className="col-xs">
+                      <span style={{ color: "#F5DE19", textAlign: "center" }}>
+                        <i
+                          style={{ fontSize: 59 }}
+                          class="fab fa-js-square"
+                        ></i>
+                      </span>
+                    </div>
+                    <div className="col-xs">
+                      <span style={{ color: "#3975A5" }}>
+                        <i style={{ fontSize: 59 }} class="fab fa-python"></i>
+                      </span>
+                    </div>
+                    <div className="col-xs">
+                      <span style={{ color: "#87C000" }}>
+                        <i style={{ fontSize: 59 }} class="fab fa-node"></i>
+                      </span>
+                    </div>
+                    <div className="col-xs">
+                      <span style={{ color: "#60DBFB" }}>
+                        <i style={{ fontSize: 59 }} class="fab fa-react"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </LightSpeed>
             </div>
             <div style={{ padding: 10 }}></div>
             <div className="col-sm">

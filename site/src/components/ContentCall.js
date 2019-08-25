@@ -12,20 +12,7 @@ export default class ContentCall extends Component {
     return (
       <div>
         <div style={{ padding: 20 }}></div>
-        <div>
-          <span>
-            <i class="fab fa-python"></i>
-          </span>
-          <span>
-            <i class="fab fa-js-square"></i>
-          </span>
-          <span>
-            <i class="fab fa-react"></i>
-          </span>
-          <span>
-            <i class="fab fa-node"></i>
-          </span>
-        </div>
+        <div></div>
         <Fade top></Fade>
         <Work />
         <About />
