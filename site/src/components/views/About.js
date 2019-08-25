@@ -6,6 +6,7 @@ export default class About extends Component {
     return (
       <div>
         <Content />
+        <div style={{ padding: 40 }}></div>
       </div>
     );
   }

@@ -6,16 +6,15 @@ import Education from "./cards/Education";
 // const animateList = [1, 2, 3, 5];
 
 export default class Content extends Component {
+  componentDidMount() {
+    window.scrollTo(0, 0);
+    document.body.scrollTop = 0;
+  }
+
   render() {
     return (
       <Fragment>
-        {/* {animateList.map((item, key) => (
-          <div key={key}>
-            <Fade top>
-              <h1>{`block ${item}`}</h1>
-            </Fade>
-          </div>
-        ))} */}
+        <div style={{ padding: 20 }}></div>
         <div className="container">
           <div className="row">
             <div className="col-sm">

@@ -47,6 +47,7 @@ export default class Jumbotron extends Component {
                     src="https://scx2.b-cdn.net/gfx/news/hires/2018/space.jpg"
                     width="100%"
                     height="200px"
+                    alt="photo"
                   />
                 </div>
               </div>
@@ -71,7 +72,6 @@ export default class Jumbotron extends Component {
                   <span style={{ paddingRight: 5 }}>Twitter</span>
                   <i className="fab fa-twitter"></i>
                 </a>
-                <span style={{ padding: 10 }}></span>
               </div>
             </div>
           </div>

@@ -10,7 +10,7 @@ export default class Header extends Component {
           <Nav className="ml-auto">
             <Nav.Link href="/work">Projects</Nav.Link>
             <Nav.Link href="/about">About</Nav.Link>
-            <Nav.Link href="#pricing">Contact</Nav.Link>
+            <Nav.Link href="#/contact">Contact</Nav.Link>
           </Nav>
         </Navbar>
       </div>
