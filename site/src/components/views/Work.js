@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Github from "../Github";
 import Fade from "react-reveal/Fade";
+import { Button } from "react-bootstrap";
 
 export default class Work extends Component {
   render() {
@@ -34,7 +35,18 @@ export default class Work extends Component {
               Native, and C#.
             </p>
           </div>
+
+          <Button
+            onClick={() => {
+              window.location.href =
+                "https://github.com/ChristianGracia/portfolioSite/";
+            }}
+          >
+            All the code for this site on GitHub{" "}
+            <i class="fas fa-code-branch"></i>
+          </Button>
         </Fade>
+        <div></div>
         <div style={{}}>
           <Github />
         </div>

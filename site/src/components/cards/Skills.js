@@ -10,7 +10,8 @@ export default class Skills extends Component {
           className="bg-transparent"
           style={{
             width: "80%",
-            color: "white"
+            color: "white",
+            backgroundColor: "transparent"
           }}
         >
           <ListGroup.Item>
