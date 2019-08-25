@@ -81,6 +81,7 @@ export default class Jumbotron extends Component {
                       <i className="fab fa-twitter"></i>
                     </a>
                   </div>
+                  <div style={{ padding: 5 }}></div>
                 </div>
                 <div className="col-sm">
                   <img

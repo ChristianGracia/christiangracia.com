@@ -10,7 +10,8 @@ export default class ContentCall extends Component {
     return (
       <div>
         <Fade top>
-          <Content />
+          <p>Hiii</p>
+          <div style={{ paddingBottom: 600 }}></div>
         </Fade>
       </div>
     );

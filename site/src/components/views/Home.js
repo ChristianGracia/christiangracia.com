@@ -3,6 +3,7 @@ import Jumbotron from "../Jumbotron";
 import Fade from "react-reveal/Fade";
 import ContentCall from "../ContentCall";
 import { Redirect } from "react-router-dom";
+import { Button } from "react-bootstrap";
 
 export default class Home extends Component {
   constructor(props) {
@@ -10,20 +11,18 @@ export default class Home extends Component {
   }
   state = { isShow: true };
 
-  hideBar = () => {
+  hideArrow = () => {
     if (this.state.isShow && window.scrollY < 100) {
       this.setState({ isShow: false });
     }
-
-    console.log(this.state.isShow);
   };
 
   componentDidMount() {
-    window.addEventListener("scroll", this.hideBar);
+    window.addEventListener("scroll", this.hideArrow);
   }
 
   componentWillUnmount() {
-    window.removeEventListener("scroll", this.hideBar);
+    window.removeEventListener("scroll", this.hideArrow);
   }
 
   render() {
@@ -48,12 +47,27 @@ export default class Home extends Component {
                   Site written by me in ReactJs <i className="fab fa-react"></i>
                 </p>
               </Fade>
-
-              <Fade top>
-                <p style={{ textAlign: "center", color: "white" }}>
-                  Scroll down <i className="fas fa-arrow-down"></i>
-                </p>
-              </Fade>
+              <div
+                style={{
+                  alignItems: "center",
+                  textAlign: "center"
+                }}
+              >
+                <Fade top>
+                  <Button
+                    onClick={() => this.setState({ isShow: false })}
+                    style={{
+                      textAlign: "center",
+                      color: "white",
+                      backgroundColor: "transparent",
+                      border: "none"
+                    }}
+                    variant="dark"
+                  >
+                    Scroll down or click <i className="fas fa-arrow-down"></i>
+                  </Button>
+                </Fade>
+              </div>
             </div>
           </div>
         ) : (
