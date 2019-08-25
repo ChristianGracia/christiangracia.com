@@ -46,7 +46,10 @@ export default class Jumbotron extends Component {
                       color: "white"
                     }}
                   >
-                    Full stack web developer, RI
+                    Full stack web developer <i class="fas fa-laptop-code"></i>
+                    {"  "}
+                    {"  "}
+                    Providence, RI
                   </p>
                   <p
                     style={{
@@ -69,14 +72,20 @@ export default class Jumbotron extends Component {
                       <span style={{ paddingRight: 5, color: "white" }}>
                         GitHub
                       </span>
-                      <i className="fab fa-github-square"></i>
+                      <i
+                        className="fab fa-github-square"
+                        style={{ color: "white" }}
+                      ></i>
                     </a>
                     <span style={{ padding: 10 }}></span>
                     <a href="https://www.linkedin.com/in/christian-gracia-32729768">
                       <span style={{ paddingRight: 5, color: "white" }}>
                         LinkedIn
                       </span>
-                      <i className="fab fa-linkedin"></i>
+                      <i
+                        className="fab fa-linkedin"
+                        style={{ color: "white" }}
+                      ></i>
                     </a>
                     <span style={{ padding: 10 }}></span>
 
@@ -84,18 +93,24 @@ export default class Jumbotron extends Component {
                       <span style={{ paddingRight: 5, color: "white" }}>
                         Twitter
                       </span>
-                      <i className="fab fa-twitter"></i>
+                      <i
+                        className="fab fa-twitter"
+                        style={{ color: "white" }}
+                      ></i>
                     </a>
                   </div>
                   <div style={{ padding: 5 }}></div>
                 </div>
-                <div className="col-sm">
-                  <img
-                    src="https://scx2.b-cdn.net/gfx/news/hires/2018/space.jpg"
-                    width="100%"
-                    height="200px"
-                    alt="photo"
-                  />
+                <div
+                  className="col-sm"
+                  style={{
+                    textAlign: "center"
+                  }}
+                >
+                  <i
+                    class="fas fa-dice-d20 fa-pulse"
+                    style={{ fontSize: 200, color: "white" }}
+                  ></i>
                 </div>
               </div>
             </div>
