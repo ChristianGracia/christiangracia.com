@@ -16,7 +16,7 @@ export default class Work extends Component {
   render() {
     return (
       <div style={{}}>
-        <div style={{ padding: 30 }}> </div>
+        <div style={{ padding: 20 }}> </div>
         <Fade left>
           <div
             className="container"
@@ -38,7 +38,7 @@ export default class Work extends Component {
               }}
             >
               I have built numerous full stack applications and worked with many
-              different langueages, libraries, frameworks, and data structures.
+              different languages, libraries, frameworks, and data structures.
               Built this site on a virtual ubuntu server from scratch and am
               hosting it myself. Currently mostly working with React, React
               Native, and C#.
@@ -70,7 +70,7 @@ export default class Work extends Component {
               >
                 All the code for this site on GitHub{"  "}
               </span>
-              <span style={{ padingLeft: 2, color: "green" }}>
+              <span style={{ padingLeft: 2, color: "#A6FF00" }}>
                 <i class="fas fa-code-branch"> </i>
               </span>
             </Button>

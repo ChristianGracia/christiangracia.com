@@ -17,6 +17,23 @@ export default class Content extends Component {
         <div className="container">
           <div className="">
             <div className="col-sm">
+              <div
+                style={{
+                  textAlign: "center",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  paddingBottom: 20
+                }}
+              >
+                <span style={{ color: "#A5FE00" }}>
+                  {" "}
+                  <i
+                    style={{ fontSize: 200 }}
+                    class="fab fa-connectdevelop fa-spin"
+                  ></i>
+                </span>
+              </div>
+              <div style={{ paddingBottom: 30 }}></div>
               <Fade top>
                 <Skills />
               </Fade>
@@ -48,6 +65,21 @@ export default class Content extends Component {
             </div>
             <div style={{ padding: 10 }}></div>
             <div className="col-sm">
+              <div
+                style={{
+                  textAlign: "center",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  paddingBottom: 20
+                }}
+              >
+                {" "}
+                <div style={{ paddingBottom: 30 }}></div>
+                <span style={{ color: "yellow" }}>
+                  <i style={{ fontSize: 200 }} class="far fa-lightbulb"></i>
+                </span>
+              </div>{" "}
+              <div style={{ paddingBottom: 30 }}></div>
               <Fade right>
                 <Education />
               </Fade>

@@ -1,6 +1,19 @@
 import React, { Component } from "react";
 
 export default class Jumbotron extends Component {
+  constructor(props) {
+    super(props);
+  }
+  state = {
+    timeout: false
+  };
+  componentDidMount() {
+    setTimeout(() => {
+      this.setState({
+        timeout: true
+      });
+    }, 2000);
+  }
   render() {
     return (
       <div>
@@ -118,10 +131,17 @@ export default class Jumbotron extends Component {
                     textAlign: "center"
                   }}
                 >
-                  <i
-                    class="fas fa-dice-d20 fa-pulse"
-                    style={{ fontSize: 200, color: "white", marginTop: 4 }}
-                  ></i>
+                  {!this.state.timeout ? (
+                    <i
+                      class="fas fa-dice-d20"
+                      style={{ fontSize: 200, color: "white", marginTop: 4 }}
+                    ></i>
+                  ) : (
+                    <i
+                      class="fas fa-dice-d20 fa-pulse"
+                      style={{ fontSize: 200, color: "white", marginTop: 4 }}
+                    ></i>
+                  )}
                 </div>
                 <div style={{ padding: 10 }}></div>
               </div>
