@@ -23,7 +23,8 @@ export default class Jumbotron extends Component {
                       style={{
                         fontWeight: "bold",
                         textAlign: "center",
-                        marginTop: 20
+                        marginTop: 20,
+                        color: "white"
                       }}
                     >
                       Christian Gracia
@@ -32,7 +33,11 @@ export default class Jumbotron extends Component {
 
                   <p
                     class="lead"
-                    style={{ fontWeight: "bold", textAlign: "center" }}
+                    style={{
+                      fontWeight: "bold",
+                      textAlign: "center",
+                      color: "white"
+                    }}
                   >
                     Full stack web developer, RI
                   </p>
@@ -46,7 +51,7 @@ export default class Jumbotron extends Component {
                 </div>
               </div>
 
-              <p style={{ fontWeight: "bold" }}>
+              <p style={{ fontWeight: "bold", color: "white", paddingTop: 10 }}>
                 Email: christianmgracia@gmail.com
               </p>
 
