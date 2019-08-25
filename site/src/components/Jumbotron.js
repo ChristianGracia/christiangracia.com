@@ -11,7 +11,7 @@ export default class Jumbotron extends Component {
             justifyContent: "center",
             alignContent: "center",
             backgroundColor: "transparent",
-            marginTop: -40
+            marginTop: -65
           }}
         >
           <div>
@@ -58,34 +58,43 @@ export default class Jumbotron extends Component {
                       textAlign: "center"
                     }}
                   >
-                    Email: christianmgracia@gmail.com
+                    Email{" "}
+                    <span>
+                      <i class="far fa-envelope"></i>
+                    </span>{" "}
+                    christianmgracia@gmail.com
                   </p>
 
                   <div
                     style={{
                       alignItems: "center",
                       justifyContent: "center",
-                      textAlign: "center"
+                      textAlign: "center",
+                      fontWeight: "bold"
                     }}
                   >
                     <a href="https://github.com/ChristianGracia">
                       <span style={{ paddingRight: 5, color: "white" }}>
                         GitHub
                       </span>
-                      <i
-                        className="fab fa-github-square"
-                        style={{ color: "white" }}
-                      ></i>
+                      <span>
+                        <i
+                          className="fab fa-github-square"
+                          style={{ color: "#2EBB4E", fontSize: 20 }}
+                        ></i>
+                      </span>
                     </a>
                     <span style={{ padding: 10 }}></span>
                     <a href="https://www.linkedin.com/in/christian-gracia-32729768">
                       <span style={{ paddingRight: 5, color: "white" }}>
                         LinkedIn
                       </span>
-                      <i
-                        className="fab fa-linkedin"
-                        style={{ color: "white" }}
-                      ></i>
+                      <span>
+                        <i
+                          className="fab fa-linkedin"
+                          style={{ color: "#0077B5", fontSize: 20 }}
+                        ></i>
+                      </span>
                     </a>
                     <span style={{ padding: 10 }}></span>
 
@@ -93,10 +102,12 @@ export default class Jumbotron extends Component {
                       <span style={{ paddingRight: 5, color: "white" }}>
                         Twitter
                       </span>
-                      <i
-                        className="fab fa-twitter"
-                        style={{ color: "white" }}
-                      ></i>
+                      <span>
+                        <i
+                          className="fab fa-twitter"
+                          style={{ color: "#1DA1F2", fontSize: 20 }}
+                        ></i>
+                      </span>
                     </a>
                   </div>
                   <div style={{ padding: 5 }}></div>

@@ -18,7 +18,7 @@ export default class Header extends Component {
             <Nav.Link href="/about" style={{ color: "white" }}>
               About
             </Nav.Link>
-            <Nav.Link href="#/contact" style={{ color: "white" }}>
+            <Nav.Link href="/contact" style={{ color: "white" }}>
               Contact
             </Nav.Link>
           </Nav>

@@ -4,7 +4,7 @@ import Header from "./components/Header";
 import Work from "./components/views/Work";
 import About from "./components/views/About";
 import Home from "./components/views/Home";
-import background from "./assets/background.png";
+import Contact from "./components/views/Contact";
 
 import "./App.css";
 
@@ -24,7 +24,7 @@ function App() {
         <Route exact path="/about" component={About} />
       </Router>
       <Router>
-        <Route exact path="/contact" component={Work} />
+        <Route exact path="/contact" component={Contact} />
       </Router>
       <Router>
         <Route exact path="/home" component={Work} />

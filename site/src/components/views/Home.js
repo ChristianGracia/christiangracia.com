@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Jumbotron from "../Jumbotron";
 import Fade from "react-reveal/Fade";
 import ContentCall from "../ContentCall";
-import { Redirect } from "react-router-dom";
+import { Bounce } from "react-reveal/Bounce";
 import { Button } from "react-bootstrap";
 
 export default class Home extends Component {
@@ -44,7 +44,10 @@ export default class Home extends Component {
             >
               <Fade top>
                 <p style={{ color: "white", textAlign: "center" }}>
-                  Site written in ReactJs <i className="fab fa-react"></i>
+                  Site written in ReactJs{" "}
+                  <span style={{ color: "yellow" }}>
+                    <i className="fab fa-react fa-spin"></i>
+                  </span>
                 </p>
               </Fade>
               <div
@@ -64,7 +67,11 @@ export default class Home extends Component {
                     }}
                     variant="dark"
                   >
-                    Scroll down or click <i className="fas fa-arrow-down"></i>
+                    Scroll down or click {/* <Bounce top> */}
+                    <span>
+                      <i className="fas fa-arrow-down"></i>{" "}
+                    </span>
+                    {/* </Bounce> */}
                   </Button>
                 </Fade>
               </div>
