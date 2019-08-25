@@ -5,7 +5,7 @@ export default class Education extends Component {
   render() {
     return (
       <div style={{}}>
-        <h1 style={{ textAlign: "center" }}>Education</h1>
+        <h1 style={{ textAlign: "center", color: "white" }}>Education</h1>
         <ListGroup style={{}}>
           <ListGroup.Item>
             Career Devs Computer Science University 2018-2019{"\n"}

@@ -19,7 +19,11 @@ export default class Jumbotron extends Component {
                   <div>
                     <h1
                       class="display-4"
-                      style={{ fontWeight: "bold", textAlign: "center" }}
+                      style={{
+                        fontWeight: "bold",
+                        textAlign: "center",
+                        marginTop: 20
+                      }}
                     >
                       Christian Gracia
                     </h1>
@@ -35,15 +39,17 @@ export default class Jumbotron extends Component {
                 <div class="col-sm">
                   <img
                     src="https://scx2.b-cdn.net/gfx/news/hires/2018/space.jpg"
-                    width="300px"
+                    width="100%"
                     height="200px"
                   />
                 </div>
               </div>
+
               <p style={{ fontWeight: "bold" }}>
                 Email: christianmgracia@gmail.com
               </p>
-              <div>
+
+              <div style={{ alignItems: "center", justifyContent: "center" }}>
                 <a href="https://github.com/ChristianGracia">
                   <span style={{ paddingRight: 5 }}>GitHub</span>
                   <i class="fab fa-github-square"></i>
