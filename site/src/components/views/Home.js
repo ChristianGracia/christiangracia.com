@@ -44,8 +44,7 @@ export default class Home extends Component {
             >
               <Fade top>
                 <p style={{ color: "white", textAlign: "center" }}>
-                  Site written by myself in ReactJs{" "}
-                  <i className="fab fa-react"></i>
+                  Site written in ReactJs <i className="fab fa-react"></i>
                 </p>
               </Fade>
               <div

@@ -4,6 +4,15 @@ import Fade from "react-reveal/Fade";
 import { Button } from "react-bootstrap";
 
 export default class Work extends Component {
+  state = {
+    showGithub: false
+  };
+
+  componentDidMount() {
+    setTimeout(() => {
+      this.setState({ showGithub: true });
+    }, 2000);
+  }
   render() {
     return (
       <div style={{}}>
@@ -17,7 +26,7 @@ export default class Work extends Component {
               justifyContent: "center"
             }}
           >
-            <p style={{ fontSize: 70, textAlign: "center" }}>
+            <p style={{ fontSize: 70, textAlign: "center", color: "yellow" }}>
               <i class="fas fa-running"></i>
             </p>
 
@@ -35,17 +44,39 @@ export default class Work extends Component {
               Native, and C#.
             </p>
           </div>
-
-          <Button
-            onClick={() => {
-              window.location.href =
-                "https://github.com/ChristianGracia/portfolioSite/";
-            }}
-          >
-            All the code for this site on GitHub{" "}
-            <i class="fas fa-code-branch"></i>
-          </Button>
         </Fade>
+
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            paddingTop: 30
+          }}
+        >
+          <Fade when={this.state.showGithub}>
+            <Button
+              onClick={() => {
+                window.location.href =
+                  "https://github.com/ChristianGracia/portfolioSite/";
+              }}
+            >
+              <span
+                style={{
+                  alignItems: "center",
+                  justifyContent: "center",
+                  alignContent: "center"
+                }}
+              >
+                All the code for this site on GitHub{"  "}
+              </span>
+              <span style={{ padingLeft: 2, color: "green" }}>
+                <i class="fas fa-code-branch"> </i>
+              </span>
+            </Button>
+          </Fade>
+        </div>
+
         <div></div>
         <div style={{}}>
           <Github />

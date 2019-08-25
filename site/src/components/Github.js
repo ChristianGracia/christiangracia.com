@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import Fade from "react-reveal/Fade";
+import { Button } from "react-bootstrap";
 
 class Github extends Component {
   constructor(props) {
@@ -10,7 +11,8 @@ class Github extends Component {
       clientSecret: "dca20f02bb83bb007e422c0a1e96573ad5c107a0",
       count: 5,
       sort: "created asc",
-      repos: []
+      repos: [],
+      showRepo: true
     };
   }
 
@@ -85,8 +87,46 @@ class Github extends Component {
           >
             Updated automatically <i class="fas fa-circle-notch fa-spin"></i>
           </p>
-          <div style={{ padding: 30 }}></div>
-          {repoItems}
+          <div style={{ padding: 26 }}></div>
+
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              paddingBottom: 20,
+              marginTop: -10
+            }}
+          >
+            <Fade bottom>
+              <Button
+                className="btn-danger"
+                onClick={() => {
+                  if (this.state.showRepo) {
+                    this.setState({ showRepo: false });
+                  } else {
+                    this.setState({ showRepo: true });
+                  }
+                }}
+              >
+                <span
+                  style={{
+                    alignItems: "center",
+                    justifyContent: "center",
+                    alignContent: "center"
+                  }}
+                >
+                  Show/Hide Github repos
+                </span>
+                <span style={{ paddingLeft: 10 }}></span>
+                <span style={{ padingLeft: 5, color: "black" }}>
+                  <i class="fas fa-chevron-down"> </i>
+                </span>
+              </Button>
+            </Fade>
+          </div>
+
+          {this.state.showRepo ? <div> {repoItems}</div> : null}
         </div>
       </div>
     );
