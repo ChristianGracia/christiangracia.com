@@ -15,7 +15,7 @@ export default class Education extends Component {
           <ListGroup.Item>
             Rhode Island College{"\n"}
             BS in General Management
-            {"\n2012-2016"}
+            {"\n\n"}2012-2016
           </ListGroup.Item>
         </ListGroup>
       </div>

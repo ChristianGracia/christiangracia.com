@@ -17,7 +17,7 @@ export default class Skills extends Component {
             MongoDB, MERN Stack apps, REST API, GraphQL
           </ListGroup.Item>
           <ListGroup.Item>
-            Agile Development Methodlogy, Linux/ubuntu , Server hosting
+            Agile Development Methodogy, Linux/ubuntu , Server hosting
           </ListGroup.Item>
         </ListGroup>
       </div>
