@@ -29,10 +29,20 @@ export default class Home extends Component {
   render() {
     return (
       <div>
+        <div style={{ padding: 20 }}></div>
         {this.state.isShow ? (
           <div>
             <Jumbotron />
-            <div style={{ float: "bottom" }}>
+            <div style={{ padding: 50 }}></div>
+
+            <div
+              style={{
+                position: "fixed",
+                bottom: 0,
+                left: 0,
+                right: 0
+              }}
+            >
               <Fade top>
                 <p style={{ color: "white", textAlign: "center" }}>
                   Site written by me in ReactJs <i className="fab fa-react"></i>
