@@ -4,9 +4,15 @@ import { ListGroup } from "react-bootstrap";
 export default class Skills extends Component {
   render() {
     return (
-      <div style={{}}>
+      <div style={{ width: "" }}>
         <h1 style={{ textAlign: "center", color: "white" }}>Skills</h1>
-        <ListGroup style={{}}>
+        <ListGroup
+          className="bg-transparent"
+          style={{
+            width: "80%",
+            color: "white"
+          }}
+        >
           <ListGroup.Item>
             Languages: JavaScript, C, Python, PHP, HTML/CSS
           </ListGroup.Item>

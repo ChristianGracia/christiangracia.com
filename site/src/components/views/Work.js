@@ -9,14 +9,14 @@ export default class Work extends Component {
         <div style={{ padding: 30 }}> </div>
         <Fade left>
           <div
-            class="row"
+            className="container"
             style={{
-              display: "flex",
+              alignItems: "center",
+              textAlign: "center",
               justifyContent: "center"
             }}
           >
-            <p style={{ fontSize: 70, paddingRight: 30 }}>
-              {" "}
+            <p style={{ fontSize: 70, textAlign: "center" }}>
               <i class="fas fa-running"></i>
             </p>
 
@@ -24,19 +24,18 @@ export default class Work extends Component {
               style={{
                 color: "white",
                 textAlign: "center",
-                width: "50vw"
+                margin: "auto"
               }}
             >
-              {" "}
               I have built numerous full stack applications and worked with many
               different langueages, libraries, frameworks, and data structures.
-              Built this site on a ubuntu server and am hosting it myself.
-              Mostly working with React, React Native, and C# currently
+              Built this site on a virtual ubuntu server from scratch and am
+              hosting it myself. Currently mostly working with React, React
+              Native, and C#.
             </p>
           </div>
         </Fade>
-
-        <div style={{ padding: 20 }}>
+        <div style={{}}>
           <Github />
         </div>
       </div>

@@ -35,11 +35,11 @@ class Github extends Component {
         <Fade top>
           <div
             key={repo.id}
-            className="card card-body mb-2 text-white bg-dark"
+            className="card card-body mb-2 text-white bg-dark mg-0"
             style={{}}
           >
-            <div className="row mg-0-auto">
-              <div className="col-md-6 text-white">
+            <div className="row">
+              <div className="col-lg-6 text-white">
                 <h4 style={{ color: "white" }}>
                   <Link
                     to={`//${repo.html_url.substr(7)}`}
@@ -72,7 +72,7 @@ class Github extends Component {
 
     return (
       <div ref="myRef">
-        <div style={{ padding: 70 }}>
+        <div style={{ padding: 15, paddingTop: 30 }}>
           <hr />
           <h3
             className="mb-4"

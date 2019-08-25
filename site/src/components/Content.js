@@ -16,7 +16,7 @@ export default class Content extends Component {
       <Fragment>
         <div style={{ padding: 20 }}></div>
         <div className="container">
-          <div className="row">
+          <div className="">
             <div className="col-sm">
               <Fade top>
                 <Skills />
