@@ -43,13 +43,21 @@ export default class Home extends Component {
               }}
             >
               <Fade top>
-                <p style={{ color: "white", textAlign: "center" }}>
+                <p
+                  style={{
+                    color: "black",
+                    textAlign: "center",
+                    fontSize: 20,
+                    fontWeight: "bold"
+                  }}
+                >
                   Site written in ReactJs{" "}
                   <span style={{ color: "yellow" }}>
                     <i className="fab fa-react fa-spin"></i>
                   </span>
                 </p>
               </Fade>
+
               <div
                 style={{
                   alignItems: "center",
@@ -61,9 +69,11 @@ export default class Home extends Component {
                     onClick={() => this.setState({ isShow: false })}
                     style={{
                       textAlign: "center",
-                      color: "white",
+                      color: "black",
+                      fontWeight: "bold",
                       backgroundColor: "transparent",
-                      border: "none"
+                      border: "none",
+                      fontSize: 20
                     }}
                     variant="dark"
                   >
@@ -81,7 +91,7 @@ export default class Home extends Component {
           <ContentCall />
         )}
 
-        <div style={{ padding: 30 }}></div>
+        <div style={{ padding: 40 }}></div>
       </div>
     );
   }

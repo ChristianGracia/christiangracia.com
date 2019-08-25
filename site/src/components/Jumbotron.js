@@ -11,7 +11,7 @@ export default class Jumbotron extends Component {
             justifyContent: "center",
             alignContent: "center",
             backgroundColor: "transparent",
-            marginTop: -65
+            marginTop: -70
           }}
         >
           <div>
@@ -123,6 +123,7 @@ export default class Jumbotron extends Component {
                     style={{ fontSize: 200, color: "white", marginTop: 4 }}
                   ></i>
                 </div>
+                <div style={{ padding: 10 }}></div>
               </div>
             </div>
           </div>
