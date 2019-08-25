@@ -15,13 +15,15 @@ export default class Contact extends Component {
 
   onChange(e) {
     this.setState({ [e.target.name]: e.target.value });
-    console.log(e.target.value);
   }
 
   render() {
+    const { body, name, email } = this.state;
     return (
       <div className="joke" style={{}}>
-        <h1 style={{ textAlign: "center" }}>Leave a note</h1>
+        <h1 style={{ textAlign: "center", fontWeight: "bold", color: "white" }}>
+          Leave a note
+        </h1>
         <div
           style={{
             paddingTop: 50,
@@ -33,6 +35,7 @@ export default class Contact extends Component {
           <div style={{ padding: 20, textAlign: "center" }}>
             <form action="https://sendpoint.io/id/gWFzbxh9O" method="POST">
               <input
+                style={{ padding: 5, paddingLeft: 20, paddingRight: 20 }}
                 type="text"
                 name="name"
                 value={this.state.name}
@@ -41,6 +44,7 @@ export default class Contact extends Component {
               />
               <div style={{ padding: 20 }}></div>
               <input
+                style={{ padding: 5, paddingLeft: 20, paddingRight: 20 }}
                 type="email"
                 name="email"
                 value={this.state.email}
@@ -48,7 +52,13 @@ export default class Contact extends Component {
                 placeholder="Email"
               />
               <div style={{ padding: 20 }}></div>
-              <input
+              <textarea
+                style={{
+                  padding: 5,
+                  paddingLeft: 20,
+                  paddingRight: 20,
+                  paddingBottom: 100
+                }}
                 type="text"
                 name="body"
                 placeholder="Leave a message"
@@ -61,12 +71,27 @@ export default class Contact extends Component {
                 className="btn-dark"
                 type="submit"
                 value="send"
-                // onClick={e => {
-                //   e.preventDefault();
-                //   alert("Please fill out the form!");
-                // }}
+                onClick={e => {
+                  if (body == "" || email == "" || name == "") {
+                    e.preventDefault();
+                    window.alert("Please fill out form");
+                  }
+                }}
               />
             </form>
+            <p
+              style={{
+                color: "white",
+                fontSize: "30",
+                fontWeight: "bold",
+                padding: 30
+              }}
+            >
+              Mail system powered by my friend Tim Wheeler's{" "}
+              <a href="https://sendpoint.io/" style={{ color: "#A5FE00" }}>
+                https://sendpoint.io/
+              </a>
+            </p>
           </div>
         </div>
 
