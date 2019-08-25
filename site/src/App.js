@@ -28,6 +28,7 @@ function App() {
       <Router>
         <Route exact path="/home" component={Work} />
       </Router>
+
       <div style={{ padding: 50 }}></div>
     </div>
   );

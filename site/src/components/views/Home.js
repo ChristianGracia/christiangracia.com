@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Jumbotron from "../Jumbotron";
 import Fade from "react-reveal/Fade";
 import ContentCall from "../ContentCall";
+import { Redirect } from "react-router-dom";
 
 export default class Home extends Component {
   constructor(props) {
@@ -28,25 +29,27 @@ export default class Home extends Component {
   render() {
     return (
       <div>
-        {this.state.isShow ? <Jumbotron /> : null}
         {this.state.isShow ? (
-          <Fade top>
-            <p style={{ color: "white", textAlign: "center", marginTop: -35 }}>
-              Site written by me in ReactJs <i className="fab fa-react"></i>
-            </p>
-          </Fade>
-        ) : null}
-        {this.state.isShow ? (
-          <Fade top>
-            <p
-              className="scroller"
-              style={{ textAlign: "center", color: "white", marginTop: -14 }}
-            >
-              Scroll down <i className="fas fa-arrow-down"></i>
-            </p>
-          </Fade>
-        ) : null}{" "}
-        {this.stateisShow ? null : <ContentCall />}
+          <div>
+            <Jumbotron />
+            <div style={{ float: "bottom" }}>
+              <Fade top>
+                <p style={{ color: "white", textAlign: "center" }}>
+                  Site written by me in ReactJs <i className="fab fa-react"></i>
+                </p>
+              </Fade>
+
+              <Fade top>
+                <p style={{ textAlign: "center", color: "white" }}>
+                  Scroll down <i className="fas fa-arrow-down"></i>
+                </p>
+              </Fade>
+            </div>
+          </div>
+        ) : (
+          <ContentCall />
+        )}
+
         <div style={{ padding: 30 }}></div>
       </div>
     );

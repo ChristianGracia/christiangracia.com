@@ -3,6 +3,9 @@ import Fade from "react-reveal/Fade";
 import Content from "./Content";
 
 export default class ContentCall extends Component {
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
   render() {
     return (
       <div>

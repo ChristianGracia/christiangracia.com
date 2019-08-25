@@ -10,20 +10,27 @@ export default class Jumbotron extends Component {
             alignItems: "center",
             justifyContent: "center",
             alignContent: "center",
-            backgroundColor: "transparent"
+            backgroundColor: "transparent",
+            marginTop: -25
           }}
         >
           <div>
             <div className="container" style={{ alignItems: "center" }}>
               <div className="row">
                 <div className="col-sm">
-                  <div>
+                  <div
+                    style={{
+                      alignItems: "center",
+                      justifyContent: "center",
+                      alignContent: "center"
+                    }}
+                  >
                     <h1
                       className="display-4"
                       style={{
                         fontWeight: "bold",
                         textAlign: "center",
-                        marginTop: 20,
+
                         color: "white"
                       }}
                     >
@@ -41,6 +48,39 @@ export default class Jumbotron extends Component {
                   >
                     Full stack web developer, RI
                   </p>
+                  <p
+                    style={{
+                      fontWeight: "bold",
+                      color: "white",
+                      textAlign: "center"
+                    }}
+                  >
+                    Email: christianmgracia@gmail.com
+                  </p>
+
+                  <div
+                    style={{
+                      alignItems: "center",
+                      justifyContent: "center",
+                      textAlign: "center"
+                    }}
+                  >
+                    <a href="https://github.com/ChristianGracia">
+                      <span style={{ paddingRight: 5 }}>GitHub</span>
+                      <i className="fab fa-github-square"></i>
+                    </a>
+                    <span style={{ padding: 10 }}></span>
+                    <a href="https://www.linkedin.com/in/christian-gracia-32729768">
+                      <span style={{ paddingRight: 5 }}>LinkedIn</span>
+                      <i className="fab fa-linkedin"></i>
+                    </a>
+                    <span style={{ padding: 10 }}></span>
+
+                    <a href="http://www.twitter.com/CG_CODING">
+                      <span style={{ paddingRight: 5 }}>Twitter</span>
+                      <i className="fab fa-twitter"></i>
+                    </a>
+                  </div>
                 </div>
                 <div className="col-sm">
                   <img
@@ -50,28 +90,6 @@ export default class Jumbotron extends Component {
                     alt="photo"
                   />
                 </div>
-              </div>
-
-              <p style={{ fontWeight: "bold", color: "white", paddingTop: 10 }}>
-                Email: christianmgracia@gmail.com
-              </p>
-
-              <div style={{ alignItems: "center", justifyContent: "center" }}>
-                <a href="https://github.com/ChristianGracia">
-                  <span style={{ paddingRight: 5 }}>GitHub</span>
-                  <i className="fab fa-github-square"></i>
-                </a>
-                <span style={{ padding: 10 }}></span>
-                <a href="https://www.linkedin.com/in/christian-gracia-32729768">
-                  <span style={{ paddingRight: 5 }}>LinkedIn</span>
-                  <i className="fab fa-linkedin"></i>
-                </a>
-                <span style={{ padding: 10 }}></span>
-
-                <a href="http://www.twitter.com/CG_CODING">
-                  <span style={{ paddingRight: 5 }}>Twitter</span>
-                  <i className="fab fa-twitter"></i>
-                </a>
               </div>
             </div>
           </div>
