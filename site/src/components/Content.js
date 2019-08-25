@@ -5,9 +5,20 @@ import Skills from "./cards/Skills";
 import Education from "./cards/Education";
 
 export default class Content extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      lightbulb: false
+    };
+  }
+
   componentDidMount() {
     window.scrollTo(0, 0);
     document.body.scrollTop = 0;
+    setTimeout(() => {
+      this.setState({ lightbulb: true });
+    }, 5000);
   }
 
   render() {
@@ -87,7 +98,7 @@ export default class Content extends Component {
                       </span>
                     </div>
                     <div className="col-xs">
-                      <span style={{ color: "#3975A5" }}>
+                      <span style={{ color: "#3775A8" }}>
                         <i style={{ fontSize: 59 }} class="fab fa-python"></i>
                       </span>
                     </div>
@@ -117,9 +128,15 @@ export default class Content extends Component {
               >
                 {" "}
                 <div style={{ paddingBottom: 30 }}></div>
-                <span style={{ color: "yellow" }}>
-                  <i style={{ fontSize: 200 }} class="far fa-lightbulb"></i>
-                </span>
+                {this.state.lightbulb ? (
+                  <span style={{ color: "yellow" }}>
+                    <i style={{ fontSize: 200 }} class="far fa-lightbulb"></i>
+                  </span>
+                ) : (
+                  <span style={{ color: "grey" }}>
+                    <i style={{ fontSize: 200 }} class="far fa-lightbulb"></i>
+                  </span>
+                )}
               </div>{" "}
               <div style={{ paddingBottom: 30 }}></div>
               <Fade right>

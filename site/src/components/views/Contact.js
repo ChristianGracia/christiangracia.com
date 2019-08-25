@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import { Button } from "react-bootstrap";
-import Game from "../Game.js";
+import Jump from "react-reveal/Jump";
 
 export default class Contact extends Component {
   constructor(props) {
@@ -20,49 +19,75 @@ export default class Contact extends Component {
   render() {
     const { body, name, email } = this.state;
     return (
-      <div className="joke" style={{}}>
-        <h1 style={{ textAlign: "center", fontWeight: "bold", color: "white" }}>
-          Leave a note
-        </h1>
+      <div style={{}}>
         <div
           style={{
             paddingTop: 50,
             display: "flex",
-            alignItems: "center",
+
             justifyContent: "center"
           }}
         >
-          <div style={{ padding: 20, textAlign: "center" }}>
-            <form action="https://sendpoint.io/id/gWFzbxh9O" method="POST">
-              <input
-                style={{ padding: 5, paddingLeft: 20, paddingRight: 20 }}
-                type="text"
-                name="name"
-                value={this.state.name}
-                onChange={this.onChange}
-                placeholder="Name"
-              />
-              <div style={{ padding: 20 }}></div>
-              <input
-                style={{ padding: 5, paddingLeft: 20, paddingRight: 20 }}
-                type="email"
-                name="email"
-                value={this.state.email}
-                onChange={this.onChange}
-                placeholder="Email"
-              />
+          <div
+            style={{
+              padding: 20,
+              textAlign: "center",
+              justifyContent: "flex-start"
+            }}
+          >
+            <form
+              action="https://sendpoint.io/id/gWFzbxh9O"
+              method="POST"
+              style={{}}
+            >
+              <div class="row">
+                <div class="col-md">
+                  <div style={{}}></div>
+                  <Jump>
+                    <i
+                      class="fas fa-mail-bulk"
+                      style={{ fontSize: 80, color: "white" }}
+                    ></i>
+                  </Jump>
+                </div>
+                <div style={{ padding: 10 }}></div>
+                <div class="col-md">
+                  <input
+                    style={{
+                      padding: 5
+                    }}
+                    type="text"
+                    name="name"
+                    value={this.state.name}
+                    onChange={this.onChange}
+                    placeholder="Name"
+                  />
+                  <div style={{ padding: 10 }}></div>
+                  <input
+                    style={{
+                      padding: 5
+                    }}
+                    type="email"
+                    name="email"
+                    value={this.state.email}
+                    onChange={this.onChange}
+                    placeholder="Email"
+                  />
+                </div>
+              </div>
               <div style={{ padding: 20 }}></div>
               <textarea
-                style={{
-                  padding: 5,
-                  paddingLeft: 20,
-                  paddingRight: 20,
-                  paddingBottom: 100
-                }}
+                rows="4"
+                cols="50"
+                class=""
                 type="text"
                 name="body"
                 placeholder="Leave a message"
-                style={{ padding: 20 }}
+                style={{
+                  textAlign: "left",
+                  width: "90%",
+                  color: "black"
+                }}
                 value={this.state.body}
                 onChange={this.onChange}
               />
