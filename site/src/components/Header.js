@@ -25,10 +25,12 @@ export default class Header extends Component {
           <Navbar.Brand href="/" style={{ color: "white" }}>
             Home{" "}
             {this.state.timeout ? (
-              <i
-                class="fas fa-dice-d20 fa-pulse"
-                style={{ fontSize: 20, color: "white", marginTop: 4 }}
-              ></i>
+              <span style={{}}>
+                <i
+                  class="fas fa-dice-d20 fa-pulse"
+                  style={{ fontSize: 20, marginTop: 4, color: "#00FE00" }}
+                ></i>
+              </span>
             ) : (
               <i
                 class="fas fa-dice-d20"

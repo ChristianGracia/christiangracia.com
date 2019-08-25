@@ -12,7 +12,7 @@ export default class Jumbotron extends Component {
       this.setState({
         timeout: true
       });
-    }, 2000);
+    }, 3000);
   }
   render() {
     return (
@@ -139,7 +139,7 @@ export default class Jumbotron extends Component {
                   ) : (
                     <i
                       class="fas fa-dice-d20 fa-pulse"
-                      style={{ fontSize: 200, color: "white", marginTop: 4 }}
+                      style={{ fontSize: 200, color: "#00FE00", marginTop: 4 }}
                     ></i>
                   )}
                 </div>

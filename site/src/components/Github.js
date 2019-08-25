@@ -48,7 +48,7 @@ class Github extends Component {
                     className="text-info"
                     target="_blank"
                   >
-                    <p style={{ color: "white" }}>{repo.name}</p>
+                    <p style={{ color: "#00FE00" }}>{repo.name}</p>
                   </Link>
                 </h4>
                 <p>{repo.description}</p>
@@ -85,7 +85,11 @@ class Github extends Component {
           <p
             style={{ color: "white", textAlign: "center", fontWeight: "bold" }}
           >
-            Updated automatically <i class="fas fa-circle-notch fa-spin"></i>
+            Updated automatically{" "}
+            <i
+              class="fas fa-circle-notch fa-spin"
+              style={{ color: "#00FE00" }}
+            ></i>
           </p>
           <div style={{ padding: 26 }}></div>
 

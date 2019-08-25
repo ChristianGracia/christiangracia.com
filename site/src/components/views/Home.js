@@ -76,9 +76,12 @@ export default class Home extends Component {
                     }}
                     variant="dark"
                   >
-                    Scroll down or click {/* <Bounce top> */}
-                    <span>
-                      <i className="fas fa-arrow-down"></i>{" "}
+                    Scroll down or click
+                    <span style={{ padding: 10 }}>
+                      <i
+                        className="fas fa-arrow-down"
+                        style={{ color: "#00FE00" }}
+                      ></i>{" "}
                     </span>
                   </Button>
                 </Fade>
