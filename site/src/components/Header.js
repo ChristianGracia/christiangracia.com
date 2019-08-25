@@ -27,13 +27,13 @@ export default class Header extends Component {
             {this.state.timeout ? (
               <span style={{}}>
                 <i
-                  class="fas fa-dice-d20 fa-pulse"
+                  className="fas fa-dice-d20 fa-pulse"
                   style={{ fontSize: 20, marginTop: 4, color: "#00FE00" }}
                 ></i>
               </span>
             ) : (
               <i
-                class="fas fa-dice-d20"
+                className="fas fa-dice-d20"
                 style={{ fontSize: 20, color: "white", marginTop: 4 }}
               ></i>
             )}
@@ -46,7 +46,7 @@ export default class Header extends Component {
               About
             </Nav.Link>
             <Nav.Link href="/contact" style={{ color: "white" }}>
-              Other
+              Contact
             </Nav.Link>
           </Nav>
         </Navbar>
