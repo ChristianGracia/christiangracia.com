@@ -66,18 +66,24 @@ export default class Jumbotron extends Component {
                     }}
                   >
                     <a href="https://github.com/ChristianGracia">
-                      <span style={{ paddingRight: 5 }}>GitHub</span>
+                      <span style={{ paddingRight: 5, color: "white" }}>
+                        GitHub
+                      </span>
                       <i className="fab fa-github-square"></i>
                     </a>
                     <span style={{ padding: 10 }}></span>
                     <a href="https://www.linkedin.com/in/christian-gracia-32729768">
-                      <span style={{ paddingRight: 5 }}>LinkedIn</span>
+                      <span style={{ paddingRight: 5, color: "white" }}>
+                        LinkedIn
+                      </span>
                       <i className="fab fa-linkedin"></i>
                     </a>
                     <span style={{ padding: 10 }}></span>
 
                     <a href="http://www.twitter.com/CG_CODING">
-                      <span style={{ paddingRight: 5 }}>Twitter</span>
+                      <span style={{ paddingRight: 5, color: "white" }}>
+                        Twitter
+                      </span>
                       <i className="fab fa-twitter"></i>
                     </a>
                   </div>

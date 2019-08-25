@@ -4,12 +4,13 @@ import Header from "./components/Header";
 import Work from "./components/views/Work";
 import About from "./components/views/About";
 import Home from "./components/views/Home";
+import background from "./assets/background.png";
 
 import "./App.css";
 
 function App() {
   return (
-    <div className="App" style={{ backgroundColor: "#343A40" }}>
+    <div className="colorful">
       <Header />
 
       <Router>
