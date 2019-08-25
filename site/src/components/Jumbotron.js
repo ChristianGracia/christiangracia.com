@@ -109,7 +109,7 @@ export default class Jumbotron extends Component {
                 >
                   <i
                     class="fas fa-dice-d20 fa-pulse"
-                    style={{ fontSize: 200, color: "white" }}
+                    style={{ fontSize: 200, color: "white", marginTop: 20 }}
                   ></i>
                 </div>
               </div>

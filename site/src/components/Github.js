@@ -31,26 +31,22 @@ class Github extends Component {
     const { repos } = this.state;
 
     const repoItems = repos.map(repo => (
-      <div>
+      <div style={{}}>
         <Fade top>
           <div
             key={repo.id}
-            className="card card-body mb-2"
-            style={{
-              alignItems: "center",
-              justifyContent: "center",
-              alignContent: "center"
-            }}
+            className="card card-body mb-2 text-white bg-dark"
+            style={{}}
           >
-            <div className="row">
-              <div className="col-md-6">
-                <h4 style={{ color: "black" }}>
+            <div className="row mg-0-auto">
+              <div className="col-md-6 text-white">
+                <h4 style={{ color: "white" }}>
                   <Link
                     to={`//${repo.html_url.substr(7)}`}
                     className="text-info"
                     target="_blank"
                   >
-                    {repo.name}
+                    <p style={{ color: "white" }}>{repo.name}</p>
                   </Link>
                 </h4>
                 <p>{repo.description}</p>
@@ -58,36 +54,38 @@ class Github extends Component {
 
               <div className="col-md-6">
                 <span className="badge badge-info mr-1">
-                  Stars: {repo.stargazers_count}
+                  <i class="fas fa-star"></i> Stars: {repo.stargazers_count}
                 </span>
                 <span className="badge badge-secondary mr-1">
-                  Watchers: {repo.watchers_count}
+                  <i class="fas fa-eye"></i> Watchers: {repo.watchers_count}
                 </span>
                 <span className="badge badge-success">
-                  Forks: {repo.forks_count}
+                  <i class="fas fa-code-branch"></i> Forks: {repo.forks_count}
                 </span>
               </div>
             </div>
           </div>
         </Fade>
+        <div style={{ padding: 30 }}></div>
       </div>
     ));
 
     return (
       <div ref="myRef">
-        <div style={{ alignContent: "center", alignItems: "center" }}>
+        <div style={{ padding: 70 }}>
           <hr />
           <h3
             className="mb-4"
             style={{ color: "white", textAlign: "center", fontWeight: "bold" }}
           >
-            Latest Github Repos
+            Latest Github Repos <i class="fab fa-github"></i>
           </h3>
           <p
             style={{ color: "white", textAlign: "center", fontWeight: "bold" }}
           >
-            Updated automatically
+            Updated automatically <i class="fas fa-circle-notch fa-spin"></i>
           </p>
+          <div style={{ padding: 30 }}></div>
           {repoItems}
         </div>
       </div>
