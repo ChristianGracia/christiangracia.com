@@ -16,13 +16,14 @@ export default class Content extends Component {
             </Fade>
           </div>
         ))} */}
-        <div class="container">
-          <div class="row">
-            <div class="col-sm">
+        <div className="container">
+          <div className="row">
+            <div className="col-sm">
               <Fade top>
                 <Skills />
               </Fade>
             </div>
+            <div style={{ padding: 20 }}></div>
             <div className="col-sm">
               <Fade top>
                 <Education />
@@ -30,6 +31,7 @@ export default class Content extends Component {
             </div>
           </div>
         </div>
+        <div style={{ padding: 50 }}></div>
       </Fragment>
     );
   }

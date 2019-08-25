@@ -5,9 +5,7 @@ export default class Skills extends Component {
   render() {
     return (
       <div style={{}}>
-        <h1 style={{ textAlign: "center", width: "70%", color: "white" }}>
-          Skills
-        </h1>
+        <h1 style={{ textAlign: "center", color: "white" }}>Skills</h1>
         <ListGroup style={{}}>
           <ListGroup.Item>
             Languages: JavaScript, C, Python, PHP, HTML/CSS
