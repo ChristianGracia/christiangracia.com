@@ -93,7 +93,7 @@ export default class Home extends Component {
         )}
 
         <div style={{ paddingBottom: 220 }}></div>
-        <div></div>
+        <div style={{ marginTop: 200 }}></div>
       </div>
     );
   }
