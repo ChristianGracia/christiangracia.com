@@ -146,16 +146,19 @@ export default class Jumbotron extends Component {
                   {!this.state.timeout ? (
                     <i
                       class="fas fa-dice-d20"
-                      style={{ fontSize: 200, color: "white", marginTop: 4 }}
+                      style={{ fontSize: 180, color: "white", marginTop: 2 }}
                     ></i>
                   ) : (
                     <i
                       class="fas fa-dice-d20 fa-pulse"
-                      style={{ fontSize: 200, color: "#00FE00", marginTop: 4 }}
+                      style={{
+                        fontSize: 180,
+                        color: "#00FE00",
+                        marginTop: 2
+                      }}
                     ></i>
                   )}
                 </div>
-                <div style={{ padding: 10 }}></div>
               </div>
             </div>
           </div>

@@ -26,21 +26,13 @@ export default class Home extends Component {
 
   render() {
     return (
-      <div>
+      <div style={{}}>
         <div style={{ padding: 20 }}></div>
         {this.state.isShow ? (
           <div>
             <Jumbotron />
 
-            <div style={{ padding: 50 }}></div>
-            <div
-              style={{
-                position: "fixed",
-                bottom: 20,
-                left: 0,
-                right: 0
-              }}
-            >
+            <div style={{ marginTop: -70 }}>
               <Fade top>
                 <p
                   style={{
@@ -77,7 +69,7 @@ export default class Home extends Component {
                     variant="dark"
                   >
                     Scroll down or click
-                    <span style={{ padding: 10 }}>
+                    <span style={{ paddingLeft: 10 }}>
                       <i
                         className="fas fa-arrow-down"
                         style={{ color: "#00FE00" }}
@@ -89,12 +81,11 @@ export default class Home extends Component {
             </div>
           </div>
         ) : (
-          <div style={{paddingBottom: 50}}></div>
-          <ContentCall />
+          <div style={{ paddingTop: 50 }}>
+            <ContentCall />
+          </div>
         )}
-
-        <div style={{ paddingBottom: 220 }}></div>
-        <div style={{ marginTop: 200 }}></div>
+        <div style={{ paddingBottom: 350 }}></div>
       </div>
     );
   }
