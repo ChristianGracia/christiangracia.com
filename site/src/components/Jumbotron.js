@@ -10,7 +10,7 @@ export default class Jumbotron extends Component {
   componentDidMount() {
     setTimeout(() => {
       this.setState({
-        timeout: true
+        timeout: !this.state.timeout
       });
     }, 3000);
   }
@@ -38,17 +38,29 @@ export default class Jumbotron extends Component {
                       alignContent: "center"
                     }}
                   >
-                    <h1
-                      className="display-4"
-                      style={{
-                        fontWeight: "bold",
-                        textAlign: "center",
+                    {!this.state.timeout ? (
+                      <h1
+                        style={{
+                          fontWeight: "bold",
+                          textAlign: "center",
 
-                        color: "white"
-                      }}
-                    >
-                      Christian Gracia
-                    </h1>
+                          color: "white"
+                        }}
+                      >
+                        Christian Gracia
+                      </h1>
+                    ) : (
+                      <h1
+                        style={{
+                          fontWeight: "bold",
+                          textAlign: "center",
+
+                          color: "#00FE00"
+                        }}
+                      >
+                        Christian Gracia
+                      </h1>
+                    )}
                   </div>
 
                   <p

@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Github from "../Github";
 import Fade from "react-reveal/Fade";
 import { Button } from "react-bootstrap";
+import LightSpeed from "react-reveal/LightSpeed";
 
 export default class Work extends Component {
   state = {
@@ -17,8 +18,6 @@ export default class Work extends Component {
   render() {
     return (
       <div style={{}}>
-        <div style={{ padding: 20 }}> </div>
-
         <div
           className="container"
           style={{

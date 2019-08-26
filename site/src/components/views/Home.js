@@ -92,7 +92,8 @@ export default class Home extends Component {
           <ContentCall />
         )}
 
-        <div style={{ padding: 40 }}></div>
+        <div style={{ paddingBottom: 150 }}></div>
+        <div></div>
       </div>
     );
   }

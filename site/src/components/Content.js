@@ -92,24 +92,24 @@ export default class Content extends Component {
                     <div className="col-xs">
                       <span style={{ color: "#F5DE19", textAlign: "center" }}>
                         <i
-                          style={{ fontSize: 59 }}
+                          style={{ fontSize: 47 }}
                           class="fab fa-js-square"
                         ></i>
                       </span>
                     </div>
                     <div className="col-xs">
                       <span style={{ color: "#3775A8" }}>
-                        <i style={{ fontSize: 59 }} class="fab fa-python"></i>
+                        <i style={{ fontSize: 47 }} class="fab fa-python"></i>
                       </span>
                     </div>
                     <div className="col-xs">
                       <span style={{ color: "#87C000" }}>
-                        <i style={{ fontSize: 59 }} class="fab fa-node"></i>
+                        <i style={{ fontSize: 47 }} class="fab fa-node"></i>
                       </span>
                     </div>
                     <div className="col-xs">
                       <span style={{ color: "#60DBFB" }}>
-                        <i style={{ fontSize: 59 }} class="fab fa-react"></i>
+                        <i style={{ fontSize: 47 }} class="fab fa-react"></i>
                       </span>
                     </div>
                   </div>

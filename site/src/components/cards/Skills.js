@@ -52,6 +52,9 @@ export default class Skills extends Component {
               {"  "}
               App Development
             </span>
+            <span>Web Design</span>
+            <span>Software Design</span>
+            <span>Data Structures</span>
           </h1>
           <div style={{ paddingBottom: 20 }}></div>
         </div>
