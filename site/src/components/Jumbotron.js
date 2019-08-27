@@ -5,14 +5,47 @@ export default class Jumbotron extends Component {
     super(props);
   }
   state = {
-    timeout: false
+    timeout: false,
+    icon: ""
   };
   componentDidMount() {
+    const icons = [
+      "fas fa-fan fa-pulse",
+      "fab fa-ello fa-pulse",
+      "fas fa-cookie fa-pulse",
+      "fab fa-cloudsmith fa-pulse",
+      "fab fa-codepen fa-pulse",
+      "fas fa-clock fa-pulse",
+      "far fa-clock fa-pulse",
+      "fas fa-circle-notch fa-pulse",
+      "fas fa-atom fa-pulse",
+      "fas fa-dice-d20 fa-pulse",
+      "fas fa-adjust fa-pulse",
+      "fas fa-star fa-pulse",
+      "fas fa-compress fa-pulse",
+      "fas fa-arrows-alt fa-pulse",
+      "fas fa-asterisk fa-pulse",
+      "fas fa-bacon fa-pulse"
+    ];
+    const iconLength = icons.length;
     setTimeout(() => {
       this.setState({
-        timeout: !this.state.timeout
+        timeout: !this.state.timeout,
+        icon: icons[Math.floor(Math.random() * iconLength)]
+      });
+    }, 3000);
+
+    setInterval(() => {
+      this.setState({
+        icon: icons[Math.floor(Math.random() * iconLength)]
       });
     }, 1000);
+
+    // if (this.state.timeout) {
+    //   this. = setInterval(() => {
+    //     icons[Math.floor(Math.random() * iconLength)];
+    //   }, 1000);
+    // }
   }
   render() {
     const icons = [
@@ -34,6 +67,7 @@ export default class Jumbotron extends Component {
       "fas fa-bacon fa-pulse"
     ];
     const iconLength = icons.length;
+
     return (
       <div style={{ flex: 1 }}>
         <div
@@ -168,7 +202,7 @@ export default class Jumbotron extends Component {
                     ></i>
                   ) : (
                     <i
-                      class={icons[Math.floor(Math.random() * iconLength)]}
+                      class={this.state.icon}
                       style={{
                         fontSize: 180,
                         color: "#00FE00",
