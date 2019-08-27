@@ -115,15 +115,13 @@ export default class Jumbotron extends Component {
       });
     }, 3000);
 
-    const interval = setInterval(() => {
+    setInterval(() => {
       this.setState({
         icon: icons[Math.floor(Math.random() * iconLength)]
       });
     }, 3000);
   }
-  componentWillUnmount() {
-    clearInterval(interval);
-  }
+
   render() {
     return (
       <div style={{ flex: 1 }}>
