@@ -8,6 +8,7 @@ export default class Jumbotron extends Component {
     timeout: false,
     icon: ""
   };
+
   componentDidMount() {
     const icons = [
       "fas fa-fan fa-pulse",
@@ -114,11 +115,14 @@ export default class Jumbotron extends Component {
       });
     }, 3000);
 
-    setInterval(() => {
+    const interval = setInterval(() => {
       this.setState({
         icon: icons[Math.floor(Math.random() * iconLength)]
       });
     }, 3000);
+  }
+  componentWillUnmount() {
+    clearInterval(interval);
   }
   render() {
     return (
