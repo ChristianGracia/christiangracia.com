@@ -12,9 +12,28 @@ export default class Jumbotron extends Component {
       this.setState({
         timeout: !this.state.timeout
       });
-    }, 3000);
+    }, 1000);
   }
   render() {
+    const icons = [
+      "fas fa-fan fa-pulse",
+      "fab fa-ello fa-pulse",
+      "fas fa-cookie fa-pulse",
+      "fab fa-cloudsmith fa-pulse",
+      "fab fa-codepen fa-pulse",
+      "fas fa-clock fa-pulse",
+      "far fa-clock fa-pulse",
+      "fas fa-circle-notch fa-pulse",
+      "fas fa-atom fa-pulse",
+      "fas fa-dice-d20 fa-pulse",
+      "fas fa-adjust fa-pulse",
+      "fas fa-star fa-pulse",
+      "fas fa-compress fa-pulse",
+      "fas fa-arrows-alt fa-pulse",
+      "fas fa-asterisk fa-pulse",
+      "fas fa-bacon fa-pulse"
+    ];
+    const iconLength = icons.length;
     return (
       <div style={{ flex: 1 }}>
         <div
@@ -145,15 +164,15 @@ export default class Jumbotron extends Component {
                   {!this.state.timeout ? (
                     <i
                       class="fas fa-dice-d20"
-                      style={{ fontSize: 180, color: "white", marginTop: 20 }}
+                      style={{ fontSize: 180, color: "white", marginTop: 15 }}
                     ></i>
                   ) : (
                     <i
-                      class="fas fa-dice-d20 fa-pulse"
+                      class={icons[Math.floor(Math.random() * iconLength)]}
                       style={{
                         fontSize: 180,
                         color: "#00FE00",
-                        marginTop: 20
+                        marginTop: 15
                       }}
                     ></i>
                   )}
