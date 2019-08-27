@@ -169,7 +169,6 @@ export default class Jumbotron extends Component {
                       </h1>
                     )}
                   </div>
-
                   <p
                     className="lead"
                     style={{
