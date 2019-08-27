@@ -25,7 +25,36 @@ export default class Jumbotron extends Component {
       "fas fa-compress fa-pulse",
       "fas fa-arrows-alt fa-pulse",
       "fas fa-asterisk fa-pulse",
-      "fas fa-bacon fa-pulse"
+      "fas fa-bacon fa-pulse",
+      "fas fa-egg",
+      "fas fa-ellipsis-v fa-pulse",
+      "fab fa-dyalog fa-pulse",
+      "fas fa-ellipsis-h fa-pulse",
+      "fas fa-fighter-jet fa-pulse",
+      "fas fa-eye",
+      "far fa-eye",
+      "fas fa-external-link-alt fa-pulse",
+      "fas fa-exclamation-triangle fa-pulse",
+      "fas fa-fire-alt",
+      "fas fa-fire",
+      "fas fa-ghost",
+      "far fa-gem",
+      "fas fa-globe-africa",
+      "fas fa-globe-americas",
+      "fas fa-globe-europe",
+      "fas fa-globe-asia",
+      "far fa-grin-squint",
+      "far fa-grin-beam-sweat",
+      "far fa-grin-squint-tears",
+      "far fa-grin-beam",
+      "far fa-grin-alt",
+      "far fa-grin-wink",
+      "fab fa-hotjar",
+      "fab fa-hubspot",
+      "fab fa-hubspot",
+      "fab fa-hubspot",
+      "fab fa-hubspot",
+      "fas fa-haykal fa-spin"
     ];
     const iconLength = icons.length;
     setTimeout(() => {
@@ -39,7 +68,7 @@ export default class Jumbotron extends Component {
       this.setState({
         icon: icons[Math.floor(Math.random() * iconLength)]
       });
-    }, 1000);
+    }, 3000);
 
     // if (this.state.timeout) {
     //   this. = setInterval(() => {
