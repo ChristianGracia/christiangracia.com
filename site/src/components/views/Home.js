@@ -36,7 +36,6 @@ export default class Home extends Component {
         {this.state.isShow ? (
           <div style={{ flex: 1, paddingTop: 20 }}>
             <Jumbotron />
-
             <div
               style={{
                 flex: 1,
@@ -91,12 +90,13 @@ export default class Home extends Component {
                 </Fade>
               </div>
             </div>
+            <div style={{ marginTop: 100 }}></div>
           </div>
         ) : (
           <div style={{ paddingTop: 50 }}>
             <ContentCall />
           </div>
-        )}
+        )}{" "}
       </div>
     );
   }

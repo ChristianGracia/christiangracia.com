@@ -10,7 +10,14 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="colorful" style={{ flex: 1 }}>
+    <div
+      className="colorful"
+      style={{
+        flex: 1,
+        width: "100%",
+        height: "100%"
+      }}
+    >
       <Header />
 
       <Router>
@@ -30,7 +37,7 @@ function App() {
         <Route exact path="/home" component={Work} />
       </Router>
 
-      <div style={{ padding: 50 }}></div>
+      <div style={{ paddingBottom: 200 }}></div>
     </div>
   );
 }

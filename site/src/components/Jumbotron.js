@@ -23,8 +23,7 @@ export default class Jumbotron extends Component {
             alignItems: "center",
             justifyContent: "center",
             alignContent: "center",
-            backgroundColor: "transparent",
-            marginTop: -40
+            backgroundColor: "transparent"
           }}
         >
           <div>
