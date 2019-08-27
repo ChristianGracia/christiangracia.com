@@ -15,14 +15,39 @@ export default class Jumbotron extends Component {
       "fas fa-cookie fa-pulse",
       "fab fa-cloudsmith fa-pulse",
       "fab fa-codepen fa-pulse",
+      "fab fa-codepen fa-pulse",
+      "fab fa-codepen fa-pulse",
+      "fab fa-codepen fa-pulse",
+      "fab fa-codepen fa-pulse",
+      "fab fa-codepen fa-pulse",
+      "fas fa-clock fa-pulse",
+      "fas fa-clock fa-pulse",
       "fas fa-clock fa-pulse",
       "far fa-clock fa-pulse",
+      "far fa-clock fa-pulse",
+      "far fa-clock fa-pulse",
+      "far fa-clock fa-pulse",
       "fas fa-circle-notch fa-pulse",
+      "fas fa-circle-notch fa-pulse",
+      "fas fa-circle-notch fa-pulse",
+      "fas fa-atom fa-pulse",
+      "fas fa-atom fa-pulse",
+      "fas fa-atom fa-pulse",
+      "fas fa-atom fa-pulse",
       "fas fa-atom fa-pulse",
       "fas fa-dice-d20 fa-pulse",
       "fas fa-adjust fa-pulse",
       "fas fa-star fa-pulse",
+      "fas fa-adjust fa-pulse",
+      "fas fa-star fa-pulse",
+      "fas fa-adjust fa-pulse",
+      "fas fa-star fa-pulse",
       "fas fa-compress fa-pulse",
+      "fas fa-arrows-alt fa-pulse",
+      "fas fa-arrows-alt fa-pulse",
+      "fas fa-arrows-alt fa-pulse",
+      "fas fa-arrows-alt fa-pulse",
+      "fas fa-arrows-alt fa-pulse",
       "fas fa-arrows-alt fa-pulse",
       "fas fa-asterisk fa-pulse",
       "fas fa-bacon fa-pulse",
@@ -31,15 +56,26 @@ export default class Jumbotron extends Component {
       "fab fa-dyalog fa-pulse",
       "fas fa-ellipsis-h fa-pulse",
       "fas fa-fighter-jet fa-pulse",
+      "fas fa-fighter-jet fa-pulse",
+      "fas fa-fighter-jet fa-pulse",
+      "fas fa-eye",
+      "far fa-eye",
       "fas fa-eye",
       "far fa-eye",
       "fas fa-external-link-alt fa-pulse",
       "fas fa-exclamation-triangle fa-pulse",
       "fas fa-fire-alt",
       "fas fa-fire",
+      "fas fa-fire-alt",
+      "fas fa-fire",
       "fas fa-ghost",
       "far fa-gem",
+      "far fa-gem",
       "fas fa-globe-africa",
+      "fas fa-globe-americas",
+      "fas fa-globe-americas",
+      "fas fa-globe-americas",
+      "fas fa-globe-americas",
       "fas fa-globe-americas",
       "fas fa-globe-europe",
       "fas fa-globe-asia",
@@ -50,34 +86,9 @@ export default class Jumbotron extends Component {
       "far fa-grin-alt",
       "far fa-grin-wink",
       "fab fa-hotjar",
-      "fab fa-hubspot",
-      "fab fa-hubspot",
-      "fab fa-hubspot",
-      "fab fa-hubspot",
-      "fas fa-haykal fa-spin"
-    ];
-    const iconLength = icons.length;
-    setTimeout(() => {
-      this.setState({
-        timeout: !this.state.timeout,
-        icon: icons[Math.floor(Math.random() * iconLength)]
-      });
-    }, 3000);
-
-    setInterval(() => {
-      this.setState({
-        icon: icons[Math.floor(Math.random() * iconLength)]
-      });
-    }, 3000);
-
-    // if (this.state.timeout) {
-    //   this. = setInterval(() => {
-    //     icons[Math.floor(Math.random() * iconLength)];
-    //   }, 1000);
-    // }
-  }
-  render() {
-    const icons = [
+      "fab fa-hubspot fa-pulse",
+      "fab fa-hubspot fa-pilse",
+      "fas fa-haykal fa-spin",
       "fas fa-fan fa-pulse",
       "fab fa-ello fa-pulse",
       "fas fa-cookie fa-pulse",
@@ -96,7 +107,20 @@ export default class Jumbotron extends Component {
       "fas fa-bacon fa-pulse"
     ];
     const iconLength = icons.length;
+    setTimeout(() => {
+      this.setState({
+        timeout: !this.state.timeout,
+        icon: icons[Math.floor(Math.random() * iconLength)]
+      });
+    }, 3000);
 
+    setInterval(() => {
+      this.setState({
+        icon: icons[Math.floor(Math.random() * iconLength)]
+      });
+    }, 3000);
+  }
+  render() {
     return (
       <div style={{ flex: 1 }}>
         <div
