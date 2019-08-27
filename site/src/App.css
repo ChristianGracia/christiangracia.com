@@ -1,3 +1,4 @@
 .colorful {
   background-image: url("./assets/background.png");
+  background-size: contain;
 }
