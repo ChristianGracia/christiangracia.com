@@ -37,7 +37,7 @@ function App() {
         <Route exact path="/home" component={Work} />
       </Router>
 
-      <div style={{ paddingBottom: 200 }}></div>
+      <div style={{ paddingBottom: 300 }}></div>
     </div>
   );
 }
