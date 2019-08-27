@@ -26,20 +26,31 @@ export default class Home extends Component {
 
   render() {
     return (
-      <div style={{}}>
-        <div style={{ padding: 20 }}></div>
+      <div
+        style={{
+          height: "100%",
+          width: "100%",
+          justifyContent: "space-between"
+        }}
+      >
         {this.state.isShow ? (
-          <div>
+          <div style={{ flex: 1, paddingTop: 20 }}>
             <Jumbotron />
 
-            <div style={{ marginTop: -70 }}>
+            <div
+              style={{
+                flex: 1,
+                margin: 0
+              }}
+            >
               <Fade top>
                 <p
                   style={{
                     color: "#FFFF00",
                     textAlign: "center",
                     fontSize: 20,
-                    fontWeight: "bold"
+                    fontWeight: "bold",
+                    flex: 1
                   }}
                 >
                   Site written in ReactJs{" "}
@@ -52,7 +63,8 @@ export default class Home extends Component {
               <div
                 style={{
                   alignItems: "center",
-                  textAlign: "center"
+                  textAlign: "center",
+                  flex: 1
                 }}
               >
                 <Fade top>
@@ -85,7 +97,6 @@ export default class Home extends Component {
             <ContentCall />
           </div>
         )}
-        <div style={{ paddingBottom: 350 }}></div>
       </div>
     );
   }

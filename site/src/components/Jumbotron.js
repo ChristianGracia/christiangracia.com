@@ -16,7 +16,7 @@ export default class Jumbotron extends Component {
   }
   render() {
     return (
-      <div>
+      <div style={{ flex: 1 }}>
         <div
           className="jumbotron jumbotron-fluid"
           style={{
@@ -24,7 +24,7 @@ export default class Jumbotron extends Component {
             justifyContent: "center",
             alignContent: "center",
             backgroundColor: "transparent",
-            marginTop: -70
+            marginTop: -40
           }}
         >
           <div>
@@ -146,7 +146,7 @@ export default class Jumbotron extends Component {
                   {!this.state.timeout ? (
                     <i
                       class="fas fa-dice-d20"
-                      style={{ fontSize: 180, color: "white", marginTop: 2 }}
+                      style={{ fontSize: 180, color: "white", marginTop: 20 }}
                     ></i>
                   ) : (
                     <i
@@ -154,7 +154,7 @@ export default class Jumbotron extends Component {
                       style={{
                         fontSize: 180,
                         color: "#00FE00",
-                        marginTop: 2
+                        marginTop: 20
                       }}
                     ></i>
                   )}
