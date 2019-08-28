@@ -27,16 +27,15 @@ export default class Education extends Component {
         >
           {" "}
           <div style={{ marginTop: 50 }}>
-            <p style={{ color: "#FFFF00" }}>Career Devs </p>{" "}
-            <p>Computer Science University 2018-2019</p>
+            <p style={{ color: "#FFFF00" }}>Career Devs </p> <p>2018-2019</p>
             <p>1000+ hours of in-person class </p>
+            <a href="http://careerdevs.com" style={{ color: "#6BDDFF" }}>
+              careerdevs.com
+            </a>
           </div>
-          <div style={{ marginTop: 50 }}>
-            <p style={{ color: "#FFFF00" }}>
-              {" "}
-              Rhode Island College{" "}
-              <span style={{ color: "white" }}>2012-2016</span>{" "}
-            </p>
+          <div class="col-sm" style={{ marginTop: 50 }}>
+            <p style={{ color: "#FFFF00" }}>Rhode Island College </p>
+            <p style={{ color: "white" }}>2012-2016</p>{" "}
             <p>BS in General Management</p>
           </div>
         </div>
