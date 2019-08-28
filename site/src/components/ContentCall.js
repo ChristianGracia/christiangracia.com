@@ -15,6 +15,15 @@ export default class ContentCall extends Component {
         <div></div>
         <Fade top></Fade>
         <Work />
+        <div style={{ textAlign: "center", marginTop: 40 }}>
+          <span style={{ color: "#A5FE00" }}>
+            {" "}
+            <i
+              style={{ fontSize: 100 }}
+              class="fab fa-connectdevelop fa-spin"
+            ></i>
+          </span>
+        </div>
         <About />
       </div>
     );

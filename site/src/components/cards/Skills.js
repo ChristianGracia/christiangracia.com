@@ -4,20 +4,39 @@ import Fade from "react-reveal/Fade";
 export default class Skills extends Component {
   render() {
     return (
-      <div style={{ width: "", padding: 10 }}>
-        <h1 style={{ textAlign: "center", color: "white", paddingBottom: 40 }}>
-          Skills{" "}
-          <span>
-            <i class="fas fa-hammer"></i>
-          </span>
-        </h1>
+      <div style={{}}>
+        <div style={{ textAlign: "center", fontSize: 70 }}>
+          <i class="fas fa-hammer" style={{ color: "#FFFF00" }}></i>
+        </div>
 
         <div
-          style={{ textAlign: "center", fontWeight: "bold", color: "white" }}
+          style={{
+            flex: 1,
+            flexDirection: "column",
+            textAlign: "center",
+            paddingTop: 30
+          }}
+        >
+          <Fade left cascade>
+            <div style={{ color: "white", margin: "auto" }}>
+              <h1>Web Design</h1>
+              <h1 style={{}}>Software Design</h1>
+              <h1>Data Structures</h1>
+            </div>
+          </Fade>
+        </div>
+
+        <div
+          style={{
+            textAlign: "center",
+            fontWeight: "bold",
+            color: "white",
+            margin: "auto"
+          }}
         >
           <h1
             style={{
-              fontSize: 30,
+              fontSize: 27,
               justifyContent: "center",
               textAlign: "center",
               alignItems: "center",
@@ -51,10 +70,7 @@ export default class Skills extends Component {
               </span>
               {"  "}
               App Development
-            </span>
-            {/* <span>Web Design</span>
-            <span>Software Design</span>
-            <span>Data Structures</span> */}
+            </span>{" "}
           </h1>
           <div style={{ paddingBottom: 20 }}></div>
         </div>

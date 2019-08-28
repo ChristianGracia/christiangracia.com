@@ -24,51 +24,52 @@ export default class Content extends Component {
   render() {
     return (
       <Fragment>
-        <div className="container" style={{ marginTop: 50 }}>
+        <div className="container" style={{ marginTop: 30 }}>
           <div className="">
             <div className="col-sm">
               <div
                 style={{
                   textAlign: "center",
                   justifyContent: "center",
-                  alignItems: "center",
-                  paddingBottom: 20
+                  alignItems: "center"
                 }}
-              >
-                <span style={{ color: "#A5FE00" }}>
-                  {" "}
-                  <i
-                    style={{ fontSize: 200 }}
-                    class="fab fa-connectdevelop fa-spin"
-                  ></i>
-                </span>
-              </div>
+              ></div>
               <div style={{ paddingBottom: 30 }}></div>
               <Fade top>
                 <Skills />
               </Fade>
 
               <LightSpeed top cascade>
-                <div>
+                <div style={{ textAlign: "center", marginTop: 20 }}>
                   <p style={{ color: "white" }}>
-                    <span style={{ color: "#00FF00" }}>Languages:</span>{" "}
-                    JavaScript, C, Python, PHP, HTML/CSS
+                    <span style={{ color: "#FEFE01", fontWeight: "bold" }}>
+                      Languages:
+                    </span>{" "}
+                    JavaScript, C#, Python, C, PHP, HTML/CSS,
                   </p>
                   <p style={{ color: "white" }}>
-                    <span style={{ color: "#00FF00" }}>Frameworks:</span> React
-                    Native, VueJS
+                    <span style={{ color: "#FEFE01", fontWeight: "bold" }}>
+                      Frameworks:
+                    </span>{" "}
+                    React Native, VueJS
                   </p>
                   <p style={{ color: "white" }}>
-                    <span style={{ color: "#00FF00" }}>Libraries:</span>{" "}
-                    ReactJS, Redux
+                    <span style={{ color: "#FEFE01", fontWeight: "bold" }}>
+                      Libraries:
+                    </span>{" "}
+                    React, Redux, Bootstrap, Express.js, NodeJs
                   </p>
                   <span style={{ marginTop: 20 }}></span>
                   <p style={{ color: "white" }}>
                     MongoDB, MERN Stack apps, REST API, GraphQL, NodeJS, Django,
-                    Bootstrap,
+                    Bootstrap
                   </p>
                   <p style={{ color: "white" }}>
-                    Agile Development Methodogy, Linux/Ubuntu , Server hosting
+                    Agile Development Methodogy, Linux/Ubuntu , Server hosting,
+                    Git
+                  </p>
+                  <p style={{ color: "white" }}>
+                    Object Oriented Programming, Bash scripting, React Hooks
                   </p>
                 </div>
               </LightSpeed>
