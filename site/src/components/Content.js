@@ -24,8 +24,7 @@ export default class Content extends Component {
   render() {
     return (
       <Fragment>
-        <div style={{ padding: 20 }}></div>
-        <div className="container">
+        <div className="container" style={{ marginTop: 50 }}>
           <div className="">
             <div className="col-sm">
               <div
