@@ -40,7 +40,13 @@ export default class Content extends Component {
               </Fade>
 
               <LightSpeed top cascade>
-                <div style={{ textAlign: "center", marginTop: 20 }}>
+                <div
+                  style={{
+                    textAlign: "center",
+                    marginTop: 20,
+                    fontWeight: "bold"
+                  }}
+                >
                   <p style={{ color: "white" }}>
                     <span style={{ color: "#FEFE01", fontWeight: "bold" }}>
                       Languages:
@@ -59,8 +65,8 @@ export default class Content extends Component {
                     </span>{" "}
                     React, Redux, Bootstrap, Express.js, NodeJs
                   </p>
-                  <span style={{ marginTop: 20 }}></span>
-                  <p style={{ color: "white" }}>
+
+                  <p style={{ color: "white", paddingTop: 25 }}>
                     MongoDB, MERN Stack apps, REST API, GraphQL, NodeJS, Django,
                     Bootstrap
                   </p>
