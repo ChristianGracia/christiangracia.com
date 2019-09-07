@@ -21,6 +21,17 @@ export default class Jumbotron extends Component {
       "fab fa-codepen fa-pulse",
       "fab fa-codepen fa-pulse",
       "fab fa-codepen fa-pulse",
+      "fab fa-codepen fa-pulse",
+      "fab fa-codepen fa-pulse",
+      "fab fa-codepen fa-pulse",
+      "fab fa-codepen fa-pulse",
+      "fas fa-clock fa-pulse",
+      "fas fa-clock fa-pulse",
+      "fas fa-clock fa-pulse",
+      "far fa-clock fa-pulse",
+      "far fa-clock fa-pulse",
+      "far fa-clock fa-pulse",
+      "far fa-clock fa-pulse",
       "fas fa-clock fa-pulse",
       "fas fa-clock fa-pulse",
       "fas fa-clock fa-pulse",
@@ -52,41 +63,36 @@ export default class Jumbotron extends Component {
       "fas fa-arrows-alt fa-pulse",
       "fas fa-asterisk fa-pulse",
       "fas fa-bacon fa-pulse",
-      "fas fa-egg",
+      "fas fa-egg fa-pulse",
       "fas fa-ellipsis-v fa-pulse",
       "fab fa-dyalog fa-pulse",
       "fas fa-ellipsis-h fa-pulse",
       "fas fa-fighter-jet fa-pulse",
       "fas fa-fighter-jet fa-pulse",
       "fas fa-fighter-jet fa-pulse",
-      "fas fa-eye",
-      "far fa-eye",
-      "fas fa-eye",
-      "far fa-eye",
+      "fas fa-eye fa-pulse",
+      "far fa-eye fa-pulse",
+      "fas fa-eye fa-pulse",
+      "far fa-eye fa-pulse",
       "fas fa-external-link-alt fa-pulse",
       "fas fa-exclamation-triangle fa-pulse",
-      "fas fa-fire-alt",
-      "fas fa-fire",
-      "fas fa-fire-alt",
-      "fas fa-fire",
-      "fas fa-ghost",
-      "far fa-gem",
-      "far fa-gem",
-      "fas fa-globe-africa",
-      "fas fa-globe-americas",
-      "fas fa-globe-americas",
-      "fas fa-globe-americas",
-      "fas fa-globe-americas",
-      "fas fa-globe-americas",
-      "fas fa-globe-europe",
-      "fas fa-globe-asia",
-      "far fa-grin-squint",
-      "far fa-grin-beam-sweat",
-      "far fa-grin-squint-tears",
-      "far fa-grin-beam",
-      "far fa-grin-alt",
-      "far fa-grin-wink",
-      "fab fa-hotjar",
+      "fas fa-fire-alt fa-pulse",
+      "fas fa-fire fa-pulse",
+      "fas fa-fire-alt fa-pulse",
+      "fas fa-fire fa-pulse",
+      "fas fa-ghost fa-pulse",
+      "far fa-gem fa-pulse",
+      "far fa-gem fa-pulse",
+      "fas fa-globe-africa fa-pulse",
+      "fas fa-globe-americas fa-pulse",
+      "fas fa-globe-americas fa-pulse",
+      "fas fa-globe-americas fa-pulse",
+      "fas fa-globe-americas fa-pulse",
+      "fas fa-globe-americas fa-pulse",
+      "fas fa-globe-europe fa-pulse",
+      "fas fa-globe-asia fa-pulse",
+
+      "fab fa-hotjar fa-pulse",
       "fab fa-hubspot fa-pulse",
       "fab fa-hubspot fa-pilse",
       "fas fa-haykal fa-spin",
@@ -105,6 +111,19 @@ export default class Jumbotron extends Component {
       "fas fa-compress fa-pulse",
       "fas fa-arrows-alt fa-pulse",
       "fas fa-asterisk fa-pulse",
+      "fas fa-bacon fa-pulse",
+      "fas fa-bacon fa-pulse",
+      "fas fa-bacon fa-pulse",
+      "fas fa-bacon fa-pulse",
+      "fas fa-bacon fa-pulse",
+      "fas fa-bacon fa-pulse",
+      "fas fa-bacon fa-pulse",
+      "fas fa-bacon fa-pulse",
+      "fas fa-bacon fa-pulse",
+      "fas fa-bacon fa-pulse",
+      "fas fa-bacon fa-pulse",
+      "fas fa-bacon fa-pulse",
+      "fas fa-bacon fa-pulse",
       "fas fa-bacon fa-pulse"
     ];
     const iconLength = icons.length;
@@ -181,6 +200,25 @@ export default class Jumbotron extends Component {
                     {"  "}
                     {"  "}
                     Providence, RI
+                  </p>
+                  <p
+                    style={{
+                      fontStyle: "italic",
+                      fontWeight: "bold",
+                      color: "yellow",
+                      textAlign: "center"
+                    }}
+                  >
+                    React, React Native, C#, and more
+                  </p>
+                  <p
+                    style={{
+                      fontWeight: "bold",
+                      textAlign: "center",
+                      color: "white"
+                    }}
+                  >
+                    Contact me to write your website
                   </p>
                   <p
                     style={{
