@@ -34,7 +34,7 @@ export default class Home extends Component {
         }}
       >
         {this.state.isShow ? (
-          <div style={{ flex: 1, margin: "auto" }}>
+          <div style={{ flex: 1, paddingTop: 20 }}>
             <Jumbotron />
             <div
               style={{
@@ -49,8 +49,7 @@ export default class Home extends Component {
                     textAlign: "center",
                     fontSize: 20,
                     fontWeight: "bold",
-                    flex: 1,
-                    marginTop: -10
+                    flex: 1
                   }}
                 >
                   Site written in ReactJs{" "}
@@ -76,8 +75,7 @@ export default class Home extends Component {
                       fontWeight: "bold",
                       backgroundColor: "transparent",
                       border: "none",
-                      fontSize: 20,
-                      marginTop: -15
+                      fontSize: 20
                     }}
                     variant="dark"
                   >
@@ -92,9 +90,10 @@ export default class Home extends Component {
                 </Fade>
               </div>
             </div>
+            <div style={{ marginTop: 100 }}></div>
           </div>
         ) : (
-          <div style={{ margin: "auto" }}>
+          <div style={{ paddingTop: 50 }}>
             <ContentCall />
           </div>
         )}{" "}

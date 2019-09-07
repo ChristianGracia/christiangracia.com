@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Pulse from "react-reveal/Pulse";
 
 export default class Jumbotron extends Component {
   constructor(props) {
@@ -53,36 +52,41 @@ export default class Jumbotron extends Component {
       "fas fa-arrows-alt fa-pulse",
       "fas fa-asterisk fa-pulse",
       "fas fa-bacon fa-pulse",
-      "fas fa-egg fa-pulse",
+      "fas fa-egg",
       "fas fa-ellipsis-v fa-pulse",
       "fab fa-dyalog fa-pulse",
       "fas fa-ellipsis-h fa-pulse",
       "fas fa-fighter-jet fa-pulse",
       "fas fa-fighter-jet fa-pulse",
       "fas fa-fighter-jet fa-pulse",
-      "fas fa-eye fa-pulse",
-      "far fa-eye fa-pulse",
-      "fas fa-eye fa-pulse",
-      "far fa-eye fa-pulse",
+      "fas fa-eye",
+      "far fa-eye",
+      "fas fa-eye",
+      "far fa-eye",
       "fas fa-external-link-alt fa-pulse",
       "fas fa-exclamation-triangle fa-pulse",
-      "fas fa-fire-alt fa-pulse",
-      "fas fa-fir fa-pulsee",
-      "fas fa-fire-alt fa-pulse",
-      "fas fa-fire fa-pulse",
-      "fas fa-ghost fa-pulse",
-      "far fa-gem fa-pulse",
-      "far fa-gem fa-pulse",
-      "fas fa-globe-africa fa-pulse",
-      "fas fa-globe-americas fa-pulse",
-      "fas fa-globe-americas fa-pulse",
-      "fas fa-globe-americas fa-pulse",
-      "fas fa-globe-americas fa-pulse",
-      "fas fa-globe-americas fa-pulse",
-      "fas fa-globe-europe fa-pulse",
-      "fas fa-globe-asia fa-pulse",
-
-      "fab fa-hotjar fa-pulse",
+      "fas fa-fire-alt",
+      "fas fa-fire",
+      "fas fa-fire-alt",
+      "fas fa-fire",
+      "fas fa-ghost",
+      "far fa-gem",
+      "far fa-gem",
+      "fas fa-globe-africa",
+      "fas fa-globe-americas",
+      "fas fa-globe-americas",
+      "fas fa-globe-americas",
+      "fas fa-globe-americas",
+      "fas fa-globe-americas",
+      "fas fa-globe-europe",
+      "fas fa-globe-asia",
+      "far fa-grin-squint",
+      "far fa-grin-beam-sweat",
+      "far fa-grin-squint-tears",
+      "far fa-grin-beam",
+      "far fa-grin-alt",
+      "far fa-grin-wink",
+      "fab fa-hotjar",
       "fab fa-hubspot fa-pulse",
       "fab fa-hubspot fa-pilse",
       "fas fa-haykal fa-spin",
@@ -107,8 +111,7 @@ export default class Jumbotron extends Component {
     setTimeout(() => {
       this.setState({
         timeout: !this.state.timeout,
-        icon: icons[Math.floor(Math.random() * iconLength)],
-        reRender: true
+        icon: icons[Math.floor(Math.random() * iconLength)]
       });
     }, 3000);
 
@@ -181,17 +184,6 @@ export default class Jumbotron extends Component {
                   </p>
                   <p
                     style={{
-                      fontStyle: "italic",
-                      fontWeight: "bold",
-                      color: "yellow",
-                      textAlign: "center"
-                    }}
-                  >
-                    React, React Native, C#, and more
-                  </p>
-
-                  <p
-                    style={{
                       fontWeight: "bold",
                       color: "white",
                       textAlign: "center"
@@ -203,6 +195,7 @@ export default class Jumbotron extends Component {
                     </span>{" "}
                     christianmgracia@gmail.com
                   </p>
+
                   <div
                     style={{
                       alignItems: "center",
@@ -259,7 +252,7 @@ export default class Jumbotron extends Component {
                   {!this.state.timeout ? (
                     <i
                       class="fas fa-dice-d20"
-                      style={{ fontSize: 180, color: "white", marginTop: 20 }}
+                      style={{ fontSize: 180, color: "white", marginTop: 15 }}
                     ></i>
                   ) : (
                     <i
@@ -267,7 +260,7 @@ export default class Jumbotron extends Component {
                       style={{
                         fontSize: 180,
                         color: "#00FE00",
-                        marginTop: 20
+                        marginTop: 15
                       }}
                     ></i>
                   )}
