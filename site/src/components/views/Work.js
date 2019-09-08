@@ -33,6 +33,7 @@ export default class Work extends Component {
               </p>
             </Fade>
           </Fade>
+
           <Fade left>
             <div>
               <p

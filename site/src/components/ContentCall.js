@@ -12,8 +12,7 @@ export default class ContentCall extends Component {
     return (
       <div>
         <div style={{ padding: 20 }}></div>
-        <div></div>
-        <Fade top></Fade>
+
         <Work />
 
         <About />

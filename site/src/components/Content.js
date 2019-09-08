@@ -35,15 +35,7 @@ export default class Content extends Component {
                   alignItems: "center",
                   paddingBottom: 20
                 }}
-              >
-                <span style={{ color: "#A5FE00" }}>
-                  {" "}
-                  <i
-                    style={{ fontSize: 100 }}
-                    class="fab fa-connectdevelop fa-spin"
-                  ></i>
-                </span>
-              </div>
+              ></div>
               <div style={{ paddingBottom: 40 }}></div>
               <Fade top>
                 <Skills />

@@ -29,6 +29,12 @@ export default class Education extends Component {
             <p style={{ color: "white" }}>2012-2016</p>{" "}
             <p>BS in General Management</p>
           </div>
+          <span style={{ color: "#A5FE00" }}>
+            <i
+              style={{ fontSize: 100, marginTop: 40 }}
+              class="fab fa-connectdevelop fa-spin"
+            ></i>
+          </span>
         </div>
       </div>
     );
