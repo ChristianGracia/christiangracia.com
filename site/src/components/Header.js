@@ -28,7 +28,7 @@ export default class Header extends Component {
               <span style={{}}>
                 <i
                   className="fas fa-dice-d20 fa-pulse"
-                  style={{ fontSize: 20, marginTop: 4, color: "#00FE00" }}
+                  style={{ fontSize: 20, marginTop: 4, color: "#FEFF01" }}
                 ></i>
               </span>
             ) : (

@@ -181,7 +181,7 @@ export default class Jumbotron extends Component {
                           fontWeight: "bold",
                           textAlign: "center",
 
-                          color: "#00FE00"
+                          color: "#FEFF01"
                         }}
                       >
                         Christian Gracia
@@ -205,7 +205,7 @@ export default class Jumbotron extends Component {
                     style={{
                       fontStyle: "italic",
                       fontWeight: "bold",
-                      color: "yellow",
+                      color: "#2F2FA2",
                       textAlign: "center"
                     }}
                   >
@@ -249,7 +249,7 @@ export default class Jumbotron extends Component {
                       <span>
                         <i
                           className="fab fa-github-square"
-                          style={{ color: "#2EBB4E", fontSize: 20 }}
+                          style={{ color: "#2F2FA2", fontSize: 20 }}
                         ></i>
                       </span>
                     </a>
@@ -261,7 +261,7 @@ export default class Jumbotron extends Component {
                       <span>
                         <i
                           className="fab fa-linkedin"
-                          style={{ color: "#0077B5", fontSize: 20 }}
+                          style={{ color: "#2F2FA2", fontSize: 20 }}
                         ></i>
                       </span>
                     </a>
@@ -274,7 +274,7 @@ export default class Jumbotron extends Component {
                       <span>
                         <i
                           className="fab fa-twitter"
-                          style={{ color: "#1DA1F2", fontSize: 20 }}
+                          style={{ color: "#2f2fa2", fontSize: 20 }}
                         ></i>
                       </span>
                     </a>
@@ -297,7 +297,7 @@ export default class Jumbotron extends Component {
                       class={this.state.icon}
                       style={{
                         fontSize: 180,
-                        color: "#00FE00",
+                        color: "#FEFF01",
                         marginTop: 15
                       }}
                     ></i>
