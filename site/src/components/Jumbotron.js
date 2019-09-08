@@ -205,7 +205,7 @@ export default class Jumbotron extends Component {
                     style={{
                       fontStyle: "italic",
                       fontWeight: "bold",
-                      color: "#2F2FA2",
+                      color: "#FEFF01",
                       textAlign: "center"
                     }}
                   >
@@ -224,14 +224,22 @@ export default class Jumbotron extends Component {
                     style={{
                       fontWeight: "bold",
                       color: "white",
-                      textAlign: "center"
+                      textAlign: "center",
+                      fontSize: 15
                     }}
                   >
                     Email{" "}
-                    <span>
+                    <span style={{ color: "#FEFF01" }}>
                       <i class="far fa-envelope"></i>
                     </span>{" "}
-                    christianmgracia@gmail.com
+                    <span
+                      style={{
+                        color: "#fff",
+                        fontWeight: "bold"
+                      }}
+                    >
+                      christianmgracia@gmail.com
+                    </span>
                   </p>
 
                   <div
@@ -249,7 +257,7 @@ export default class Jumbotron extends Component {
                       <span>
                         <i
                           className="fab fa-github-square"
-                          style={{ color: "#2F2FA2", fontSize: 20 }}
+                          style={{ color: "#000087", fontSize: 20 }}
                         ></i>
                       </span>
                     </a>
@@ -261,7 +269,7 @@ export default class Jumbotron extends Component {
                       <span>
                         <i
                           className="fab fa-linkedin"
-                          style={{ color: "#2F2FA2", fontSize: 20 }}
+                          style={{ color: "#000087", fontSize: 20 }}
                         ></i>
                       </span>
                     </a>
@@ -274,7 +282,7 @@ export default class Jumbotron extends Component {
                       <span>
                         <i
                           className="fab fa-twitter"
-                          style={{ color: "#2f2fa2", fontSize: 20 }}
+                          style={{ color: "#000087", fontSize: 20 }}
                         ></i>
                       </span>
                     </a>
