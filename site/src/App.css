@@ -1,4 +1,5 @@
 .colorful {
-  background-image: url("./assets/background.png");
-  background-size: repeat;
+  /* background-image: url("./assets/background.png");
+  background-size: repeat; */
+  background-color: #3993ec;
 }
