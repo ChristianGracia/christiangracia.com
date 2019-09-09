@@ -153,7 +153,7 @@ export default class Contact extends Component {
                 >
                   <textarea
                     rows="4"
-                    cols="40"
+                    cols="30"
                     type="text"
                     name="body"
                     placeholder="Leave a message"
