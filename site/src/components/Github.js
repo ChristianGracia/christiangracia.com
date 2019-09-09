@@ -37,10 +37,10 @@ class Github extends Component {
         <Fade top>
           <div
             key={repo.id}
-            className="card card-body mb-2 bg-light mg-0"
-            style={{ margin: 0, paddingRight: 0, width: "auto" }}
+            className="card card-body mb-2 bg-light ml-auto mr-auto pr-3"
+            style={{ margin: 0, paddingRight: 0, width: "88vw" }}
           >
-            <div className="row">
+            <div className="row" style={{ alignItems: "center" }}>
               <div className="col-lg-6">
                 <h4 style={{ color: "white" }}>
                   <Link
@@ -130,7 +130,12 @@ class Github extends Component {
             </Fade>
           </div>
 
-          {this.state.showRepo ? <div> {repoItems}</div> : null}
+          {this.state.showRepo ? (
+            <div style={{ justifyContent: "center", alignItems: "center" }}>
+              {" "}
+              {repoItems}
+            </div>
+          ) : null}
         </div>
       </div>
     );
