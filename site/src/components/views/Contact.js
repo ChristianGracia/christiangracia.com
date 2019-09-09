@@ -72,36 +72,34 @@ export default class Contact extends Component {
                     onChange={this.onChange}
                     placeholder="Email"
                   />
+                  <textarea
+                    rows="4"
+                    cols="50"
+                    class=""
+                    type="text"
+                    name="body"
+                    placeholder="Leave a message"
+                    style={{
+                      textAlign: "left",
+                      width: "90%",
+                      color: "black"
+                    }}
+                    value={this.state.body}
+                    onChange={this.onChange}
+                  />
+                  <input
+                    className="btn-dark"
+                    type="submit"
+                    value="send"
+                    onClick={e => {
+                      if (body == "" || email == "" || name == "") {
+                        e.preventDefault();
+                        window.alert("Please fill out form");
+                      }
+                    }}
+                  />
                 </div>
               </div>
-              <div style={{ padding: 20 }}></div>
-              <textarea
-                rows="4"
-                cols="50"
-                class=""
-                type="text"
-                name="body"
-                placeholder="Leave a message"
-                style={{
-                  textAlign: "left",
-                  width: "90%",
-                  color: "black"
-                }}
-                value={this.state.body}
-                onChange={this.onChange}
-              />
-              <div style={{ padding: 20 }}></div>
-              <input
-                className="btn-dark"
-                type="submit"
-                value="send"
-                onClick={e => {
-                  if (body == "" || email == "" || name == "") {
-                    e.preventDefault();
-                    window.alert("Please fill out form");
-                  }
-                }}
-              />
             </form>
             <p
               style={{
