@@ -42,7 +42,6 @@ export default class Contact extends Component {
             >
               <div class="row">
                 <div class="col-md">
-                  <div style={{}}></div>
                   <Jump>
                     <i
                       class="fas fa-mail-bulk"
