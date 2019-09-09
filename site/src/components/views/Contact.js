@@ -29,7 +29,7 @@ export default class Contact extends Component {
           alignItems: "center"
         }}
       >
-        <div classstyle={{}}>
+        <div classstyle={{ width: "70vw" }}>
           <div
             style={{
               display: "flex",
