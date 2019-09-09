@@ -82,7 +82,8 @@ export default class Contact extends Component {
                     placeholder="Leave a message"
                     style={{
                       textAlign: "left",
-                      color: "black"
+                      color: "black",
+                      width: "100%"
                     }}
                     value={this.state.body}
                     onChange={this.onChange}

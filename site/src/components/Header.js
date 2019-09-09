@@ -15,7 +15,7 @@ export default class Header extends Component {
           <Navbar.Brand href="/" style={{ color: "white" }}>
             Home{" "}
             <i
-              className=" fas fa-radiation fa-spin"
+              className="fas fa-radiation fa-spin"
               style={{ fontSize: 20, color: "white", marginTop: 4 }}
             ></i>
           </Navbar.Brand>
