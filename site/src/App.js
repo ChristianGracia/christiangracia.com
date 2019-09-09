@@ -35,9 +35,6 @@ function App() {
       <Router>
         <Route exact path="/contact" component={Contact} />
       </Router>
-      <Router>
-        <Route exact path="/home" component={Work} />
-      </Router>
 
       <div style={{ paddingBottom: 350 }}></div>
     </div>
