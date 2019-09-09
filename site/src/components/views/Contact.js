@@ -19,109 +19,154 @@ export default class Contact extends Component {
   render() {
     const { body, name, email } = this.state;
     return (
-      <div style={{}}>
-        <div>
+      <div
+        style={{
+          display: "flex",
+          flex: 1,
+          justifyContent: "center",
+          flexDirection: "column",
+
+          alignItems: "center"
+        }}
+      >
+        <div classstyle={{}}>
           <div
             style={{
-              paddingTop: 50
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center"
             }}
           >
-            <div
+            <form
+              action="https://sendpoint.io/id/gWFzbxh9O"
+              method="POST"
               style={{
-                padding: 20,
-                textAlign: "center"
+                position: "relative"
               }}
             >
-              <Jump>
-                <i
-                  class="fas fa-mail-bulk"
-                  style={{ fontSize: 80, color: "white" }}
-                ></i>
-              </Jump>
-              <form
-                action="https://sendpoint.io/id/gWFzbxh9O"
-                method="POST"
-                style={{}}
-              >
-                <div
-                  class="col-md"
-                  style={{
-                    alignItems: "center",
-                    justifyContent: "center",
-                    marginTop: 15,
-                    alignContent: "center"
-                  }}
-                >
-                  <input
-                    style={{
-                      padding: 5
-                    }}
-                    type="text"
-                    name="name"
-                    value={this.state.name}
-                    onChange={this.onChange}
-                    placeholder="Name"
-                  />
-                  <div style={{ padding: 10 }}></div>
-                  <input
-                    style={{
-                      padding: 5
-                    }}
-                    type="email"
-                    name="email"
-                    value={this.state.email}
-                    onChange={this.onChange}
-                    placeholder="Email"
-                  />
-                  <div style={{ padding: 10 }}></div>
-                  <textarea
-                    rows="4"
-                    cols="30"
-                    type="text"
-                    name="body"
-                    placeholder="Leave a message"
-                    style={{
-                      textAlign: "left",
-                      color: "black",
-                      width: "100%"
-                    }}
-                    value={this.state.body}
-                    onChange={this.onChange}
-                    style={{ padding: 5 }}
-                  />
-                  <div style={{ padding: 10 }}></div>
-
-                  <input
-                    className="btn-dark"
-                    type="submit"
-                    value="send"
-                    onClick={e => {
-                      if (body == "" || email == "" || name == "") {
-                        e.preventDefault();
-                        window.alert("Please fill out form");
-                      }
-                    }}
-                  />
-                </div>
-              </form>
-              <p
+              <div
+                className="row"
                 style={{
-                  color: "white",
-                  fontSize: "30",
-                  fontWeight: "bold",
-                  padding: 30,
-                  position: "relative"
+                  alignItems: "center",
+                  justifyContent: "center",
+                  marginTop: 20
                 }}
               >
-                Mail system powered by my friend Tim Wheeler's{" "}
-                <a href="https://sendpoint.io/" style={{ color: "#A5FE00" }}>
-                  https://sendpoint.io/
-                </a>
-              </p>
-            </div>
-          </div>
+                <Jump>
+                  <i
+                    class="fas fa-mail-bulk"
+                    style={{ fontSize: 80, color: "white" }}
+                  ></i>
+                </Jump>
+              </div>
 
-          <div style={{ paddingBottom: 1000 }}></div>
+              <div
+                className="row"
+                style={{
+                  alignItems: "center",
+                  justifyContent: "center",
+                  marginTop: 20
+                }}
+              >
+                <input
+                  type="text"
+                  name="name"
+                  value={this.state.name}
+                  onChange={this.onChange}
+                  placeholder="Name"
+                  style={{
+                    background: "transparent",
+                    border: "transparent",
+                    color: "white"
+                  }}
+                />
+              </div>
+              <div
+                className="row"
+                style={{
+                  alignItems: "center",
+                  justifyContent: "center",
+                  marginTop: 20
+                }}
+              >
+                <span>Email: </span>
+                <input
+                  type="email"
+                  name="email"
+                  value={this.state.email}
+                  onChange={this.onChange}
+                  placeholder="Email"
+                  style={{
+                    background: "transparent",
+                    border: "transparent",
+                    color: "white"
+                  }}
+                />
+              </div>
+              <div
+                className="row"
+                style={{
+                  alignItems: "center",
+                  justifyContent: "center",
+                  marginTop: 20
+                }}
+              >
+                <textarea
+                  rows="4"
+                  cols="40"
+                  type="text"
+                  name="body"
+                  placeholder="Leave a message"
+                  style={{
+                    textAlign: "left",
+                    color: "black"
+                  }}
+                  value={this.state.body}
+                  onChange={this.onChange}
+                  style={{}}
+                />
+              </div>
+              <div
+                className="row"
+                style={{
+                  alignItems: "center",
+                  justifyContent: "center",
+                  marginTop: 20
+                }}
+              >
+                <input
+                  className="btn-dark"
+                  type="submit"
+                  value="send"
+                  onClick={e => {
+                    if (body == "" || email == "" || name == "") {
+                      e.preventDefault();
+                      window.alert("Please fill out form");
+                    }
+                  }}
+                />
+              </div>
+              <div className="row">
+                <p
+                  style={{
+                    color: "white",
+                    fontSize: "30",
+                    fontWeight: "bold",
+                    position: "relative",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    textAlign: "center",
+                    marginTop: 20
+                  }}
+                >
+                  Mail system powered by my friend Tim Wheeler's{" "}
+                  <a href="https://sendpoint.io/" style={{ color: "#A5FE00" }}>
+                    https://sendpoint.io/
+                  </a>
+                </p>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     );
