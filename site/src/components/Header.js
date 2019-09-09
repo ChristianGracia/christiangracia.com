@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Nav, Navbar } from "react-bootstrap";
-import { IntervalHook } from "./IntervalHook";
 
 export default class Header extends Component {
   constructor(props) {
@@ -168,7 +167,7 @@ export default class Header extends Component {
               ></i>
             )}
           </Navbar.Brand>
-          <IntervalHook />
+
           <Nav className="ml-auto">
             <Nav.Link href="/work" style={{ color: "white" }}>
               Projects
