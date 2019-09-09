@@ -37,18 +37,18 @@ class Github extends Component {
         <Fade top>
           <div
             key={repo.id}
-            className="card card-body mb-2 text-white bg-dark mg-0"
-            style={{}}
+            className="card card-body mb-2 bg-light mg-0"
+            style={{ margin: 0, paddingRight: 0, width: "auto" }}
           >
             <div className="row">
-              <div className="col-lg-6 text-white">
+              <div className="col-lg-6">
                 <h4 style={{ color: "white" }}>
                   <Link
                     to={`//${repo.html_url.substr(7)}`}
                     className="text-info"
                     target="_blank"
                   >
-                    <p style={{ color: "#00FE00" }}>{repo.name}</p>
+                    <p style={{ color: "#3993EC" }}>{repo.name}</p>
                   </Link>
                 </h4>
                 <p>{repo.description}</p>
