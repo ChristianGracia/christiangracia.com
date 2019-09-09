@@ -75,22 +75,32 @@ class Github extends Component {
     return (
       <div ref="myRef">
         <div style={{ padding: 15, paddingTop: 10 }}>
-          <hr />
-          <h3
-            className="mb-4"
-            style={{ color: "white", textAlign: "center", fontWeight: "bold" }}
-          >
-            Latest Github Repos <i class="fab fa-github"></i>
-          </h3>
-          <p
-            style={{ color: "white", textAlign: "center", fontWeight: "bold" }}
-          >
-            Updated automatically{" "}
-            <i
-              class="fas fa-circle-notch fa-spin"
-              style={{ color: "#00FE00" }}
-            ></i>
-          </p>
+          <div>
+            <h3
+              className="mb-4"
+              style={{
+                color: "white",
+                textAlign: "center",
+                fontWeight: "bold"
+              }}
+            >
+              Latest Github Repos <i class="fab fa-github"></i>
+            </h3>
+            <p
+              style={{
+                color: "white",
+                textAlign: "center",
+                fontWeight: "bold",
+                position: "relative"
+              }}
+            >
+              Updated automatically{" "}
+              <i
+                class="fas fa-circle-notch fa-spin"
+                style={{ color: "#00FE00" }}
+              ></i>
+            </p>
+          </div>
           <div style={{ padding: 26 }}></div>
 
           <div

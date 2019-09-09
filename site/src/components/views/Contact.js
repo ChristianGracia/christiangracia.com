@@ -20,104 +20,110 @@ export default class Contact extends Component {
     const { body, name, email } = this.state;
     return (
       <div style={{}}>
-        <div
-          style={{
-            paddingTop: 50,
-            display: "flex",
-
-            justifyContent: "center"
-          }}
-        >
+        <div>
           <div
             style={{
-              padding: 20,
-              textAlign: "center",
-              justifyContent: "flex-start"
+              paddingTop: 50,
+              display: "flex",
+
+              justifyContent: "center"
             }}
           >
-            <form
-              action="https://sendpoint.io/id/gWFzbxh9O"
-              method="POST"
-              style={{}}
+            <div
+              style={{
+                padding: 20,
+                textAlign: "center",
+                justifyContent: "flex-start"
+              }}
             >
-              <div class="row">
-                <div class="col-md">
+              <form
+                action="https://sendpoint.io/id/gWFzbxh9O"
+                method="POST"
+                style={{}}
+              >
+                <div class="row">
                   <Jump>
                     <i
                       class="fas fa-mail-bulk"
                       style={{ fontSize: 80, color: "white" }}
                     ></i>
                   </Jump>
-                </div>
-                <div style={{ padding: 10 }}></div>
-                <div class="col-md">
-                  <input
-                    style={{
-                      padding: 5
-                    }}
-                    type="text"
-                    name="name"
-                    value={this.state.name}
-                    onChange={this.onChange}
-                    placeholder="Name"
-                  />
+                  <div class="col-md"></div>
                   <div style={{ padding: 10 }}></div>
-                  <input
-                    style={{
-                      padding: 5
-                    }}
-                    type="email"
-                    name="email"
-                    value={this.state.email}
-                    onChange={this.onChange}
-                    placeholder="Email"
-                  />
-                  <textarea
-                    rows="4"
-                    cols="50"
-                    class=""
-                    type="text"
-                    name="body"
-                    placeholder="Leave a message"
-                    style={{
-                      textAlign: "left",
-                      width: "90%",
-                      color: "black"
-                    }}
-                    value={this.state.body}
-                    onChange={this.onChange}
-                  />
-                  <input
-                    className="btn-dark"
-                    type="submit"
-                    value="send"
-                    onClick={e => {
-                      if (body == "" || email == "" || name == "") {
-                        e.preventDefault();
-                        window.alert("Please fill out form");
-                      }
-                    }}
-                  />
-                </div>
-              </div>
-            </form>
-            <p
-              style={{
-                color: "white",
-                fontSize: "30",
-                fontWeight: "bold",
-                padding: 30
-              }}
-            >
-              Mail system powered by my friend Tim Wheeler's{" "}
-              <a href="https://sendpoint.io/" style={{ color: "#A5FE00" }}>
-                https://sendpoint.io/
-              </a>
-            </p>
-          </div>
-        </div>
+                  <div
+                    class="col-md"
+                    style={{ alignItems: "center", justifyContent: "center" }}
+                  >
+                    <input
+                      style={{
+                        padding: 5
+                      }}
+                      type="text"
+                      name="name"
+                      value={this.state.name}
+                      onChange={this.onChange}
+                      placeholder="Name"
+                    />
+                    <div style={{ padding: 10 }}></div>
+                    <input
+                      style={{
+                        padding: 5
+                      }}
+                      type="email"
+                      name="email"
+                      value={this.state.email}
+                      onChange={this.onChange}
+                      placeholder="Email"
+                    />
+                    <div style={{ padding: 10 }}></div>
+                    <textarea
+                      rows="4"
+                      cols="50"
+                      type="text"
+                      name="body"
+                      placeholder="Leave a message"
+                      style={{
+                        textAlign: "left",
 
-        <div style={{ paddingBottom: 1000 }}></div>
+                        color: "black"
+                      }}
+                      value={this.state.body}
+                      onChange={this.onChange}
+                      style={{ padding: 5 }}
+                    />
+                    <input
+                      className="btn-dark"
+                      type="submit"
+                      value="send"
+                      onClick={e => {
+                        if (body == "" || email == "" || name == "") {
+                          e.preventDefault();
+                          window.alert("Please fill out form");
+                        }
+                      }}
+                    />
+                  </div>
+                </div>
+              </form>
+              <p
+                style={{
+                  color: "white",
+                  fontSize: "30",
+                  fontWeight: "bold",
+                  padding: 30,
+                  position: "relative"
+                }}
+              >
+                Mail system powered by my friend Tim Wheeler's{" "}
+                <a href="https://sendpoint.io/" style={{ color: "#A5FE00" }}>
+                  https://sendpoint.io/
+                </a>
+              </p>
+            </div>
+          </div>
+
+          <div style={{ paddingBottom: 1000 }}></div>
+        </div>
       </div>
     );
   }
