@@ -214,15 +214,6 @@ export default class Jumbotron extends Component {
                   <p
                     style={{
                       fontWeight: "bold",
-                      textAlign: "center",
-                      color: "white"
-                    }}
-                  >
-                    Contact me to write your website
-                  </p>
-                  <p
-                    style={{
-                      fontWeight: "bold",
                       color: "white",
                       textAlign: "center",
                       fontSize: 15
@@ -230,7 +221,7 @@ export default class Jumbotron extends Component {
                   >
                     Email{" "}
                     <span style={{ color: "#FEFF01" }}>
-                      <i class="far fa-envelope"></i>
+                      <i class="fas fa-envelope"></i>
                     </span>{" "}
                     <span
                       style={{
@@ -257,7 +248,7 @@ export default class Jumbotron extends Component {
                       <span>
                         <i
                           className="fab fa-github"
-                          style={{ color: "#fff", fontSize: 20 }}
+                          style={{ color: "#FEFF01", fontSize: 20 }}
                         ></i>
                       </span>
                     </a>
@@ -269,7 +260,7 @@ export default class Jumbotron extends Component {
                       <span>
                         <i
                           className="fab fa-linkedin"
-                          style={{ color: "#fff", fontSize: 20 }}
+                          style={{ color: "#FEFF01", fontSize: 20 }}
                         ></i>
                       </span>
                     </a>
@@ -282,7 +273,7 @@ export default class Jumbotron extends Component {
                       <span>
                         <i
                           className="fab fa-twitter"
-                          style={{ color: "#fff", fontSize: 20 }}
+                          style={{ color: "#FEFF01", fontSize: 20 }}
                         ></i>
                       </span>
                     </a>
