@@ -37,183 +37,184 @@ export default class Contact extends Component {
               alignItems: "center"
             }}
           >
-            <form
-              action="https://sendpoint.io/id/gWFzbxh9O"
-              method="POST"
-              style={{
-                position: "relative"
-              }}
-            >
-              <div
-                className="row"
-                style={{
-                  alignItems: "center",
-                  justifyContent: "center",
-                  marginTop: 50
-                }}
+            <Jump>
+              <form
+                action="https://sendpoint.io/id/gWFzbxh9O"
+                method="POST"
+                style={{}}
               >
-                <Jump>
+                <div
+                  className="row"
+                  style={{
+                    alignItems: "center",
+                    justifyContent: "center",
+                    marginTop: 50
+                  }}
+                >
                   <i
                     class="fas fa-mail-bulk"
                     style={{ fontSize: 80, color: "white" }}
                   ></i>
-                </Jump>
-              </div>
+                </div>
 
-              <div
-                className="row"
-                style={{
-                  alignItems: "center",
-                  justifyContent: "center",
-                  marginTop: 30
-                }}
-              >
-                {this.state.name == "" ? null : (
-                  <span
-                    style={{
-                      fontWeight: "bold",
-                      color: "#fff",
-                      paddingRight: 5
-                    }}
-                  >
-                    Name:{" "}
-                  </span>
-                )}
-                <input
-                  type="text"
-                  name="name"
-                  value={this.state.name}
-                  onChange={this.onChange}
-                  placeholder="Name"
-                  style={{
-                    background: "transparent",
-                    border: "transparent",
-                    color: "white"
-                  }}
-                />
-              </div>
-              <div
-                className="row"
-                style={{
-                  alignItems: "center",
-                  justifyContent: "center",
-                  marginTop: 20
-                }}
-              >
-                {this.state.email == "" ? null : (
-                  <span
-                    style={{
-                      fontWeight: "bold",
-                      color: "#fff",
-                      paddingRight: 5
-                    }}
-                  >
-                    Email:{" "}
-                  </span>
-                )}
-                <input
-                  type="email"
-                  name="email"
-                  value={this.state.email}
-                  onChange={this.onChange}
-                  placeholder="Email"
-                  style={{
-                    background: "transparent",
-                    border: "transparent",
-                    color: "white"
-                  }}
-                />
-              </div>
-              {this.state.body == "" ? null : (
                 <div
                   className="row"
                   style={{
-                    textAlign: "center",
                     alignItems: "center",
                     justifyContent: "center",
-                    marginTop: 5
+                    marginTop: 30
                   }}
                 >
-                  <span
+                  {this.state.name == "" ? null : (
+                    <span
+                      style={{
+                        fontWeight: "bold",
+                        color: "#fff",
+                        paddingRight: 5
+                      }}
+                    >
+                      Name:{" "}
+                    </span>
+                  )}
+                  <input
+                    type="text"
+                    name="name"
+                    value={this.state.name}
+                    onChange={this.onChange}
+                    placeholder="Name"
                     style={{
-                      textAlign: "center",
-                      fontWeight: "bold",
-                      color: "white",
-                      fontSize: 15
+                      background: "transparent",
+                      border: "transparent",
+                      color: "white"
                     }}
-                  >
-                    Message
-                  </span>
+                  />
                 </div>
-              )}
-              <div
-                className="row"
-                style={{
-                  alignItems: "center",
-                  justifyContent: "center",
-                  marginTop: 20
-                }}
-              >
-                <textarea
-                  rows="4"
-                  cols="40"
-                  type="text"
-                  name="body"
-                  placeholder="Leave a message"
+                <div
+                  className="row"
                   style={{
-                    textAlign: "left",
-                    color: "black"
-                  }}
-                  value={this.state.body}
-                  onChange={this.onChange}
-                  style={{
-                    background: "transparent",
-                    border: "transparent",
-                    color: "white"
-                  }}
-                />
-              </div>
-              <div
-                className="row"
-                style={{
-                  alignItems: "center",
-                  justifyContent: "center",
-                  marginTop: 20
-                }}
-              >
-                <input
-                  className=""
-                  type="submit"
-                  value="send"
-                  style={{ backgroundColor: "white", borderRadius: 19 }}
-                  onClick={e => {
-                    if (body == "" || email == "" || name == "") {
-                      e.preventDefault();
-                      window.alert("Please fill out form");
-                    }
-                  }}
-                />
-              </div>
-              <div className="row">
-                <p
-                  style={{
-                    color: "white",
-                    fontSize: "30",
-                    fontWeight: "bold",
-                    position: "relative",
-                    justifyContent: "center",
                     alignItems: "center",
-                    textAlign: "center",
+                    justifyContent: "center",
                     marginTop: 20
                   }}
                 >
-                  Mail system powered by my friend Tim Wheeler's{" "}
-                  <a href="https://sendpoint.io/" style={{ color: "#A5FE00" }}>
-                    https://sendpoint.io/
-                  </a>
-                </p>
-              </div>
-            </form>
+                  {this.state.email == "" ? null : (
+                    <span
+                      style={{
+                        fontWeight: "bold",
+                        color: "#fff",
+                        paddingRight: 5
+                      }}
+                    >
+                      Email:{" "}
+                    </span>
+                  )}
+                  <input
+                    type="email"
+                    name="email"
+                    value={this.state.email}
+                    onChange={this.onChange}
+                    placeholder="Email"
+                    style={{
+                      background: "transparent",
+                      border: "transparent",
+                      color: "white"
+                    }}
+                  />
+                </div>
+                {this.state.body == "" ? null : (
+                  <div
+                    className="row"
+                    style={{
+                      textAlign: "center",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      marginTop: 5
+                    }}
+                  >
+                    <span
+                      style={{
+                        textAlign: "center",
+                        fontWeight: "bold",
+                        color: "white",
+                        fontSize: 15
+                      }}
+                    >
+                      Message
+                    </span>
+                  </div>
+                )}
+                <div
+                  className="row"
+                  style={{
+                    alignItems: "center",
+                    justifyContent: "center",
+                    marginTop: 20
+                  }}
+                >
+                  <textarea
+                    rows="4"
+                    cols="40"
+                    type="text"
+                    name="body"
+                    placeholder="Leave a message"
+                    style={{
+                      textAlign: "left",
+                      color: "black"
+                    }}
+                    value={this.state.body}
+                    onChange={this.onChange}
+                    style={{
+                      background: "transparent",
+                      border: "transparent",
+                      color: "white"
+                    }}
+                  />
+                </div>
+                <div
+                  className="row"
+                  style={{
+                    alignItems: "center",
+                    justifyContent: "center",
+                    marginTop: 20
+                  }}
+                >
+                  <input
+                    className=""
+                    type="submit"
+                    value="send"
+                    style={{ backgroundColor: "white", borderRadius: 19 }}
+                    onClick={e => {
+                      if (body == "" || email == "" || name == "") {
+                        e.preventDefault();
+                        window.alert("Please fill out form");
+                      }
+                    }}
+                  />
+                </div>
+                <div className="row">
+                  <p
+                    style={{
+                      color: "white",
+                      fontSize: "30",
+                      fontWeight: "bold",
+                      position: "relative",
+                      justifyContent: "center",
+                      alignItems: "center",
+                      textAlign: "center",
+                      marginTop: 20
+                    }}
+                  >
+                    Mail system powered by my friend Tim Wheeler's{" "}
+                    <a
+                      href="https://sendpoint.io/"
+                      style={{ color: "#A5FE00" }}
+                    >
+                      https://sendpoint.io/
+                    </a>
+                  </p>
+                </div>
+              </form>
+            </Jump>
           </div>
         </div>
       </div>
