@@ -33,29 +33,16 @@ export default class Jumbotron extends Component {
                       alignContent: "center"
                     }}
                   >
-                    {!this.state.timeout ? (
-                      <h1
-                        style={{
-                          fontWeight: "bold",
-                          textAlign: "center",
+                    <h1
+                      style={{
+                        fontWeight: "bold",
+                        textAlign: "center",
 
-                          color: "white"
-                        }}
-                      >
-                        Christian Gracia
-                      </h1>
-                    ) : (
-                      <h1
-                        style={{
-                          fontWeight: "bold",
-                          textAlign: "center",
-
-                          color: "#FEFF01"
-                        }}
-                      >
-                        Christian Gracia
-                      </h1>
-                    )}
+                        color: "#FEFF01"
+                      }}
+                    >
+                      Christian Gracia
+                    </h1>
                   </div>
                   <p
                     className="lead"
