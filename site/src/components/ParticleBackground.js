@@ -9,7 +9,7 @@ class Particle extends Component {
         params={{
           particles: {
             line_linked: {
-              color: "#4C4C4C"
+              color: "#39F077"
             },
             number: {
               value: 50
