@@ -24,17 +24,17 @@ export default class Education extends Component {
               careerdevs.com
             </a>
           </div>
-          <div class="col-sm" style={{ marginTop: 50 }}>
-            <p style={{ color: "#FFFF00" }}>Rhode Island College </p>
-            <p style={{ color: "white" }}>2012-2016</p>{" "}
-            <p>BS in General Management</p>
-          </div>
           <span style={{ color: "#A5FE00" }}>
             <i
               style={{ fontSize: 100, marginTop: 40 }}
               class="fab fa-connectdevelop fa-spin"
             ></i>
           </span>
+          <div class="col-sm" style={{ marginTop: 50 }}>
+            <p style={{ color: "#FFFF00" }}>Rhode Island College </p>
+            <p style={{ color: "white" }}>2012-2016</p>{" "}
+            <p>BS in General Management</p>
+          </div>
         </div>
       </div>
     );
