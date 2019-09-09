@@ -16,7 +16,13 @@ export default class Header extends Component {
             Home{" "}
             <i
               className="fas fa-radiation fa-spin"
-              style={{ fontSize: 20, color: "white", marginTop: 4 }}
+              style={{
+                fontSize: 20,
+                color: "white",
+                marginTop: 4,
+                positon: "absolute",
+                float: "top"
+              }}
             ></i>
           </Navbar.Brand>
 

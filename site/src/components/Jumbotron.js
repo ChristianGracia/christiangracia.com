@@ -12,7 +12,7 @@ export default class Jumbotron extends Component {
 
   render() {
     return (
-      <div style={{ flex: 1 }}>
+      <div style={{ flex: 1, width: "auto" }}>
         <div
           className="jumbotron jumbotron-fluid"
           style={{

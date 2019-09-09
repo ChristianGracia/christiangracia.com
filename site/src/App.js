@@ -19,7 +19,6 @@ function App() {
         height: "100%"
       }}
     >
-      <ParticleBackground style={{}} />
       <Header />
 
       <Router>
