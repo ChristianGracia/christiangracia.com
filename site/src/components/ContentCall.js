@@ -3,6 +3,7 @@ import Fade from "react-reveal/Fade";
 import Content from "./Content";
 import Work from "./views/Work";
 import About from "./views/About";
+import Particles from "react-particles-js";
 
 export default class ContentCall extends Component {
   componentDidMount() {
@@ -16,6 +17,7 @@ export default class ContentCall extends Component {
         <Work />
 
         <About />
+        <Particles />
       </div>
     );
   }

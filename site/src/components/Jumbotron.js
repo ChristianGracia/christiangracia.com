@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Particles from "react-particles-js";
 
 export default class Jumbotron extends Component {
   constructor(props) {
@@ -286,21 +287,7 @@ export default class Jumbotron extends Component {
                     textAlign: "center"
                   }}
                 >
-                  {!this.state.timeout ? (
-                    <i
-                      class="fas fa-dice-d20"
-                      style={{ fontSize: 180, color: "white", marginTop: 15 }}
-                    ></i>
-                  ) : (
-                    <i
-                      class={this.state.icon}
-                      style={{
-                        fontSize: 180,
-                        color: "#FEFF01",
-                        marginTop: 15
-                      }}
-                    ></i>
-                  )}
+                  <Particles />
                 </div>
               </div>
             </div>
