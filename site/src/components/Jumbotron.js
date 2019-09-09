@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Particles from "react-particles-js";
 
 export default class Jumbotron extends Component {
   constructor(props) {
@@ -154,9 +153,7 @@ export default class Jumbotron extends Component {
                   style={{
                     textAlign: "center"
                   }}
-                >
-                  <Particles />
-                </div>
+                ></div>
               </div>
             </div>
           </div>

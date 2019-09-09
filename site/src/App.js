@@ -5,6 +5,7 @@ import Work from "./components/views/Work";
 import About from "./components/views/About";
 import Home from "./components/views/Home";
 import Contact from "./components/views/Contact";
+import ParticleBackground from "./components/ParticleBackground";
 
 import "./App.css";
 
@@ -18,6 +19,7 @@ function App() {
         height: "100%"
       }}
     >
+      <ParticleBackground style={{}} />
       <Header />
 
       <Router>
