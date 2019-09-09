@@ -65,7 +65,7 @@ export default class Contact extends Component {
                 style={{
                   alignItems: "center",
                   justifyContent: "center",
-                  marginTop: 20
+                  marginTop: 30
                 }}
               >
                 {this.state.name == "" ? null : (
@@ -124,6 +124,28 @@ export default class Contact extends Component {
                   }}
                 />
               </div>
+              {this.state.body == "" ? null : (
+                <div
+                  className="row"
+                  style={{
+                    textAlign: "center",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    marginTop: 5
+                  }}
+                >
+                  <span
+                    style={{
+                      textAlign: "center",
+                      fontWeight: "bold",
+                      color: "white",
+                      fontSize: 15
+                    }}
+                  >
+                    Message
+                  </span>
+                </div>
+              )}
               <div
                 className="row"
                 style={{
@@ -144,7 +166,11 @@ export default class Contact extends Component {
                   }}
                   value={this.state.body}
                   onChange={this.onChange}
-                  style={{}}
+                  style={{
+                    background: "transparent",
+                    border: "transparent",
+                    color: "white"
+                  }}
                 />
               </div>
               <div
@@ -156,9 +182,10 @@ export default class Contact extends Component {
                 }}
               >
                 <input
-                  className="btn-dark"
+                  className=""
                   type="submit"
                   value="send"
+                  style={{ backgroundColor: "white", borderRadius: 19 }}
                   onClick={e => {
                     if (body == "" || email == "" || name == "") {
                       e.preventDefault();
