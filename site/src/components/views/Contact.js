@@ -49,7 +49,7 @@ export default class Contact extends Component {
                 style={{
                   alignItems: "center",
                   justifyContent: "center",
-                  marginTop: 20
+                  marginTop: 50
                 }}
               >
                 <Jump>
@@ -68,6 +68,17 @@ export default class Contact extends Component {
                   marginTop: 20
                 }}
               >
+                {this.state.name == "" ? null : (
+                  <span
+                    style={{
+                      fontWeight: "bold",
+                      color: "#fff",
+                      paddingRight: 5
+                    }}
+                  >
+                    Name:{" "}
+                  </span>
+                )}
                 <input
                   type="text"
                   name="name"
@@ -89,7 +100,17 @@ export default class Contact extends Component {
                   marginTop: 20
                 }}
               >
-                <span>Email: </span>
+                {this.state.email == "" ? null : (
+                  <span
+                    style={{
+                      fontWeight: "bold",
+                      color: "#fff",
+                      paddingRight: 5
+                    }}
+                  >
+                    Email:{" "}
+                  </span>
+                )}
                 <input
                   type="email"
                   name="email"
