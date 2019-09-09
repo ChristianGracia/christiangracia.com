@@ -12,7 +12,7 @@ class Particle extends Component {
               color: "#FFFFFF"
             },
             number: {
-              value: 150
+              value: 80
             },
             size: {
               value: 5
