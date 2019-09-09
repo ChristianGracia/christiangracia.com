@@ -3,6 +3,8 @@ import Jumbotron from "../Jumbotron";
 import Fade from "react-reveal/Fade";
 import ContentCall from "../ContentCall";
 import { Button } from "react-bootstrap";
+import Particles from "react-particles-js";
+import ParticleBackground from "../ParticleBackground";
 
 export default class Home extends Component {
   constructor(props) {
@@ -35,6 +37,7 @@ export default class Home extends Component {
       >
         {this.state.isShow ? (
           <div style={{ flex: 1, paddingTop: 10 }}>
+            <ParticleBackground style={{ position: "absolute" }} />
             <Jumbotron />
             <div
               style={{
