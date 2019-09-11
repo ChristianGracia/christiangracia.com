@@ -267,3 +267,20 @@ function IntervalHook() {
 //     icon: icons[Math.floor(Math.random() * iconLength)]
 //   });
 // }, 3000);
+
+
+
+//temp
+
+
+  // <div
+  //   className="ml-auto mr-auto"
+  //   style={{
+  //     justifyContent: "center",
+  //     alignItems: "center",
+  //     marginTop: -50,
+  //     marginBottom: 30
+  //   }}
+  // >
+  //   <SmallParticle />
+  // </div>

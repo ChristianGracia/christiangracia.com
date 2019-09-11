@@ -4,7 +4,6 @@ import Fade from "react-reveal/Fade";
 import ContentCall from "../ContentCall";
 import { Button } from "react-bootstrap";
 import ParticleBackground from "../ParticleBackground";
-import Header from "../Header";
 
 export default class Home extends Component {
   constructor(props) {
