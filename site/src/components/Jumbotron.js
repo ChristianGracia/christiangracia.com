@@ -77,9 +77,10 @@ export default class Jumbotron extends Component {
                   >
                     Email{" "}
                     <span style={{ color: "#FEFF01" }}>
-                      <i class="fas fa-envelope"></i>
+                      <i className="fas fa-envelope"></i>
                     </span>{" "}
                     <span
+                      className="email-home"
                       style={{
                         color: "#fff",
                         fontWeight: "bold"
