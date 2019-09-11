@@ -14,7 +14,7 @@ export default class Jumbotron extends Component {
     return (
       <div style={{ flex: 1, width: "auto" }}>
         <div
-          className="jumbotron jumbotron-fluid"
+          className="jumbotron jumbotron-fluid jumbo"
           style={{
             alignItems: "center",
             justifyContent: "center",

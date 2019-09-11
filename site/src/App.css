@@ -21,3 +21,10 @@
   /* Internet Explorer 10-11 */
   color: white;
 }
+
+.jumbo {
+  pointer-events: none;
+}
+.social-links {
+  pointer-events: auto;
+}

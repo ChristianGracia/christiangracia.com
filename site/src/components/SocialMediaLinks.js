@@ -3,7 +3,7 @@ import React, { Component } from "react";
 export default class SocialMediaLinks extends Component {
   render() {
     return (
-      <div style={{ textAlign: "center" }}>
+      <div style={{ textAlign: "center" }} className="social-links">
         <a href="https://github.com/ChristianGracia">
           <span style={{ paddingRight: 5, color: "white" }}>GitHub</span>
           <span>
