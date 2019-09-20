@@ -43,7 +43,7 @@ export default class Work extends Component {
                   margin: "auto"
                 }}
               >
-                I like to build websites, apps, and software. I have build many
+                I like to build websites, apps, and software. I have built many
                 full stack applications using many different languages,
                 libraries, frameworks, and data structures. I built this site on
                 a virtual ubuntu server from scratch and am hosting it myself.
