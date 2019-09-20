@@ -73,11 +73,12 @@ export default class Content extends Component {
                       Django, Bootstrap
                     </p>
                     <p style={{ color: "white", fontWeight: "bold" }}>
-                      Agile Development Methodogy, Linux/Ubuntu , Server
-                      hosting, Git
+                      Agile Development Methodogy, Linux/Ubuntu, Server hosting,
+                      Git, Sass, React Hooks
                     </p>
                     <p style={{ color: "white", fontWeight: "bold" }}>
-                      Object Oriented Programming, Bash scripting, React Hooks
+                      Object Oriented Programming, Bash scripting, SOA and
+                      Open-Closed principal design
                     </p>
                   </div>
                 </div>

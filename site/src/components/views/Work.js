@@ -43,11 +43,12 @@ export default class Work extends Component {
                   margin: "auto"
                 }}
               >
-                I have built numerous full stack applications and worked with
-                many different languages, libraries, frameworks, and data
-                structures. Built this site on a virtual ubuntu server from
-                scratch and am hosting it myself. Currently mostly working with
-                React, React Native, and C#.
+                I like to build websites, apps, and software. I have build many
+                full stack applications using many different languages,
+                libraries, frameworks, and data structures. I built this site on
+                a virtual ubuntu server from scratch and am hosting it myself.
+                Currently mostly working with React, React Native, and C# and
+                dabbling in freelance web design.
               </p>
             </div>
           </Fade>
