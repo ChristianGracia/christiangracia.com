@@ -1,8 +1,9 @@
 import React, { Component } from "react";
+import AppPickSlides from "./AppPicSlides";
 
 export default function CurrentProjects() {
   return (
-    <div style={{ flex: 1, alignItems: "center" }}>
+    <div style={{ flex: 1, alignItems: "center", textAlign: "center" }}>
       <p
         style={{
           fontWeight: "bold",
@@ -14,7 +15,69 @@ export default function CurrentProjects() {
       >
         Some of my current projects
       </p>
+      <p style={{ textAlign: "center", color: "white", marginTop: 25 }}>
+        iOS/Android App for{" "}
+        <a style={{ color: "#FEFF01" }} href="http://adcofnorton.com">
+          adcofnorton.com
+        </a>
+      </p>
       <p style={{ textAlign: "center", color: "white" }}>
+        Over 11,000+ lines of React Native code
+      </p>
+      <p style={{ textAlign: "center", color: "white", fontWeight: "bold" }}>
+        code:{" "}
+        <a
+          href="https://github.com/ChristianGracia/Dental-iOSApp-React-Native"
+          style={{ color: "#FEFF01" }}
+        >
+          Link
+        </a>
+      </p>
+      <div
+        className=""
+        style={{
+          width: "70vw",
+          heigth: "400px",
+          maxWidth: 500,
+          margin: "0 auto"
+        }}
+      >
+        <AppPickSlides />
+      </div>
+
+      <i
+        style={{
+          textAlign: "center",
+          color: "#FEFF01",
+          fontSize: 25,
+          marginTop: 25
+        }}
+        class="fas fa-code"
+      ></i>
+
+      <p style={{ textAlign: "center", color: "white", marginTop: 25 }}>
+        Luxury Clothes website
+        <a style={{ color: "#FEFF01" }} href="https://cuffy-inc.herokuapp.com/">
+          {" "}
+          cuffy-inc.herokuapp.com
+        </a>
+      </p>
+      <p style={{ textAlign: "center", color: "white" }}>
+        In progess, enterprise level site with React, Redux, Sass, GraphQl and
+        more
+      </p>
+
+      <i
+        style={{
+          textAlign: "center",
+          color: "#FEFF01",
+          fontSize: 25,
+          marginTop: 25
+        }}
+        class="fas fa-code"
+      ></i>
+
+      <p style={{ textAlign: "center", color: "white", marginTop: 25 }}>
         Rewriting{" "}
         <a style={{ color: "#FEFF01" }} href="http://onabeat.com">
           {" "}
@@ -25,7 +88,12 @@ export default function CurrentProjects() {
         Not live yet, due to launch in a month or two
       </p>
 
-      <p style={{ textAlign: "center", color: "white" }}>
+      <i
+        style={{ textAlign: "center", color: "#FEFF01", fontSize: 25 }}
+        class="fas fa-code"
+      ></i>
+
+      <p style={{ textAlign: "center", color: "white", marginTop: 25 }}>
         Rewriting{" "}
         <a style={{ color: "#FEFF01" }} href="http://nflandscaping.com">
           nflandscaping.com
@@ -34,13 +102,13 @@ export default function CurrentProjects() {
       <p style={{ textAlign: "center", color: "white" }}>
         Also not live. Waiting on domain access to post what I have written
       </p>
-      <p style={{ textAlign: "center", color: "white" }}>
+      <p style={{ textAlign: "center", color: "white", fontWeight: "bold" }}>
         code:{" "}
         <a
-          href=" https://github.com/ChristianGracia/nflandscaping.com"
+          href="https://github.com/ChristianGracia/nflandscaping.com"
           style={{ color: "#FEFF01" }}
         >
-          Code Link
+          Link
         </a>
       </p>
     </div>
