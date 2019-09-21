@@ -3,6 +3,7 @@ import Github from "../Github";
 import Fade from "react-reveal/Fade";
 import { Button } from "react-bootstrap";
 import LightSpeed from "react-reveal/LightSpeed";
+import CurrentProjects from "../CurrentProjects";
 
 export default class Work extends Component {
   state = {
@@ -53,6 +54,7 @@ export default class Work extends Component {
             </div>
           </Fade>
         </div>
+        <CurrentProjects />
 
         <div
           style={{
@@ -76,7 +78,7 @@ export default class Work extends Component {
                   alignContent: "center"
                 }}
               >
-                All the code for this site on GitHub{"  "}
+                All the code for this website on GitHub{"  "}
               </span>
               <span style={{ padingLeft: 2, color: "#A6FF00" }}>
                 <i class="fas fa-code-branch"> </i>
@@ -86,9 +88,7 @@ export default class Work extends Component {
         </div>
 
         <div></div>
-        <div style={{}}>
-          <Github />
-        </div>
+        <div style={{}}></div>
       </div>
     );
   }
