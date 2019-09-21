@@ -52,7 +52,7 @@ export default class Contact extends Component {
                   }}
                 >
                   <i
-                    class="fas fa-mail-bulk"
+                    className="fas fa-mail-bulk"
                     style={{ fontSize: 80, color: "white" }}
                   ></i>
                 </div>
@@ -65,7 +65,7 @@ export default class Contact extends Component {
                     marginTop: 30
                   }}
                 >
-                  {this.state.name == "" ? null : (
+                  {this.state.name === "" ? null : (
                     <span
                       style={{
                         fontWeight: "bold",
@@ -97,7 +97,7 @@ export default class Contact extends Component {
                     marginTop: 20
                   }}
                 >
-                  {this.state.email == "" ? null : (
+                  {this.state.email === "" ? null : (
                     <span
                       style={{
                         fontWeight: "bold",
@@ -121,7 +121,7 @@ export default class Contact extends Component {
                     }}
                   />
                 </div>
-                {this.state.body == "" ? null : (
+                {this.state.body === "" ? null : (
                   <div
                     className="row"
                     style={{
@@ -157,10 +157,6 @@ export default class Contact extends Component {
                     type="text"
                     name="body"
                     placeholder="Leave a message"
-                    style={{
-                      textAlign: "left",
-                      color: "black"
-                    }}
                     value={this.state.body}
                     onChange={this.onChange}
                     style={{
@@ -184,7 +180,7 @@ export default class Contact extends Component {
                     value="send"
                     style={{ backgroundColor: "white", borderRadius: 19 }}
                     onClick={e => {
-                      if (body == "" || email == "" || name == "") {
+                      if (body === "" || email === "" || name === "") {
                         e.preventDefault();
                         window.alert("Please fill out form");
                       }

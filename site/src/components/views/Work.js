@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import Github from "../Github";
 import Fade from "react-reveal/Fade";
 import { Button } from "react-bootstrap";
-import LightSpeed from "react-reveal/LightSpeed";
 import CurrentProjects from "../CurrentProjects";
 
 export default class Work extends Component {
@@ -30,7 +29,7 @@ export default class Work extends Component {
           <Fade top>
             <Fade left opposite when={this.state.showRunner}>
               <p style={{ fontSize: 70, textAlign: "center", color: "yellow" }}>
-                <i class="fas fa-running"></i>
+                <i className="fas fa-running"></i>
               </p>
             </Fade>
           </Fade>
@@ -87,8 +86,9 @@ export default class Work extends Component {
           </Fade>
         </div>
 
-        <div></div>
-        <div style={{}}></div>
+        <div style={{}}>
+          <Github />
+        </div>
       </div>
     );
   }

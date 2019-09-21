@@ -25,7 +25,6 @@ class Github extends Component {
         if (this.refs.myRef) {
           this.setState({ repos: data });
         }
-        console.log(data);
       })
       .catch(err => console.log(err));
   }
@@ -33,7 +32,7 @@ class Github extends Component {
     const { repos } = this.state;
 
     const repoItems = repos.map(repo => (
-      <div style={{}}>
+      <div key={repo.id} style={{}}>
         <Fade top>
           <div
             key={repo.id}

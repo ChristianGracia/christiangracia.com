@@ -2,9 +2,6 @@ import React, { Component } from "react";
 import SocialMediaLinks from "./SocialMediaLinks";
 
 export default class Jumbotron extends Component {
-  constructor(props) {
-    super(props);
-  }
   state = {
     timeout: false,
     icon: ""
@@ -52,7 +49,8 @@ export default class Jumbotron extends Component {
                       color: "white"
                     }}
                   >
-                    Full stack web developer <i class="fas fa-laptop-code"></i>
+                    Full stack web developer{" "}
+                    <i className="fas fa-laptop-code"></i>
                     {"  "}
                     {"  "}
                     Providence, RI

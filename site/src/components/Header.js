@@ -2,10 +2,6 @@ import React, { Component } from "react";
 import { Nav, Navbar } from "react-bootstrap";
 
 export default class Header extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <div style={{}}>

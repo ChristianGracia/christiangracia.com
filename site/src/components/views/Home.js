@@ -6,9 +6,6 @@ import { Button } from "react-bootstrap";
 import ParticleBackground from "../ParticleBackground";
 
 export default class Home extends Component {
-  constructor(props) {
-    super(props);
-  }
   state = { isShow: true };
 
   hideArrow = () => {
