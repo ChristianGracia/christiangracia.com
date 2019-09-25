@@ -49,8 +49,7 @@ export default class Jumbotron extends Component {
                       color: "white"
                     }}
                   >
-                    Software Engineer
-                    <i className="fas fa-laptop-code"></i>
+                    Software Engineer <i className="fas fa-laptop-code"></i>
                     {"  "}
                     {"  "}
                     Providence, RI
