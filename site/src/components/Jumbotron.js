@@ -49,7 +49,7 @@ export default class Jumbotron extends Component {
                       color: "white"
                     }}
                   >
-                    Full stack web developer{" "}
+                    Software Engineer
                     <i className="fas fa-laptop-code"></i>
                     {"  "}
                     {"  "}
