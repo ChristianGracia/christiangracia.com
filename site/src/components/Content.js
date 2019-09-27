@@ -77,8 +77,12 @@ export default class Content extends Component {
                       Git, Sass, React Hooks
                     </p>
                     <p style={{ color: "white", fontWeight: "bold" }}>
-                      Object Oriented Programming, Bash scripting, SOA and
-                      Open-Closed principal design
+                      Object Oriented Programming, Bash scripting, Docker,
+                      ASP.NET web apps
+                    </p>
+                    <p style={{ color: "white", fontWeight: "bold" }}>
+                      Open-Closed principle, Service-oriented architecture, and
+                      SOLID design
                     </p>
                   </div>
                 </div>
