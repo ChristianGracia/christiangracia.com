@@ -73,7 +73,7 @@ class Github extends Component {
 
     return (
       <div ref="myRef">
-        <div style={{ padding: 15, paddingTop: 10 }}>
+        <div style={{ padding: 15, marginTop: 70 }}>
           <div>
             <h3
               className="mb-4"
