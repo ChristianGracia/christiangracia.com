@@ -28,15 +28,7 @@ export default class Content extends Component {
         <div className="container">
           <div className="">
             <div className="col-sm">
-              <div
-                style={{
-                  textAlign: "center",
-
-                  alignItems: "center",
-                  paddingBottom: 20
-                }}
-              ></div>
-              <div style={{ paddingBottom: 40 }}></div>
+              <div style={{ paddingBottom: 5 }}></div>
               <Fade top>
                 <Skills />
               </Fade>
@@ -77,8 +69,12 @@ export default class Content extends Component {
                       Git, Sass, React Hooks
                     </p>
                     <p style={{ color: "white", fontWeight: "bold" }}>
-                      Object Oriented Programming, Bash scripting, SOA and
-                      Open-Closed principal design
+                      Object Oriented Programming, Bash scripting, Docker,
+                      ASP.NET web apps
+                    </p>
+                    <p style={{ color: "white", fontWeight: "bold" }}>
+                      Open-Closed principle, Service-oriented architecture, and
+                      SOLID design
                     </p>
                   </div>
                 </div>
@@ -143,10 +139,10 @@ export default class Content extends Component {
                     <i style={{ fontSize: 200 }} class="far fa-lightbulb"></i>
                   </span>
                 ) : (
-                  <span style={{ color: "grey" }}>
-                    <i style={{ fontSize: 200 }} class="far fa-lightbulb"></i>
-                  </span>
-                )}
+                    <span style={{ color: "grey" }}>
+                      <i style={{ fontSize: 200 }} class="far fa-lightbulb"></i>
+                    </span>
+                  )}
               </div>{" "}
               <div style={{ paddingBottom: 30 }}></div>
               <Fade right>

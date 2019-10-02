@@ -64,7 +64,7 @@ export default class Work extends Component {
           }}
         >
           <Fade when={this.state.showGithub}>
-            <Button
+            <Button className="btn btn-success"
               onClick={() => {
                 window.location.href =
                   "https://github.com/ChristianGracia/portfolioSite/";
