@@ -69,7 +69,6 @@ export default class Work extends Component {
                 window.location.href =
                   "https://github.com/ChristianGracia/portfolioSite/";
               }}
-              className="btn btn-success"
             >
               <span
                 style={{
