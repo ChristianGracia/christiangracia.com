@@ -100,12 +100,11 @@ export default function CurrentProjects() {
           style={{ color: "#FEFF01", fontWeight: "bold" }}
           href="http://onabeat.com"
         >
-          {" "}
           onabeat.com
         </a>
       </p>
       <p style={{ textAlign: "center", color: "white" }}>
-        Not live yet, due to launch in a month or two.
+        Currently redesigning, put a temp page up. Currently own and manage the server
       </p>
 
       <i
