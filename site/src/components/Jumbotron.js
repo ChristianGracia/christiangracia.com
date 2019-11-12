@@ -62,7 +62,7 @@ export default class Jumbotron extends Component {
                       textAlign: "center"
                     }}
                   >
-                    React, React Native, C#, and more
+                    React, Java, React Native, C#, ++
                   </p>
                   <p
                     style={{

@@ -43,7 +43,7 @@ export default class Content extends Component {
                 >
                   <p style={{ color: "white", fontWeight: "bold" }}>
                     <span style={{ color: "yellow" }}>Languages:</span>{" "}
-                    JavaScript, C#, Python, C, PHP, HTML/CSS
+                    JavaScript, C#, Java, Python, C, PHP, HTML/CSS
                   </p>
                   <p
                     style={{
@@ -70,7 +70,7 @@ export default class Content extends Component {
                     </p>
                     <p style={{ color: "white", fontWeight: "bold" }}>
                       Object Oriented Programming, Bash scripting, Docker,
-                      ASP.NET web apps
+                      ASP.NET web apps, Maven, Jenkins API
                     </p>
                     <p style={{ color: "white", fontWeight: "bold" }}>
                       Open-Closed principle, Service-oriented architecture, and
@@ -139,10 +139,10 @@ export default class Content extends Component {
                     <i style={{ fontSize: 200 }} class="far fa-lightbulb"></i>
                   </span>
                 ) : (
-                    <span style={{ color: "grey" }}>
-                      <i style={{ fontSize: 200 }} class="far fa-lightbulb"></i>
-                    </span>
-                  )}
+                  <span style={{ color: "grey" }}>
+                    <i style={{ fontSize: 200 }} class="far fa-lightbulb"></i>
+                  </span>
+                )}
               </div>{" "}
               <div style={{ paddingBottom: 30 }}></div>
               <Fade right>

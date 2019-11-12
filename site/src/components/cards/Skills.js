@@ -22,6 +22,7 @@ export default class Skills extends Component {
               <p>Web Design</p>
               <p style={{}}>Software Design</p>
               <p>Data Structures</p>
+              <p>Web Scraping</p>
             </div>
           </Fade>
         </div>

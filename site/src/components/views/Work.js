@@ -47,8 +47,8 @@ export default class Work extends Component {
                 full stack applications using many different languages,
                 libraries, frameworks, and data structures. I built this site on
                 a virtual ubuntu server from scratch and am hosting it myself.
-                Currently mostly working with React, React Native, and C# and
-                dabbling in freelance web design.
+                Currently mostly working with Java, React, React Native, and C#
+                and dabbling in freelance web design.
               </p>
             </div>
           </Fade>
@@ -64,7 +64,8 @@ export default class Work extends Component {
           }}
         >
           <Fade when={this.state.showGithub}>
-            <Button className="btn btn-success"
+            <Button
+              className="btn btn-success"
               onClick={() => {
                 window.location.href =
                   "https://github.com/ChristianGracia/portfolioSite/";
