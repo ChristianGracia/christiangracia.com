@@ -56,7 +56,6 @@ export default class Contact extends Component {
                     style={{ fontSize: 80, color: "white" }}
                   ></i>
                 </div>
-
                 <div
                   className="row"
                   style={{
@@ -82,11 +81,13 @@ export default class Contact extends Component {
                     value={this.state.name}
                     onChange={this.onChange}
                     placeholder="Name"
-                    style={{
-                      background: "transparent",
-                      border: "transparent",
-                      color: "white"
-                    }}
+                    style={
+                      {
+                        // background: "transparent",
+                        // border: "white",
+                        // color: "white"
+                      }
+                    }
                   />
                 </div>
                 <div
@@ -114,11 +115,13 @@ export default class Contact extends Component {
                     value={this.state.email}
                     onChange={this.onChange}
                     placeholder="Email"
-                    style={{
-                      background: "transparent",
-                      border: "transparent",
-                      color: "white"
-                    }}
+                    style={
+                      {
+                        // background: "transparent",
+                        // border: "transparent",
+                        // color: "white"
+                      }
+                    }
                   />
                 </div>
                 {this.state.body === "" ? null : (
@@ -159,11 +162,13 @@ export default class Contact extends Component {
                     placeholder="Leave a message"
                     value={this.state.body}
                     onChange={this.onChange}
-                    style={{
-                      background: "transparent",
-                      border: "transparent",
-                      color: "white"
-                    }}
+                    style={
+                      {
+                        // background: "transparent",
+                        // border: "transparent",
+                        // color: "white"
+                      }
+                    }
                   />
                 </div>
                 <div
@@ -186,28 +191,6 @@ export default class Contact extends Component {
                       }
                     }}
                   />
-                </div>
-                <div className="row">
-                  <p
-                    style={{
-                      color: "white",
-                      fontSize: "30",
-                      fontWeight: "bold",
-                      position: "relative",
-                      justifyContent: "center",
-                      alignItems: "center",
-                      textAlign: "center",
-                      marginTop: 20
-                    }}
-                  >
-                    Mail system powered by my friend Tim Wheeler's{" "}
-                    <a
-                      href="https://sendpoint.io/"
-                      style={{ color: "#A5FE00" }}
-                    >
-                      https://sendpoint.io/
-                    </a>
-                  </p>
                 </div>
               </form>
             </Jump>
