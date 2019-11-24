@@ -52,7 +52,7 @@ export default class Content extends Component {
                     }}
                   >
                     <span style={{ color: "yellow" }}>Frameworks:</span> React
-                    Native, VueJS
+                    Native, VueJS,
                   </p>
                   <p style={{ color: "white", fontWeight: "bold" }}>
                     <span style={{ color: "yellow" }}>Libraries:</span> React,

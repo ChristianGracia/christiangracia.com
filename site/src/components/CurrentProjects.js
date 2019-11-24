@@ -122,7 +122,7 @@ export default function CurrentProjects() {
           display: "flex",
           flexDirection: "row",
           flexWrap: "wrap",
-          justifyContent: "space-around"
+          justifyContent: "center"
         }}
       >
         <div
@@ -135,9 +135,8 @@ export default function CurrentProjects() {
         >
           <p>React Native Mobile App</p>
           <TwitterTweetEmbed
-            options={{ height: 100, width: "20vw" }}
+            options={{ width: 330 }}
             tweetId={"1173662545464451075"}
-            autoHeight="true"
           />
         </div>
         <div
@@ -150,9 +149,8 @@ export default function CurrentProjects() {
         >
           <p>Java scraper with React/Redux Front end</p>
           <TwitterTweetEmbed
-            options={{ height: 100, width: "20vw" }}
+            options={{ width: 330 }}
             tweetId={"1198478865901015041"}
-            autoHeight="true"
           />
         </div>
       </div>
@@ -169,7 +167,7 @@ export default function CurrentProjects() {
       <TwitterTimelineEmbed
         sourceType="profile"
         screenName="CG_CODING"
-        options={{ height: 100, width: "20vw" }}
+        options={{ height: 100, width: 330 }}
         autoHeight="true"
         // onComplete={action}
       />

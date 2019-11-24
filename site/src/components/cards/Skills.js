@@ -20,8 +20,9 @@ export default class Skills extends Component {
           <Fade left cascade>
             <div style={{ color: "white", margin: "auto", fontSize: 25 }}>
               <p>Web Design</p>
+              <p>RESTful API Design</p>
               <p style={{}}>Software Design</p>
-              <p>Data Structures</p>
+              <p>Data Architecture</p>
               <p>Web Scraping</p>
             </div>
           </Fade>
