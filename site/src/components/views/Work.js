@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Github from "../Github";
+import Github from "../github/github-component";
 import Fade from "react-reveal/Fade";
 import { Button } from "react-bootstrap";
 import CurrentProjects from "../current-projects/current-projects.component";

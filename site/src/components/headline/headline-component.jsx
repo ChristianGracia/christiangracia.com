@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import SocialMediaLinks from "./SocialMediaLinks";
+import SocialMediaLinks from "../common/social-links/social-links.component";
 
 export default class Jumbotron extends Component {
   state = {

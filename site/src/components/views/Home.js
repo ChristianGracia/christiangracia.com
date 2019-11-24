@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import Jumbotron from "../Jumbotron";
+import Headline from "../headline/headline-component";
 import Fade from "react-reveal/Fade";
 import PageCombiner from "../page-combiner/page-combiner.component";
 import { Button } from "react-bootstrap";
-import ParticleBackground from "../ParticleBackground";
+import ParticleBackground from "../particles/ParticleBackground";
 
 export default class Home extends Component {
   state = { isShow: true };
@@ -35,7 +35,7 @@ export default class Home extends Component {
         {this.state.isShow ? (
           <div style={{ flex: 1, paddingTop: 10 }}>
             <ParticleBackground style={{}} />
-            <Jumbotron />
+            <Headline />
             <div
               style={{
                 flex: 1,
