@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./social-links.styles.scss";
+import "./social-links.styles.css";
 
 export default class SocialMediaLinks extends Component {
   render() {
