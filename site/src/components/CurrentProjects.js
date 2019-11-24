@@ -1,5 +1,5 @@
 import React from "react";
-import AppPickSlides from "./AppPicSlides";
+import AppPicSlides from "./AppPicSlides";
 
 export default function CurrentProjects() {
   return (
@@ -40,13 +40,13 @@ export default function CurrentProjects() {
       <div
         className=""
         style={{
-          width: "70vw",
-          heigth: "400px",
-          maxWidth: 500,
+          width: "200px",
+          heigth: "200px",
+          minWidth: 200,
           margin: "0 auto"
         }}
       >
-        <AppPickSlides />
+        <AppPicSlides />
       </div>
 
       <i
@@ -104,7 +104,8 @@ export default function CurrentProjects() {
         </a>
       </p>
       <p style={{ textAlign: "center", color: "white" }}>
-        Currently redesigning, put a temp page up. Currently own and manage the server
+        Currently redesigning, put a temp page up. Currently own and manage the
+        server
       </p>
 
       <i

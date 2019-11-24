@@ -2,7 +2,7 @@ import React from "react";
 import { Carousel } from "react-bootstrap";
 import "../App.css";
 
-export default function AppPickSlides() {
+export default function AppPicSlides() {
   return (
     <div style={{}}>
       <Carousel style={{}}>
