@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import SocialMediaLinks from "../common/social-links/social-links.component";
+import "./headline.styles.css";
 
 export default class Jumbotron extends Component {
   state = {

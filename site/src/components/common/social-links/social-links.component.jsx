@@ -9,7 +9,7 @@ export default class SocialMediaLinks extends Component {
           <span style={{ paddingRight: 5, color: "white" }}>GitHub</span>
           <span>
             <i
-              className="fab fa-github box box-1"
+              className="fab fa-github"
               style={{ color: "#FEFF01", fontSize: 20 }}
             ></i>
           </span>
@@ -19,7 +19,7 @@ export default class SocialMediaLinks extends Component {
           <span style={{ paddingRight: 5, color: "white" }}>LinkedIn</span>
           <span>
             <i
-              className="fab fa-linkedin box box-2"
+              className="fab fa-linkedin"
               style={{ color: "#FEFF01", fontSize: 20 }}
             ></i>
           </span>
@@ -30,7 +30,7 @@ export default class SocialMediaLinks extends Component {
           <span style={{ paddingRight: 5, color: "white" }}>Twitter</span>
           <span>
             <i
-              className="fab fa-twitter box box-3"
+              className="fab fa-twitter"
               style={{ color: "#FEFF01", fontSize: 20 }}
             ></i>
           </span>
