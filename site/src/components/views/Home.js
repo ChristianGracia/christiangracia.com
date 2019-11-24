@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Jumbotron from "../Jumbotron";
 import Fade from "react-reveal/Fade";
-import ContentCall from "../ContentCall";
+import PageCombiner from "../page-combiner/page-combiner.component";
 import { Button } from "react-bootstrap";
 import ParticleBackground from "../ParticleBackground";
 
@@ -94,7 +94,7 @@ export default class Home extends Component {
           </div>
         ) : (
           <div style={{ margin: "auto" }}>
-            <ContentCall />
+            <PageCombiner />
           </div>
         )}{" "}
       </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import AppPicSlides from "./AppPicSlides";
+import AppPicSlides from "../app-pic-caro/app-pic-carousel.component";
 import { TwitterTweetEmbed, TwitterTimelineEmbed } from "react-twitter-embed";
 
 export default function CurrentProjects() {
@@ -172,7 +172,7 @@ export default function CurrentProjects() {
         // onComplete={action}
       />
 
-      <div style={{ paddingBottom: 300 }}></div>
+      <div style={{ paddingBottom: 300 }}> </div>
     </div>
   );
 }

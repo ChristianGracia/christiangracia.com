@@ -1,6 +1,6 @@
 import React from "react";
 import { Carousel } from "react-bootstrap";
-import "../App.css";
+import "./app-pic-carousel.styles.scss";
 
 export default function AppPicSlides() {
   return (

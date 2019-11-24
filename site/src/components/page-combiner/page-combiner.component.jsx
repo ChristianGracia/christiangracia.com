@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import Work from "./views/Work";
-import About from "./views/About";
+import Work from "../views/Work";
+import About from "../views/About";
 
-export default class ContentCall extends Component {
+export default class PageCombiner extends Component {
   componentDidMount() {
     window.scrollTo(0, 0);
   }

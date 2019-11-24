@@ -1,10 +1,10 @@
 import React, { Component, Fragment } from "react";
 import Fade from "react-reveal/Fade";
 import LightSpeed from "react-reveal/LightSpeed";
-import Skills from "./cards/Skills";
-import Education from "./cards/Education";
+import Skills from "../cards/Skills";
+import Education from "../cards/Education";
 
-export default class Content extends Component {
+export default class SkillsAndEdu extends Component {
   constructor(props) {
     super(props);
 
@@ -52,7 +52,7 @@ export default class Content extends Component {
                     }}
                   >
                     <span style={{ color: "yellow" }}>Frameworks:</span> React
-                    Native, VueJS,
+                    Native, VueJS, Spring Boot
                   </p>
                   <p style={{ color: "white", fontWeight: "bold" }}>
                     <span style={{ color: "yellow" }}>Libraries:</span> React,
@@ -61,15 +61,15 @@ export default class Content extends Component {
                   <span style={{ fontWeight: "bold", padding: 30 }}></span>
                   <div style={{ textAlign: "center" }}>
                     <p style={{ color: "white", fontWeight: "bold" }}>
-                      MongoDB, MERN Stack apps, REST API, GraphQL, NodeJS,
-                      Django, Bootstrap
+                      MongoDB, SQL, MySql, MERN Stack apps, REST API, GraphQL,
+                      NodeJS, Django, Bootstrap
                     </p>
                     <p style={{ color: "white", fontWeight: "bold" }}>
                       Agile Development Methodogy, Linux/Ubuntu, Server hosting,
                       Git, Sass, React Hooks
                     </p>
                     <p style={{ color: "white", fontWeight: "bold" }}>
-                      Object Oriented Programming, Bash scripting, Docker,
+                      Object Oriented Programming, Bash scripting, Docker, .NET,
                       ASP.NET web apps, Maven, Jenkins API
                     </p>
                     <p style={{ color: "white", fontWeight: "bold" }}>

@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Github from "../Github";
 import Fade from "react-reveal/Fade";
 import { Button } from "react-bootstrap";
-import CurrentProjects from "../CurrentProjects";
+import CurrentProjects from "../current-projects/current-projects.component";
 
 export default class Work extends Component {
   state = {
