@@ -1,5 +1,6 @@
 import React from "react";
 import AppPicSlides from "./AppPicSlides";
+import { TwitterTweetEmbed, TwitterTimelineEmbed } from "react-twitter-embed";
 
 export default function CurrentProjects() {
   return (
@@ -15,6 +16,9 @@ export default function CurrentProjects() {
       >
         Some of my current projects
       </p>
+
+      <div style={{ padding: 40 }}></div>
+
       <p style={{ textAlign: "center", color: "white", marginTop: 25 }}>
         iOS/Android App for{" "}
         <a
@@ -40,9 +44,9 @@ export default function CurrentProjects() {
       <div
         className=""
         style={{
-          width: "200px",
-          heigth: "200px",
-          minWidth: 200,
+          width: "150px",
+          heigth: "150px",
+          minWidth: 150,
           margin: "0 auto"
         }}
       >
@@ -60,7 +64,7 @@ export default function CurrentProjects() {
       ></i>
 
       <p style={{ textAlign: "center", color: "white", marginTop: 25 }}>
-        Luxury Clothes website
+        Luxury Clothes website (takes a min or two for server to wake up)
         <a
           style={{ color: "#FEFF01", fontWeight: "bold" }}
           href="https://cuffy-inc.herokuapp.com/"
@@ -71,7 +75,7 @@ export default function CurrentProjects() {
       </p>
       <p style={{ textAlign: "center", color: "white" }}>
         In progess, enterprise level site with React, Redux, Sass, GraphQl and
-        more. Currently looks great on a computer, working on mobile.
+        more. Working on this more later when I have time
       </p>
 
       <p style={{ textAlign: "center", color: "white", fontWeight: "bold" }}>
@@ -112,28 +116,65 @@ export default function CurrentProjects() {
         style={{ textAlign: "center", color: "#FEFF01", fontSize: 25 }}
         class="fas fa-code"
       ></i>
+      <div style={{ padding: 40 }}></div>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          flexWrap: "wrap",
+          justifyContent: "space-around"
+        }}
+      >
+        <div
+          style={{
+            textAlign: "center",
+            color: "white",
+            fontWeight: "bold",
+            fontSize: 23
+          }}
+        >
+          <p>React Native Mobile App</p>
+          <TwitterTweetEmbed
+            options={{ height: 100, width: "20vw" }}
+            tweetId={"1173662545464451075"}
+            autoHeight="true"
+          />
+        </div>
+        <div
+          style={{
+            textAlign: "center",
+            color: "white",
+            fontWeight: "bold",
+            fontSize: 23
+          }}
+        >
+          <p>Java scraper with React/Redux Front end</p>
+          <TwitterTweetEmbed
+            options={{ height: 100, width: "20vw" }}
+            tweetId={"1198478865901015041"}
+            autoHeight="true"
+          />
+        </div>
+      </div>
+      <span
+        style={{
+          textAlign: "center",
+          color: "white",
+          fontWeight: "bold",
+          fontSize: 40
+        }}
+      >
+        Twitter Feed
+      </span>
+      <TwitterTimelineEmbed
+        sourceType="profile"
+        screenName="CG_CODING"
+        options={{ height: 100, width: "20vw" }}
+        autoHeight="true"
+        // onComplete={action}
+      />
 
-      <p style={{ textAlign: "center", color: "white", marginTop: 25 }}>
-        Rewriting{" "}
-        <a
-          style={{ color: "#FEFF01", fontWeight: "bold" }}
-          href="http://nflandscaping.com"
-        >
-          nflandscaping.com
-        </a>
-      </p>
-      <p style={{ textAlign: "center", color: "white" }}>
-        Also not live. Waiting on domain access to post what I have written.
-      </p>
-      <p style={{ textAlign: "center", color: "white", fontWeight: "bold" }}>
-        code:{" "}
-        <a
-          href="https://github.com/ChristianGracia/nflandscaping.com"
-          style={{ color: "#FEFF01" }}
-        >
-          Link
-        </a>
-      </p>
+      <div style={{ paddingBottom: 300 }}></div>
     </div>
   );
 }

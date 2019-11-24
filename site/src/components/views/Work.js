@@ -51,7 +51,6 @@ export default class Work extends Component {
             </div>
           </Fade>
         </div>
-        <CurrentProjects />
 
         <div
           style={{
@@ -88,6 +87,7 @@ export default class Work extends Component {
         <div style={{}}>
           <Github />
         </div>
+        <CurrentProjects />
       </div>
     );
   }

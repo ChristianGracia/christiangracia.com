@@ -11,8 +11,8 @@ export default class ContentCall extends Component {
       <div>
         <div style={{ padding: 20 }}></div>
 
-        <Work />
         <About />
+        <Work />
       </div>
     );
   }
