@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./social-links.styles.scss";
 
 export default class SocialMediaLinks extends Component {
   render() {
@@ -8,7 +9,7 @@ export default class SocialMediaLinks extends Component {
           <span style={{ paddingRight: 5, color: "white" }}>GitHub</span>
           <span>
             <i
-              className="fab fa-github"
+              className="fab fa-github box box-1"
               style={{ color: "#FEFF01", fontSize: 20 }}
             ></i>
           </span>
@@ -18,7 +19,7 @@ export default class SocialMediaLinks extends Component {
           <span style={{ paddingRight: 5, color: "white" }}>LinkedIn</span>
           <span>
             <i
-              className="fab fa-linkedin"
+              className="fab fa-linkedin box box-2"
               style={{ color: "#FEFF01", fontSize: 20 }}
             ></i>
           </span>
@@ -29,7 +30,7 @@ export default class SocialMediaLinks extends Component {
           <span style={{ paddingRight: 5, color: "white" }}>Twitter</span>
           <span>
             <i
-              className="fab fa-twitter"
+              className="fab fa-twitter box box-3"
               style={{ color: "#FEFF01", fontSize: 20 }}
             ></i>
           </span>
