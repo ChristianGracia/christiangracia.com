@@ -4,24 +4,26 @@ import { TwitterTweetEmbed, TwitterTimelineEmbed } from "react-twitter-embed";
 
 export default function CurrentProjects() {
   return (
-    <div style={{ flex: 1, alignItems: "center", textAlign: "center" }}>
+    <div
+      style={{ flex: 1, alignItems: "center", textAlign: "center", padding: 5 }}
+    >
       <p
         style={{
           fontWeight: "bold",
-          color: "#FEFF01",
+          color: "white",
           marginTop: 40,
           textAlign: "center",
-          fontSize: 20
+          fontSize: 40
         }}
       >
-        Some of my current projects
+        Recent Projects
       </p>
 
-      <div style={{ padding: 40 }}></div>
+      <div style={{ padding: 20 }}></div>
 
       <p style={{ textAlign: "center", marginTop: 25 }}>
         <a
-          style={{ color: "#FEFF01", fontWeight: "bold" }}
+          style={{ color: "#FEFF01", fontWeight: "bold", fontSize: 30 }}
           href="https://github.com/ChristianGracia/Java-Financial-Web-Scraper"
         >
           Java Web Scraper with React/Redux Front-end
@@ -34,14 +36,35 @@ export default function CurrentProjects() {
         front-end communicates with. Users can create accounts, request data
         scrapes, and view all data.
       </p>
-      <p>
-        {" "}
+      <p style={{ textAlign: "center", color: "white", fontWeight: "bold" }}>
+        code:{" "}
         <a
           style={{ color: "#FEFF01", fontWeight: "bold" }}
           href="https://github.com/ChristianGracia/Java-Financial-Web-Scraper"
         >
-          Code
+          Link
         </a>
+      </p>
+      <i
+        style={{
+          textAlign: "center",
+          color: "#FEFF01",
+          fontSize: 25,
+          marginTop: 25
+        }}
+        class="fas fa-code"
+      ></i>
+
+      <p
+        style={{
+          textAlign: "center",
+          marginTop: 25,
+          color: "#FEFF01",
+          fontWeight: "bold",
+          fontSize: 30
+        }}
+      >
+        Dental iOS App React Native
       </p>
 
       <p style={{ textAlign: "center", color: "white", marginTop: 25 }}>
@@ -61,15 +84,7 @@ export default function CurrentProjects() {
         Users can email the front desk, view detailed info and images about
         services offered, leave suggestions, and more!
       </p>
-      <p style={{ textAlign: "center", color: "white", fontWeight: "bold" }}>
-        code:{" "}
-        <a
-          href="https://github.com/ChristianGracia/Dental-iOSApp-React-Native"
-          style={{ color: "#FEFF01", fontWeight: "bold" }}
-        >
-          Link
-        </a>
-      </p>
+
       <div
         className=""
         style={{
@@ -81,6 +96,22 @@ export default function CurrentProjects() {
       >
         <AppPicSlides />
       </div>
+      <p
+        style={{
+          textAlign: "center",
+          color: "white",
+          fontWeight: "bold",
+          marginTop: 15
+        }}
+      >
+        code:{" "}
+        <a
+          href="https://github.com/ChristianGracia/Dental-iOSApp-React-Native"
+          style={{ color: "#FEFF01", fontWeight: "bold" }}
+        >
+          Link
+        </a>
+      </p>
 
       <i
         style={{
@@ -94,7 +125,7 @@ export default function CurrentProjects() {
 
       <p style={{ textAlign: "center", marginTop: 25 }}>
         <a
-          style={{ color: "#FEFF01", fontWeight: "bold" }}
+          style={{ color: "#FEFF01", fontWeight: "bold", fontSize: 30 }}
           href="http://onabeat.com"
         >
           onabeat.com
@@ -105,9 +136,36 @@ export default function CurrentProjects() {
         write this site for some friends.
       </p>
 
+      <p
+        style={{
+          textAlign: "center",
+          color: "white",
+          fontWeight: "bold",
+          marginTop: 15
+        }}
+      >
+        code:{" "}
+        <a
+          href="https://github.com/ChristianGracia/onabeat.com"
+          style={{ color: "#FEFF01", fontWeight: "bold" }}
+        >
+          Link
+        </a>
+      </p>
+
+      <i
+        style={{
+          textAlign: "center",
+          color: "#FEFF01",
+          fontSize: 25,
+          marginTop: 25
+        }}
+        class="fas fa-code"
+      ></i>
+
       <p style={{ textAlign: "center", marginTop: 25 }}>
         <a
-          style={{ color: "#FEFF01", fontWeight: "bold" }}
+          style={{ color: "#FEFF01", fontWeight: "bold", fontSize: 30 }}
           href="https://cuffy-inc.herokuapp.com/"
         >
           cuffy-inc.herokuapp.com
@@ -131,16 +189,6 @@ export default function CurrentProjects() {
           Link
         </a>
       </p>
-
-      <i
-        style={{
-          textAlign: "center",
-          color: "#FEFF01",
-          fontSize: 25,
-          marginTop: 25
-        }}
-        class="fas fa-code"
-      ></i>
 
       <i
         style={{ textAlign: "center", color: "#FEFF01", fontSize: 25 }}
