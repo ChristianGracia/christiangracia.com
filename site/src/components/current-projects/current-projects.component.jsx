@@ -19,6 +19,31 @@ export default function CurrentProjects() {
 
       <div style={{ padding: 40 }}></div>
 
+      <p style={{ textAlign: "center", marginTop: 25 }}>
+        <a
+          style={{ color: "#FEFF01", fontWeight: "bold" }}
+          href="https://github.com/ChristianGracia/Java-Financial-Web-Scraper"
+        >
+          Java Web Scraper with React/Redux Front-end
+        </a>
+      </p>
+      <p style={{ color: "white" }}>
+        Webscraper written in Java that scrapes cryptocurrency data with
+        Selenium, stores the data in a sql db, and displays on the React
+        front-end. The Java portion functions as an api endpoint that my
+        front-end communicates with. Users can create accounts, request data
+        scrapes, and view all data.
+      </p>
+      <p>
+        {" "}
+        <a
+          style={{ color: "#FEFF01", fontWeight: "bold" }}
+          href="https://github.com/ChristianGracia/Java-Financial-Web-Scraper"
+        >
+          Code
+        </a>
+      </p>
+
       <p style={{ textAlign: "center", color: "white", marginTop: 25 }}>
         iOS/Android App for{" "}
         <a
@@ -31,6 +56,10 @@ export default function CurrentProjects() {
       </p>
       <p style={{ textAlign: "center", color: "white" }}>
         Over 11,000+ lines of React Native code.
+      </p>
+      <p style={{ textAlign: "center", color: "white" }}>
+        Users can email the front desk, view detailed info and images about
+        services offered, leave suggestions, and more!
       </p>
       <p style={{ textAlign: "center", color: "white", fontWeight: "bold" }}>
         code:{" "}
@@ -63,15 +92,30 @@ export default function CurrentProjects() {
         class="fas fa-code"
       ></i>
 
-      <p style={{ textAlign: "center", color: "white", marginTop: 25 }}>
-        Luxury Clothes website (takes a min or two for server to wake up)
+      <p style={{ textAlign: "center", marginTop: 25 }}>
+        <a
+          style={{ color: "#FEFF01", fontWeight: "bold" }}
+          href="http://onabeat.com"
+        >
+          onabeat.com
+        </a>
+      </p>
+      <p style={{ color: "white" }}>
+        Currently own and manage the server, put a temp page up for now while I
+        write this site for some friends.
+      </p>
+
+      <p style={{ textAlign: "center", marginTop: 25 }}>
         <a
           style={{ color: "#FEFF01", fontWeight: "bold" }}
           href="https://cuffy-inc.herokuapp.com/"
         >
-          {" "}
           cuffy-inc.herokuapp.com
         </a>
+      </p>
+      <p style={{ textAlign: "center", color: "white" }}>
+        {" "}
+        Luxury Clothes website (takes a min or two for server to wake up)
       </p>
       <p style={{ textAlign: "center", color: "white" }}>
         In progess, enterprise level site with React, Redux, Sass, GraphQl and
@@ -98,20 +142,6 @@ export default function CurrentProjects() {
         class="fas fa-code"
       ></i>
 
-      <p style={{ textAlign: "center", color: "white", marginTop: 25 }}>
-        Rewriting{" "}
-        <a
-          style={{ color: "#FEFF01", fontWeight: "bold" }}
-          href="http://onabeat.com"
-        >
-          onabeat.com
-        </a>
-      </p>
-      <p style={{ textAlign: "center", color: "white" }}>
-        Currently redesigning, put a temp page up. Currently own and manage the
-        server
-      </p>
-
       <i
         style={{ textAlign: "center", color: "#FEFF01", fontSize: 25 }}
         class="fas fa-code"
@@ -135,7 +165,7 @@ export default function CurrentProjects() {
         >
           <p>React Native Mobile App</p>
           <TwitterTweetEmbed
-            options={{ width: 330 }}
+            options={{ width: 320 }}
             tweetId={"1173662545464451075"}
           />
         </div>
@@ -147,9 +177,9 @@ export default function CurrentProjects() {
             fontSize: 23
           }}
         >
-          <p>Java scraper with React/Redux Front end</p>
+          <p>Java scraper with React/Redux</p>
           <TwitterTweetEmbed
-            options={{ width: 330 }}
+            options={{ width: 320 }}
             tweetId={"1198478865901015041"}
           />
         </div>
