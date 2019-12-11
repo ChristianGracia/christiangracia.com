@@ -47,8 +47,7 @@ export default class Contact extends Component {
                   className="row"
                   style={{
                     alignItems: "center",
-                    justifyContent: "center",
-                    marginTop: 50
+                    justifyContent: "center"
                   }}
                 >
                   <i
@@ -81,13 +80,6 @@ export default class Contact extends Component {
                     value={this.state.name}
                     onChange={this.onChange}
                     placeholder="Name"
-                    style={
-                      {
-                        // background: "transparent",
-                        // border: "white",
-                        // color: "white"
-                      }
-                    }
                   />
                 </div>
                 <div
@@ -115,13 +107,6 @@ export default class Contact extends Component {
                     value={this.state.email}
                     onChange={this.onChange}
                     placeholder="Email"
-                    style={
-                      {
-                        // background: "transparent",
-                        // border: "transparent",
-                        // color: "white"
-                      }
-                    }
                   />
                 </div>
                 {this.state.body === "" ? null : (
@@ -162,13 +147,6 @@ export default class Contact extends Component {
                     placeholder="Leave a message"
                     value={this.state.body}
                     onChange={this.onChange}
-                    style={
-                      {
-                        // background: "transparent",
-                        // border: "transparent",
-                        // color: "white"
-                      }
-                    }
                   />
                 </div>
                 <div
@@ -194,6 +172,7 @@ export default class Contact extends Component {
                 </div>
               </form>
             </Jump>
+            <div style={{ paddingBottom: 600 }}></div>
           </div>
         </div>
       </div>
