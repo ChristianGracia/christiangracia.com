@@ -15,7 +15,7 @@ export default class SocialMediaLinks extends Component {
           </span>
         </a>
         <span style={{ padding: 10 }}></span>
-        <a href="https://www.linkedin.com/in/christian-gracia-32729768">
+        <a href="https://www.linkedin.com/in/christiangracia">
           <span style={{ paddingRight: 5, color: "white" }}>LinkedIn</span>
           <span>
             <i
