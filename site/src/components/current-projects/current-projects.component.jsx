@@ -132,8 +132,7 @@ export default function CurrentProjects() {
         </a>
       </p>
       <p style={{ color: "white" }}>
-        Currently own and manage the server, put a temp page up for now while I
-        write this site for some friends.
+        MERN stack site I wrote and host for my friends in On a Beat.
       </p>
 
       <p
