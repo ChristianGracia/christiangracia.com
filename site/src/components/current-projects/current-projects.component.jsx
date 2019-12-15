@@ -132,7 +132,9 @@ export default function CurrentProjects() {
         </a>
       </p>
       <p style={{ color: "white" }}>
-        MERN stack site I wrote and host for my friends in On a Beat.
+        MERN stack site I wrote and host for my friends in On a Beat. Hosted on
+        Heroku in a single dyno. React front-end with a Node Js back-end with
+        MongoDB database{" "}
       </p>
 
       <p
