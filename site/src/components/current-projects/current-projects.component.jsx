@@ -61,16 +61,6 @@ export default function CurrentProjects() {
         class="fas fa-code"
       ></i>
 
-      <i
-        style={{
-          textAlign: "center",
-          color: "#FEFF01",
-          fontSize: 25,
-          marginTop: 25
-        }}
-        class="fas fa-code"
-      ></i>
-
       <p style={{ textAlign: "center", marginTop: 25 }}>
         <a
           style={{ color: "#FEFF01", fontWeight: "bold", fontSize: 30 }}
