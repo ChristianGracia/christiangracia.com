@@ -45,6 +45,75 @@ export default function CurrentProjects() {
           Link
         </a>
       </p>
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        <TwitterTweetEmbed
+          options={{ width: 320 }}
+          tweetId={"1198478865901015041"}
+        />
+      </div>
+      <i
+        style={{
+          textAlign: "center",
+          color: "#FEFF01",
+          fontSize: 25,
+          marginTop: 25
+        }}
+        class="fas fa-code"
+      ></i>
+
+      <i
+        style={{
+          textAlign: "center",
+          color: "#FEFF01",
+          fontSize: 25,
+          marginTop: 25
+        }}
+        class="fas fa-code"
+      ></i>
+
+      <p style={{ textAlign: "center", marginTop: 25 }}>
+        <a
+          style={{ color: "#FEFF01", fontWeight: "bold", fontSize: 30 }}
+          href="http://onabeat.com"
+        >
+          onabeat.com
+        </a>
+      </p>
+      <p style={{ color: "white" }}>
+        MERN stack site I wrote and host for my friends in On a Beat. Hosted on
+        Heroku on a single server. React/Redux front-end with a Node Js back-end
+        and a MongoDB database{" "}
+      </p>
+
+      <p style={{ textAlign: "center", color: "white" }}>
+        Users can make accounts, sign in, add/delete videos and songs to front
+        page, and more with a protected dashboard I built.
+      </p>
+
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        <TwitterTweetEmbed
+          options={{ width: 300 }}
+          tweetId={"1207152863434231808"}
+        />
+      </div>
+
+      <p
+        style={{
+          textAlign: "center",
+          color: "white",
+          fontWeight: "bold",
+          marginTop: 15
+        }}
+      >
+        code:{" "}
+        <a
+          href="https://github.com/ChristianGracia/onabeat.com"
+          style={{ color: "#FEFF01", fontWeight: "bold" }}
+        >
+          Link
+        </a>
+      </p>
+
       <i
         style={{
           textAlign: "center",
@@ -113,56 +182,12 @@ export default function CurrentProjects() {
         </a>
       </p>
 
-      <i
-        style={{
-          textAlign: "center",
-          color: "#FEFF01",
-          fontSize: 25,
-          marginTop: 25
-        }}
-        class="fas fa-code"
-      ></i>
-
-      <p style={{ textAlign: "center", marginTop: 25 }}>
-        <a
-          style={{ color: "#FEFF01", fontWeight: "bold", fontSize: 30 }}
-          href="http://onabeat.com"
-        >
-          onabeat.com
-        </a>
-      </p>
-      <p style={{ color: "white" }}>
-        MERN stack site I wrote and host for my friends in On a Beat. Hosted on
-        Heroku in a single dyno. React front-end with a Node Js back-end with
-        MongoDB database{" "}
-      </p>
-
-      <p
-        style={{
-          textAlign: "center",
-          color: "white",
-          fontWeight: "bold",
-          marginTop: 15
-        }}
-      >
-        code:{" "}
-        <a
-          href="https://github.com/ChristianGracia/onabeat.com"
-          style={{ color: "#FEFF01", fontWeight: "bold" }}
-        >
-          Link
-        </a>
-      </p>
-
-      <i
-        style={{
-          textAlign: "center",
-          color: "#FEFF01",
-          fontSize: 25,
-          marginTop: 25
-        }}
-        class="fas fa-code"
-      ></i>
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        <TwitterTweetEmbed
+          options={{ width: 300 }}
+          tweetId={"1173662545464451075"}
+        />
+      </div>
 
       <p style={{ textAlign: "center", marginTop: 25 }}>
         <a
@@ -203,36 +228,7 @@ export default function CurrentProjects() {
           flexWrap: "wrap",
           justifyContent: "center"
         }}
-      >
-        <div
-          style={{
-            textAlign: "center",
-            color: "white",
-            fontWeight: "bold",
-            fontSize: 23
-          }}
-        >
-          <p>React Native Mobile App</p>
-          <TwitterTweetEmbed
-            options={{ width: 320 }}
-            tweetId={"1173662545464451075"}
-          />
-        </div>
-        <div
-          style={{
-            textAlign: "center",
-            color: "white",
-            fontWeight: "bold",
-            fontSize: 23
-          }}
-        >
-          <p>Java scraper with React/Redux</p>
-          <TwitterTweetEmbed
-            options={{ width: 320 }}
-            tweetId={"1198478865901015041"}
-          />
-        </div>
-      </div>
+      ></div>
       <span
         style={{
           textAlign: "center",
