@@ -45,9 +45,14 @@ export default function CurrentProjects() {
           Link
         </a>
       </p>
-      <div style={{ display: "flex", justifyContent: "center" }}>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center"
+        }}
+      >
         <TwitterTweetEmbed
-          options={{ width: 320 }}
+          options={{ width: 300 }}
           tweetId={"1198478865901015041"}
         />
       </div>
