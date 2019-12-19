@@ -51,10 +51,12 @@ export default function CurrentProjects() {
           justifyContent: "center"
         }}
       >
-        <TwitterTweetEmbed
-          options={{ width: 300 }}
-          tweetId={"1198478865901015041"}
-        />
+        <div style={{ minWidth: 290, maxWidth: 700 }}>
+          <TwitterTweetEmbed
+            options={{ width: 300 }}
+            tweetId={"1198478865901015041"}
+          />
+        </div>
       </div>
       <i
         style={{
@@ -86,10 +88,13 @@ export default function CurrentProjects() {
       </p>
 
       <div style={{ display: "flex", justifyContent: "center" }}>
-        <TwitterTweetEmbed
-          options={{ width: 300 }}
-          tweetId={"1207152863434231808"}
-        />
+        <div style={{ minWidth: 290, maxWidth: 700 }}>
+          {" "}
+          <TwitterTweetEmbed
+            options={{ width: 300 }}
+            tweetId={"1207152863434231808"}
+          />
+        </div>
       </div>
 
       <p
@@ -178,10 +183,13 @@ export default function CurrentProjects() {
       </p>
 
       <div style={{ display: "flex", justifyContent: "center" }}>
-        <TwitterTweetEmbed
-          options={{ width: 300 }}
-          tweetId={"1173662545464451075"}
-        />
+        <div style={{ minWidth: 290, maxWidth: 700 }}>
+          {" "}
+          <TwitterTweetEmbed
+            options={{ width: 300 }}
+            tweetId={"1173662545464451075"}
+          />
+        </div>
       </div>
 
       <p style={{ textAlign: "center", marginTop: 25 }}>
