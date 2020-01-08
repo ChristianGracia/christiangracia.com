@@ -3,6 +3,8 @@ import Fade from "react-reveal/Fade";
 import LightSpeed from "react-reveal/LightSpeed";
 import Skills from "../cards/Skills";
 import Education from "../cards/Education";
+import "./skills-and-edu.styles.scss"
+import Slide from 'react-reveal/Slide';
 
 export default class SkillsAndEdu extends Component {
   constructor(props) {
@@ -41,7 +43,7 @@ export default class SkillsAndEdu extends Component {
                     textAlign: "center"
                   }}
                 >
-                  <p style={{ color: "white", fontWeight: "bold" }}>
+                  <p className="skillsText">
                     <span style={{ color: "yellow" }}>Languages:</span>{" "}
                     JavaScript, C#, Java, Python, C, PHP, HTML/CSS
                   </p>
@@ -52,33 +54,34 @@ export default class SkillsAndEdu extends Component {
                     }}
                   >
                     <span style={{ color: "yellow" }}>Frameworks:</span> React
-                    Native, VueJS, Spring Boot
+                    Native, VueJS, Angular, Django, Flask
                   </p>
-                  <p style={{ color: "white", fontWeight: "bold" }}>
+                  <p className="skillsText">
                     <span style={{ color: "yellow" }}>Libraries:</span> React,
                     Redux, Bootstrap, Express.js, NodeJs
                   </p>
-                  <span style={{ fontWeight: "bold", padding: 30 }}></span>
-                  <div style={{ textAlign: "center" }}>
-                    <p style={{ color: "white", fontWeight: "bold" }}>
-                      MongoDB, SQL, MySql, MERN Stack apps, REST API, GraphQL,
-                      NodeJS, Django, Bootstrap
-                    </p>
-                    <p style={{ color: "white", fontWeight: "bold" }}>
-                      Agile Development Methodogy, Linux/Ubuntu, Server hosting,
-                      Git, Sass, React Hooks
-                    </p>
-                    <p style={{ color: "white", fontWeight: "bold" }}>
-                      Object Oriented Programming, Bash scripting, Docker, .NET,
-                      ASP.NET web apps, Maven, Jenkins API
-                    </p>
-                    <p style={{ color: "white", fontWeight: "bold" }}>
-                      Open-Closed principle, Service-oriented architecture, and
-                      SOLID design
-                    </p>
-                  </div>
+
+                  <p className="skillsText">
+                    <span style={{ color: "yellow" }}>Database:</span> SQL, NoSQL, MongoDB, MySQL, SQL Server
+                  </p>
+
+                  <p className="skillsText">
+                    <span style={{ color: "yellow" }}>API:</span> RESTful, GraphQL, AWS Amplify Serverless
+                  </p>
                 </div>
               </LightSpeed>
+
+
+              <Slide right cascade>
+
+                <div className="container"><p className="skillHeader">Technologies</p><span className="skillsText">NET, .NET Core, ASP.NET MVC, Maven, Sprint Boot, Docker, Git, Eclipse, Visual Studio Code, Linux</span></div>
+
+                <div className="container"><p className="skillHeader">Skills</p><span className="skillsText"> Unit testing, MERN stack, API design, OOP, TDD, SOLID, Design Patterns, UI/UX, Data Structures, Algorithms, Agile, Scrum</span></div>
+
+                <span style={{ padding: 30 }}></span>
+              </Slide>
+
+
               <LightSpeed left>
                 <div
                   style={{

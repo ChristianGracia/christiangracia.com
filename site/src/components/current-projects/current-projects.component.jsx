@@ -9,7 +9,7 @@ export default function CurrentProjects() {
     <div
       style={{ flex: 1, alignItems: "center", textAlign: "center", padding: 5 }}
     >
-      <p class="pageHeader">Recent Projects</p>
+      <p className="pageHeader">Recent Projects</p>
 
       <ProjectBox
         codeLink={"https://github.com/ChristianGracia/Java-Financial-Web-Scraper"}
@@ -18,7 +18,7 @@ export default function CurrentProjects() {
         tweet={"1198478865901015041"}
         siteLink={""} />
 
-      <i class="fas fa-code iconStyle"></i>
+      <i className="fas fa-code iconStyle"></i>
 
       <ProjectBox
         codeLink={"https://github.com/ChristianGracia/onabeat.com"}
@@ -27,7 +27,7 @@ export default function CurrentProjects() {
         tweet={"1207152863434231808"}
         siteLink={"http://onabeat.com"} />
 
-      <i class="fas fa-code iconStyle"></i>
+      <i className="fas fa-code iconStyle"></i>
 
       <ProjectBox
         codeLink={"https://github.com/ChristianGracia/Dental-iOSApp-React-Native"}
@@ -39,7 +39,7 @@ export default function CurrentProjects() {
       <p style={{ marginTop: 30, marginBottom: 30, color: "white", fontWeight: "bold", fontSize: 20 }}>Pictures of App</p>
 
       <div
-        className=""
+        classNameName=""
         style={{
           width: "150px",
           heigth: "150px",
@@ -59,7 +59,7 @@ export default function CurrentProjects() {
         tweet={"1173662545464451075"}
         siteLink={"https://cuffy-inc.herokuapp.com"} />
 
-      <i class="fas fa-code iconStyle"></i>
+      <i className="fas fa-code iconStyle"></i>
       <div style={{ padding: 40 }}></div>
       <div
         style={{

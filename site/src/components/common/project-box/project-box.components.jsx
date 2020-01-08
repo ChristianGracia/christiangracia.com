@@ -6,15 +6,15 @@ import { Button } from "react-bootstrap";
 const ProjectBox = ({ description, title, codeLink, tweet, siteLink }) => {
     return (<div style={{ display: "flex", justifyContent: "center", flexDirection: "column", textAlign: "center" }}>
 
-        <p class="title">
+        <p className="title">
             <a
-                class="linkStyle"
+                className="linkStyle"
                 href={siteLink}
             >
                 <span>{title}</span>
             </a>
         </p>
-        <p class="description" style={{ maxWidth: 900 }}>
+        <p className="description" style={{ maxWidth: 900 }}>
             {description}
         </p>
         <div style={{ marginTop: 30, marginBottom: 30 }}>

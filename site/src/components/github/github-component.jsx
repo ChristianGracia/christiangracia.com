@@ -16,18 +16,18 @@ class Github extends Component {
     };
   }
 
-  // componentDidMount() {
-  //   const { count, sort, clientId, clientSecret } = this.state;
-  //   const url = `https://api.github.com/users/ChristianGracia/repos?per_page=${count}&sort=${sort}&client_id=${clientId}&client_secret=${clientSecret}`;
-  //   fetch(url, { accept: "application/vnd.github.v3+json" })
-  //     .then(res => res.json())
-  //     .then(data => {
-  //       if (this.refs.myRef) {
-  //         this.setState({ repos: data });
-  //       }
-  //     })
-  //     .catch(err => console.log(err));
-  // }
+  componentDidMount() {
+    const { count, sort, clientId, clientSecret } = this.state;
+    const url = `https://api.github.com/users/ChristianGracia/repos?per_page=${count}&sort=${sort}&client_id=${clientId}&client_secret=${clientSecret}`;
+    fetch(url, { accept: "application/vnd.github.v3+json" })
+      .then(res => res.json())
+      .then(data => {
+        if (this.refs.myRef) {
+          this.setState({ repos: data });
+        }
+      })
+      .catch(err => console.log(err));
+  }
   render() {
     const { repos } = this.state;
 
