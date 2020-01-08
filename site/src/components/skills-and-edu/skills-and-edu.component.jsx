@@ -23,7 +23,7 @@ export default class SkillsAndEdu extends Component {
 
   render() {
     return (
-      <Fragment>
+      <div>
         <div style={{ padding: 20 }}></div>
         <div className="container">
           <div className="">
@@ -139,10 +139,10 @@ export default class SkillsAndEdu extends Component {
                     <i style={{ fontSize: 200 }} class="far fa-lightbulb"></i>
                   </span>
                 ) : (
-                  <span style={{ color: "grey" }}>
-                    <i style={{ fontSize: 200 }} class="far fa-lightbulb"></i>
-                  </span>
-                )}
+                    <span style={{ color: "grey" }}>
+                      <i style={{ fontSize: 200 }} class="far fa-lightbulb"></i>
+                    </span>
+                  )}
               </div>{" "}
               <div style={{ paddingBottom: 30 }}></div>
               <Fade right>
@@ -152,7 +152,7 @@ export default class SkillsAndEdu extends Component {
           </div>
         </div>
         <div style={{ padding: 50 }}></div>
-      </Fragment>
+      </div>
     );
   }
 }

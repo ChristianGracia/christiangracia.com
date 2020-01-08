@@ -1,17 +1,23 @@
 import React, { Component } from "react";
 import Particle from "react-particles-js";
 
-export default class SmallParticle extends Component {
+export default class ParticleSmall extends Component {
   render() {
     return (
       <div>
         <Particle
           params={{
             particles: {
+              number: {
+                value: this.props.number
+              },
+              size: {
+                value: 3
+              },
               line_linked: {
                 shadow: {
                   enable: true,
-                  color: "#3CA9D1",
+                  color: this.props.color,
                   blur: 5
                 }
               }
@@ -26,7 +32,7 @@ export default class SmallParticle extends Component {
             }
           }}
           style={{
-            background: `#3993EC`
+            background: "transparent"
           }}
         />
       </div>

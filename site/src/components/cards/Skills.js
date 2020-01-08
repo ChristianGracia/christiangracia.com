@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Fade from "react-reveal/Fade";
+import SmallParticle from "../particles/SmallParticle"
 
 export default class Skills extends Component {
   render() {
@@ -21,56 +22,15 @@ export default class Skills extends Component {
             <div style={{ color: "white", margin: "auto", fontSize: 25 }}>
               <p>Web Design</p>
               <p>REST API Design</p>
-              <p style={{}}>Software Design</p>
-              <p>Data Architecture</p>
-              <p>Web Scraping</p>
+              <p>Software Design</p>
+              <p>iOS/Android Mobile Apps</p>
             </div>
           </Fade>
+          <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+            <div style={{ height: 80, width: 200 }}><SmallParticle number={10} /></div></div>
         </div>
+        <div style={{paddingBottom: 30}}></div>
 
-        <div
-          style={{ textAlign: "center", fontWeight: "bold", color: "white" }}
-        >
-          <h1
-            style={{
-              fontSize: 30,
-              justifyContent: "center",
-              textAlign: "center",
-              alignItems: "center",
-              fontWeight: "bold"
-            }}
-          >
-            <span style={{}}>
-              {" "}
-              Android
-              <span
-                style={{
-                  color: "#00FF00",
-                  marginLeft: 6,
-                  paddingRight: 2,
-                  fontSize: 40
-                }}
-              >
-                <i class="fab fa-android"></i>
-              </span>
-              {"  "}/ iOS {"  "}
-              <span
-                style={{
-                  color: "white",
-                  paddingLeft: 2,
-                  paddingRight: 2,
-                  fontSize: 40
-                }}
-              >
-                {"  "}
-                <i class="fab fa-apple"></i>
-              </span>
-              {"  "}
-              App Development
-            </span>
-          </h1>
-          <div style={{ paddingBottom: 20 }}></div>
-        </div>
       </div>
     );
   }
