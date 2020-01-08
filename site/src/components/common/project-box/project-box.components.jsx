@@ -1,8 +1,10 @@
 import React from "react";
 import { TwitterTweetEmbed, TwitterTimelineEmbed } from "react-twitter-embed";
+import "./project-box.styles.scss"
+import { Button } from "react-bootstrap";
 
 const ProjectBox = ({ description, title, codeLink, tweet, siteLink }) => {
-    return (<div>
+    return (<div style={{ display: "flex", justifyContent: "center", flexDirection: "column", textAlign: "center" }}>
 
         <p class="title">
             <a
@@ -12,16 +14,13 @@ const ProjectBox = ({ description, title, codeLink, tweet, siteLink }) => {
                 <span>{title}</span>
             </a>
         </p>
-        <p class="description">
+        <p class="description" style={{ maxWidth: 900 }}>
             {description}
         </p>
-        <p class="title">
-            code:{" "}
-            <a
-                class="linkStyle"
-                href={codeLink}
-            >Link </a>
-        </p>
+        <div style={{ marginTop: 30, marginBottom: 30 }}>
+            <Button onClick={() => window.location.href = codeLink} variant="danger">Link to Code</Button>
+        </div>
+
         <div
             style={{
                 display: "flex",

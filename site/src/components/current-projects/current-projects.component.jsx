@@ -22,7 +22,7 @@ export default function CurrentProjects() {
 
       <ProjectBox
         codeLink={"https://github.com/ChristianGracia/onabeat.com"}
-        title={"onabeat.com     -     MERN stack site"}
+        title={"onabeat.com"}
         description={"MERN stack site I wrote and host for my friends in On a Beat. Hosted on Heroku on a single server. React/Redux front-end with a Node Js back-end and a MongoDB database. Users can make accounts, sign in, add/delete videos and songs to front page, and more with a protected dashboard I built."}
         tweet={"1207152863434231808"}
         siteLink={"http://onabeat.com"} />
@@ -36,13 +36,16 @@ export default function CurrentProjects() {
         tweet={"1173662545464451075"}
         siteLink={"http://adcofnorton.com"} />
 
+      <p style={{ marginTop: 30, marginBottom: 30, color: "white", fontWeight: "bold", fontSize: 20 }}>Pictures of App</p>
+
       <div
         className=""
         style={{
           width: "150px",
           heigth: "150px",
           minWidth: 150,
-          margin: "0 auto"
+          margin: "0 auto",
+          marginBottom: 60
         }}
       >
         <AppPicSlides />
