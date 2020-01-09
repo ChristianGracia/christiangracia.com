@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import Work from "../views/Work";
-import About from "../views/About";
+import Work from "../pages/Work";
+import About from "../pages/About";
 
 export default class PageCombiner extends Component {
   componentDidMount() {
