@@ -1,6 +1,6 @@
 import React from "react";
 import { TwitterTweetEmbed, TwitterTimelineEmbed } from "react-twitter-embed";
-import "./project-box.styles.scss"
+import "./project-box.styles.css"
 import { Button } from "react-bootstrap";
 
 const ProjectBox = ({ description, title, codeLink, tweet, siteLink }) => {

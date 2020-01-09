@@ -3,7 +3,7 @@ import Fade from "react-reveal/Fade";
 import LightSpeed from "react-reveal/LightSpeed";
 import Skills from "../cards/Skills";
 import Education from "../cards/Education";
-import "./skills-and-edu.styles.scss"
+import "./skills-and-edu.styles.css"
 import Slide from 'react-reveal/Slide';
 
 export default class SkillsAndEdu extends Component {

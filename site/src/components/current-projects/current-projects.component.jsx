@@ -1,7 +1,7 @@
 import React from "react";
 import AppPicSlides from "../app-pic-caro/app-pic-carousel.component";
 import { TwitterTweetEmbed, TwitterTimelineEmbed } from "react-twitter-embed";
-import "./current-projects.styles.scss";
+import "./current-projects.styles.css";
 import ProjectBox from "../common/project-box/project-box.components"
 
 export default function CurrentProjects() {
