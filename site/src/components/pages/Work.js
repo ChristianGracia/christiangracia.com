@@ -3,17 +3,15 @@ import Github from "../github/github-component";
 import Fade from "react-reveal/Fade";
 import { Button } from "react-bootstrap";
 import CurrentProjects from "../current-projects/current-projects.component";
+import TweetsComponent from "../tweets-component/tweets-component";
 
 export default class Work extends Component {
   state = {
     showGithub: false,
-    showRunner: true
+    showTwitter: false
   };
 
   componentDidMount() {
-    setTimeout(() => {
-      this.setState({ showGithub: true, showRunner: false });
-    }, 2000);
   }
   render() {
     return (
@@ -26,15 +24,13 @@ export default class Work extends Component {
             justifyContent: "center"
           }}
         >
-          <Fade top>
-            <Fade left opposite when={this.state.showRunner}>
-              <p style={{ fontSize: 70, textAlign: "center", color: "yellow" }}>
-                <i className="fas fa-running"></i>
-              </p>
-            </Fade>
+          <Fade left >
+            <p style={{ fontSize: 70, textAlign: "center", color: "yellow" }}>
+              <i className="fas fa-running"></i>
+            </p>
           </Fade>
 
-          <Fade left>
+          <Fade right>
             <div>
               <p
                 style={{
@@ -88,6 +84,15 @@ export default class Work extends Component {
           <Github />
         </div>
         <CurrentProjects />
+        <div style={{ display: "flex", justifyContent: "center", flexDirection: "column", marigin: "0 auto" }}>
+          <p style={{ fontSize: 30, color: "white", textAlign: "center" }}>Twitter Feed</p>
+
+          <Button onClick={() => this.setState({ showTwitter: !this.state.showTwitter })}>{this.state.showTwitter ? <span>Hide Twitter </span> : <span>Show Twitter</span>}</Button>
+
+          <div style={{ height: 1000 }}>
+            <TweetsComponent showTwitter={this.state.showTwitter} />
+          </div>
+        </div>
       </div>
     );
   }

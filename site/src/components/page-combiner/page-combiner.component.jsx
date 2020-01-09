@@ -14,7 +14,7 @@ export default class PageCombiner extends Component {
         <div style={{ padding: 20 }}></div>
 
         <About />
-        <Suspense fallback={<div>Lazy Loading :)</div>}>
+        <Suspense fallback={<div><p>Lazy Loading....</p></div>}>
           <Work />
         </Suspense>
       </div>

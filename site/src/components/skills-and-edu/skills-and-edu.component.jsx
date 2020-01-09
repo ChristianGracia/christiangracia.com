@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from "react";
+import React, { Component } from "react";
 import Fade from "react-reveal/Fade";
 import LightSpeed from "react-reveal/LightSpeed";
 import Skills from "../cards/Skills";

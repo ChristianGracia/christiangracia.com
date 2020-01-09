@@ -1,8 +1,9 @@
 import React from "react";
 import AppPicSlides from "../app-pic-caro/app-pic-carousel.component";
-import { TwitterTweetEmbed, TwitterTimelineEmbed } from "react-twitter-embed";
+
 import "./current-projects.styles.css";
-import ProjectBox from "../common/project-box/project-box.components"
+import ProjectBox from "../common/project-box/project-box.component";
+
 
 export default function CurrentProjects() {
   return (
@@ -77,17 +78,8 @@ export default function CurrentProjects() {
           fontSize: 40
         }}
       >
-        Twitter Feed
       </span>
-      <TwitterTimelineEmbed
-        sourceType="profile"
-        screenName="CG_CODING"
-        options={{ height: 100, width: 330 }}
-        autoHeight="true"
-      // onComplete={action}
-      />
 
-      <div style={{ paddingBottom: 300 }}> </div>
     </div >
   );
 }

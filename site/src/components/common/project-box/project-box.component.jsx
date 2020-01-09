@@ -1,5 +1,5 @@
 import React from "react";
-import { TwitterTweetEmbed, TwitterTimelineEmbed } from "react-twitter-embed";
+import { TwitterTweetEmbed } from "react-twitter-embed";
 import "./project-box.styles.css"
 import { Button } from "react-bootstrap";
 
