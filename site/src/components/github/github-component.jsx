@@ -23,16 +23,6 @@ class Github extends Component {
     const github = await fetch(url, { accept: "application/vnd.github.v3+json" });
     const repos = await github.json();
     this.setState({ repos: repos });
-
-    // .then(res => res.json())
-    // .then(data => {
-    //   if (this.refs.myRef) {
-    //     this.setState({ repos: data });
-    //   }
-    // })
-    // .catch(err => console.log(err));
-
-
   }
   render() {
     const { repos } = this.state;
