@@ -3,7 +3,7 @@ import { TwitterTimelineEmbed } from "react-twitter-embed";
 
 const TweetsComponent = ({ showTwitter }) => {
     return (
-        <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
+        <div style={{ display: "flex", alignItems: "center", justifyContent: "center", height: 1000, width: "90vw", margin: "0 auto", marginTop: 60 }}>
 
             {showTwitter ? <TwitterTimelineEmbed
                 sourceType="profile"

@@ -84,12 +84,12 @@ export default class Work extends Component {
           <Github />
         </div>
         <CurrentProjects />
-        <div style={{ display: "flex", justifyContent: "center", flexDirection: "column", marigin: "0 auto" }}>
+        <div style={{ display: "flex", justifyContent: "center", flexDirection: "column", margin: "0 auto" }}>
           <p style={{ fontSize: 30, color: "white", textAlign: "center" }}>Twitter Feed</p>
 
-          <Button onClick={() => this.setState({ showTwitter: !this.state.showTwitter })}>{this.state.showTwitter ? <span>Hide Twitter </span> : <span>Show Twitter</span>}</Button>
+          <Button style={{ maxWidth: 320, margin: "0 auto" }} onClick={() => this.setState({ showTwitter: !this.state.showTwitter })}>{this.state.showTwitter ? <span>Hide Twitter </span> : <span>Show Twitter</span>}</Button>
 
-          <div style={{ height: 1000 }}>
+          <div >
             <TweetsComponent showTwitter={this.state.showTwitter} />
           </div>
         </div>
