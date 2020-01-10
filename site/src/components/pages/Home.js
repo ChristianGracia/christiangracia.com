@@ -5,6 +5,7 @@ import PageCombiner from "../page-combiner/page-combiner.component";
 import { Button } from "react-bootstrap";
 import ParticleBackground from "../particles/ParticleBackground";
 
+
 export default class Home extends Component {
   state = { isShow: true };
 
@@ -93,10 +94,10 @@ export default class Home extends Component {
             <div style={{ marginTop: 100, paddingBottom: 20 }}></div>
           </div>
         ) : (
-          <div style={{ margin: "auto" }}>
-            <PageCombiner />
-          </div>
-        )}{" "}
+            <div style={{ margin: "auto" }}>
+              <PageCombiner />
+            </div>
+          )}{" "}
       </div>
     );
   }

@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import SocialMediaLinks from "../common/social-links/social-links.component";
 import "./headline.styles.css";
+import LazyLoad from 'react-lazyload';
+import Spinner from "../common/spinner/spinner.component";
 
 export default class Jumbotron extends Component {
   state = {
@@ -96,10 +98,12 @@ export default class Jumbotron extends Component {
                       fontWeight: "bold"
                     }}
                   ></div>
-                  <div style={{ padding: 5 }}>
-                    {" "}
-                    <SocialMediaLinks />
-                  </div>
+                  <LazyLoad height={200} placeholder={<Spinner />} once>
+                    <div style={{ padding: 5 }}>
+
+                      <SocialMediaLinks />
+                    </div>
+                  </LazyLoad>
                 </div>
               </div>
             </div>
