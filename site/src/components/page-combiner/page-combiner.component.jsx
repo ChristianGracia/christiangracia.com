@@ -16,7 +16,7 @@ export default class PageCombiner extends Component {
         <div style={{ padding: 20 }}></div>
         <LazyLoad height={200} once> <About /></LazyLoad>
 
-        <LazyLoad height={200} placeholder={<Spinner />} offset={100}>    <Work /></LazyLoad>
+        <LazyLoad height={200} placeholder={<Spinner />} offset={100} once>    <Work /></LazyLoad>
 
       </div>
     );
