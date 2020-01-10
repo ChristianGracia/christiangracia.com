@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import Headline from "../headline/headline-component";
-import Fade from "react-reveal/Fade";
 import PageCombiner from "../page-combiner/page-combiner.component";
-import { Button } from "react-bootstrap";
 import ParticleBackground from "../particles/ParticleBackground";
+import Fade from "react-reveal/Fade"
+import { Button } from "react-bootstrap"
 
 export default class Home extends Component {
   state = { isShow: true };
@@ -37,13 +37,14 @@ export default class Home extends Component {
 
             <ParticleBackground style={{}} />
             <Headline />
+
             <div
               style={{
                 flex: 1,
                 margin: 0
               }}
             >
-              <Fade top>
+              <Fade left>
                 <p
                   style={{
                     color: "#FFFF00",
@@ -67,7 +68,7 @@ export default class Home extends Component {
                   flex: 1
                 }}
               >
-                <Fade top>
+                <Fade right>
                   <Button
                     onClick={() => this.setState({ isShow: false })}
                     style={{
@@ -91,6 +92,7 @@ export default class Home extends Component {
                 </Fade>
               </div>
             </div>
+
             <div style={{ marginTop: 100, paddingBottom: 20 }}></div>
           </div>
         ) : (
