@@ -5,7 +5,6 @@ import PageCombiner from "../page-combiner/page-combiner.component";
 import { Button } from "react-bootstrap";
 import ParticleBackground from "../particles/ParticleBackground";
 
-
 export default class Home extends Component {
   state = { isShow: true };
 

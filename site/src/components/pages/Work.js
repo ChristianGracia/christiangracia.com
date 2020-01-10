@@ -42,9 +42,9 @@ export default class Work extends Component {
                 }}
               >
                 I like to build websites, applications, and mobile apps. I built
-                this site on a virtual ubuntu server from scratch and am hosting
-                it myself. Currently mostly working with Java, React, React
-                Native, and C# and dabbling in freelance web design.
+                this site on a virtual ubuntu linux server from scratch and am hosting
+                it myself. Currently mostly working with Java, React, and C#.
+                Also dabbling in freelance web design ex. <a style={{ color: "rgb(254,254,0)" }} href="http://onabeat.com">onabeat.com</a>
               </p>
             </div>
           </Fade>
