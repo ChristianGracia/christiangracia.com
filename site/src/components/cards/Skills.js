@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import Fade from "react-reveal/Fade";
 import SmallParticle from "../particles/SmallParticle"
+import LazyLoad from 'react-lazyload';
+import Spinner from "../common/spinner/spinner.component"
+
 
 export default class Skills extends Component {
   render() {
@@ -26,12 +29,13 @@ export default class Skills extends Component {
               <p>iOS/Android Mobile Apps</p>
             </div>
           </Fade>
-          <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-            <div style={{ height: 80, width: 200 }}><SmallParticle number={10} /></div></div>
-        </div>
-        <div style={{paddingBottom: 30}}></div>
 
-      </div>
+          <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+            <div style={{ height: 80, width: 200 }}> <LazyLoad height={200} placeholder={<Spinner />} once>  <SmallParticle number={10} /></LazyLoad></div></div>
+        </div>
+        <div style={{ paddingBottom: 30 }}></div>
+
+      </div >
     );
   }
 }
