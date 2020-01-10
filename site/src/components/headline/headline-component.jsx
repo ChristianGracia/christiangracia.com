@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import SocialMediaLinks from "../common/social-links/social-links.component";
+import { Wave } from 'react-animated-text'
 import "./headline.styles.css";
 
 export default class Jumbotron extends Component {
@@ -31,16 +32,16 @@ export default class Jumbotron extends Component {
                       alignContent: "center"
                     }}
                   >
-                    <h1
+                    <div
                       style={{
                         fontWeight: "bold",
                         textAlign: "center",
-
+                        fontSize: 30,
                         color: "#FEFF01"
                       }}
                     >
-                      Christian Gracia
-                    </h1>
+                      <Wave text="Christian Gracia" effect="stretch" effectChange={1.2} />
+                    </div>
                   </div>
                   <p
                     className="lead"

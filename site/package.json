@@ -6,6 +6,7 @@
   "dependencies": {
     "express": "^4.17.1",
     "react": "^16.9.0",
+    "react-animated-text": "^0.1.4",
     "react-bootstrap": "^1.0.0-beta.12",
     "react-dom": "^16.9.0",
     "react-lazyload": "^2.6.5",
