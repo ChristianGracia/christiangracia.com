@@ -90,12 +90,12 @@ export default class Jumbotron extends Component {
                     </span>
                   </p>
 
-                  <LazyLoad height={200} placeholder={<Spinner />} once>
-                    <div style={{ padding: 5 }} height={200}>
+                  <div style={{ padding: 5 }}>
 
+                    <LazyLoad height={200} placeholder={<Spinner />} once>
                       <SocialMediaLinks />
-                    </div>
-                  </LazyLoad>
+                    </LazyLoad>
+                  </div>
                 </div>
               </div>
             </div>

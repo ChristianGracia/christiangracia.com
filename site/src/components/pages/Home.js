@@ -31,7 +31,6 @@ export default class Home extends Component {
           justifyContent: "space-between"
         }}
       >
-        {" "}
         {this.state.isShow ? (
           <div style={{ flex: 1, paddingTop: 10 }}>
 
@@ -45,20 +44,22 @@ export default class Home extends Component {
               }}
             >
               <Fade left>
-                <p
-                  style={{
-                    color: "#FFFF00",
-                    textAlign: "center",
-                    fontSize: 20,
-                    fontWeight: "bold",
-                    flex: 1
-                  }}
-                >
-                  Site written in ReactJs{" "}
-                  <span style={{ color: "#60DAFB" }}>
-                    <i className="fab fa-react fa-spin"></i>
-                  </span>
-                </p>
+                <div>
+                  <p
+                    style={{
+                      color: "#FFFF00",
+                      textAlign: "center",
+                      fontSize: 20,
+                      fontWeight: "bold",
+                      flex: 1
+                    }}
+                  >
+                    Site written in ReactJs{" "}
+                    <span style={{ color: "#60DAFB" }}>
+                      <i className="fab fa-react fa-spin"></i>
+                    </span>
+                  </p>
+                </div>
               </Fade>
 
               <div
