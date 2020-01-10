@@ -4,6 +4,8 @@ import Fade from "react-reveal/Fade";
 import { Button } from "react-bootstrap";
 import CurrentProjects from "../current-projects/current-projects.component";
 import TweetsComponent from "../tweets-component/tweets-component";
+import LazyLoad from 'react-lazyload';
+import Spinner from "../common/spinner/spinner.component"
 
 export default class Work extends Component {
   state = {
@@ -83,7 +85,9 @@ export default class Work extends Component {
         <div style={{}}>
           <Github />
         </div>
-        <CurrentProjects />
+        <LazyLoad height={200} placeholder={<Spinner />} offset={100} once>
+          <CurrentProjects />
+        </LazyLoad>
         <div style={{ display: "flex", justifyContent: "center", flexDirection: "column", margin: "0 auto" }}>
           <p style={{ fontSize: 30, color: "white", textAlign: "center" }}>Twitter Feed</p>
 
