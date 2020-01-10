@@ -76,9 +76,11 @@ export default class Jumbotron extends Component {
                     }}
                   >
                     Email{" "}
-                    <span style={{ color: "#FEFF01" }}>
-                      <i className="fas fa-envelope"></i>
-                    </span>{" "}
+                    <LazyLoad height={200} placeholder={<Spinner />} once>
+                      <span style={{ color: "#FEFF01" }}>
+                        <i className="fas fa-envelope"></i>
+                      </span>{" "}
+                    </LazyLoad>
                     <span
                       className="email-home"
                       style={{

@@ -34,6 +34,7 @@ export default class Home extends Component {
         {" "}
         {this.state.isShow ? (
           <div style={{ flex: 1, paddingTop: 10 }}>
+
             <ParticleBackground style={{}} />
             <Headline />
             <div
