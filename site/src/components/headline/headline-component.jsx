@@ -92,16 +92,8 @@ export default class Jumbotron extends Component {
                     </span>
                   </p>
 
-                  <div
-                    style={{
-                      alignItems: "center",
-                      justifyContent: "center",
-                      textAlign: "center",
-                      fontWeight: "bold"
-                    }}
-                  ></div>
                   <LazyLoad height={200} placeholder={<Spinner />} once>
-                    <div style={{ padding: 5 }}>
+                    <div style={{ padding: 5 }} height={200}>
 
                       <SocialMediaLinks />
                     </div>
