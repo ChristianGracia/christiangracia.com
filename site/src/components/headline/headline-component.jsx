@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import SocialMediaLinks from "../common/social-links/social-links.component";
 import "./headline.styles.css";
-import LazyLoad from 'react-lazyload';
-import Spinner from "../common/spinner/spinner.component";
 
 export default class Jumbotron extends Component {
   state = {
@@ -91,10 +89,7 @@ export default class Jumbotron extends Component {
                   </p>
 
                   <div style={{ padding: 5 }}>
-
-                    <LazyLoad height={200} placeholder={<Spinner />} once>
-                      <SocialMediaLinks />
-                    </LazyLoad>
+                    <SocialMediaLinks />
                   </div>
                 </div>
               </div>
