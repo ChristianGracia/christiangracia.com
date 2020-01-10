@@ -92,8 +92,6 @@ export default class Home extends Component {
                 </Fade>
               </div>
             </div>
-
-            <div style={{ marginTop: 100, paddingBottom: 20 }}></div>
           </div>
         ) : (
             <div style={{ margin: "auto" }}>
