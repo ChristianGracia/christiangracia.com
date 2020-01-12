@@ -57,7 +57,7 @@ export default function CurrentProjects() {
         codeLink={"https://github.com/ChristianGracia/Cuffy-Professional-Store-Site"}
         title={"Enterprise Ecommerce Store"}
         description={"Luxury Clothes website (takes a min or two for server to wake up) In progess, enterprise level site with React, Redux, Sass, GraphQl, Firebase and more. Working on this more later when I have time."}
-        tweet={"1173662545464451075"}
+        tweet={""}
         siteLink={"https://cuffy-inc.herokuapp.com"} />
 
       <i className="fas fa-code iconStyle"></i>

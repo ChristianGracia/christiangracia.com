@@ -28,10 +28,11 @@ const ProjectBox = ({ description, title, codeLink, tweet, siteLink }) => {
             }}
         >
             <div style={{ minWidth: 290, maxWidth: 700 }}>
-                <TwitterTweetEmbed
-                    options={{ width: 300 }}
-                    tweetId={tweet}
-                />
+                {tweet === "" ? null :
+                    <TwitterTweetEmbed
+                        options={{ width: 300 }}
+                        tweetId={tweet}
+                    />}
             </div>
         </div>
     </div>)
