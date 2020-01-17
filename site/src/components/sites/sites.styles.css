@@ -1,0 +1,10 @@
+.sites-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.site-link {
+  padding: 6;
+  color: white;
+}
