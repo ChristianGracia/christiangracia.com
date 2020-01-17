@@ -27,7 +27,7 @@ const Sites = () => {
           </a>
         </span>
         <span className="site-div">
-          <a className="site-link" href="https://www.christiangracia.com">
+          <a className="site-link" href="http://www.christiangracia.com">
             insurance site coming soon(weeks)
           </a>
         </span>
