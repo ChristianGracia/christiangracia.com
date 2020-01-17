@@ -26,13 +26,20 @@ const Sites = () => {
             crane-site.herokuapp.com/
           </a>
         </span>
-        {/* <span className="site-div">
-        <a className="site-link" href="https://www.nflandscaping.com">
-          nflandscaping.com
-        </a>
-      </span> */}
-        <span style={{ fontWeight: "bold", color: "green" }}>
-          All sites are paid
+        <span className="site-div">
+          <a className="site-link" href="https://www.christiangracia.com">
+            insurance site coming soon(weeks)
+          </a>
+        </span>
+        <span
+          style={{
+            fontWeight: "bold",
+            color: "rgb(0,255,0)",
+            fontSize: 23,
+            marginTop: 10
+          }}
+        >
+          All sites are clients
         </span>
       </div>
     </Fade>
