@@ -5,6 +5,21 @@
   text-align: center;
 }
 .site-link {
-  padding: 6;
   color: white;
+  font-size: 20px;
+}
+.site-dive {
+  margin-top: 40px;
+}
+
+.sites-detail {
+  margin: 40px 20px;
+  /* color: white; */
+  font-weight: bold;
+}
+
+.sites-header {
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 30px;
 }
