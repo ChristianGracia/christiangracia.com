@@ -23,20 +23,7 @@ const Sites = () => {
             nflandscaping.com
           </a>
         </span>
-        {/* <span className="sites-detail">
-          This site will be up soon. On a slow load server for now so it takes a
-          min or two to load until we buy host
-        </span>
-        <span className="site-div">
-          <a className="site-link" href="https://crane-site.herokuapp.com/">
-            crane-site.herokuapp.com/
-          </a>
-        </span>
-        <span className="site-div">
-          <a className="site-link" href="http://www.christiangracia.com">
-            insurance site coming soon(weeks)
-          </a>
-        </span> */}
+
         <span
           style={{
             fontWeight: "bold",
