@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import SkillsAndEdu from "../skills-and-edu/skills-and-edu.component";
-import Sites from "../sites/sites.components";
+import SkillsAndEdu from "../../skills-and-edu/skills-and-edu.component";
+import Sites from "../../sites/sites.components";
 
 export default class About extends Component {
   render() {

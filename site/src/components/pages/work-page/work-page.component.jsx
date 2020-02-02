@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-import Github from "../github/github-component";
+import Github from "../../github/github-component";
 import Fade from "react-reveal/Fade";
 import { Button } from "react-bootstrap";
-import CurrentProjects from "../current-projects/current-projects.component";
-import TweetsComponent from "../tweets-component/tweets-component";
-import LazyLoad from 'react-lazyload';
-import Spinner from "../common/spinner/spinner.component"
+import CurrentProjects from "../../current-projects/current-projects.component";
+import TweetsComponent from "../../tweets-component/tweets-component";
+import LazyLoad from "react-lazyload";
+import Spinner from "../../common/spinner/spinner.component";
 
 export default class Work extends Component {
   state = {
@@ -13,8 +13,7 @@ export default class Work extends Component {
     showTwitter: false
   };
 
-  componentDidMount() {
-  }
+  componentDidMount() {}
   render() {
     return (
       <div style={{}}>
@@ -26,7 +25,7 @@ export default class Work extends Component {
             justifyContent: "center"
           }}
         >
-          <Fade left >
+          <Fade left>
             <p style={{ fontSize: 70, textAlign: "center", color: "yellow" }}>
               <i className="fas fa-running"></i>
             </p>
@@ -42,9 +41,15 @@ export default class Work extends Component {
                 }}
               >
                 I like to build websites, applications, and mobile apps. I built
-                this site on a virtual ubuntu linux server from scratch and am hosting
-                it myself. Currently mostly working with Java, React, and C#.
-                Also dabbling in freelance web design ex. <a style={{ color: "rgb(254,254,0)" }} href="http://onabeat.com">onabeat.com</a>
+                this site on a virtual ubuntu linux server from scratch and am
+                hosting it myself. Currently mostly working with Java, React,
+                and C#. Also dabbling in freelance web design ex.{" "}
+                <a
+                  style={{ color: "rgb(254,254,0)" }}
+                  href="http://onabeat.com"
+                >
+                  onabeat.com
+                </a>
               </p>
             </div>
           </Fade>
@@ -88,12 +93,32 @@ export default class Work extends Component {
         <LazyLoad height={200} placeholder={<Spinner />} offset={100} once>
           <CurrentProjects />
         </LazyLoad>
-        <div style={{ display: "flex", justifyContent: "center", flexDirection: "column", margin: "0 auto" }}>
-          <p style={{ fontSize: 30, color: "white", textAlign: "center" }}>Twitter Feed</p>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            flexDirection: "column",
+            margin: "0 auto"
+          }}
+        >
+          <p style={{ fontSize: 30, color: "white", textAlign: "center" }}>
+            Twitter Feed
+          </p>
 
-          <Button style={{ maxWidth: 320, margin: "0 auto" }} onClick={() => this.setState({ showTwitter: !this.state.showTwitter })}>{this.state.showTwitter ? <span>Hide Twitter </span> : <span>Show Twitter</span>}</Button>
+          <Button
+            style={{ maxWidth: 320, margin: "0 auto" }}
+            onClick={() =>
+              this.setState({ showTwitter: !this.state.showTwitter })
+            }
+          >
+            {this.state.showTwitter ? (
+              <span>Hide Twitter </span>
+            ) : (
+              <span>Show Twitter</span>
+            )}
+          </Button>
 
-          <div >
+          <div>
             <TweetsComponent showTwitter={this.state.showTwitter} />
           </div>
         </div>
