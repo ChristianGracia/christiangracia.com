@@ -82,7 +82,7 @@ export default class Home extends Component {
                     variant="dark"
                   >
                     Scroll down or click{" "}
-                    <a style={{ color: "#FEFF01" }}>Here</a>
+                    <span style={{ color: "#FEFF01" }}>Here</span>
                   </Button>
                 </Fade>
               </div>
