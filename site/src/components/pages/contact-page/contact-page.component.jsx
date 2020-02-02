@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import Jump from "react-reveal/Jump";
 import { Card, Button } from "react-bootstrap";
 import "./contact-page.styles.css";
+import LightSpeed from "react-reveal/LightSpeed";
+
 export default class Contact extends Component {
   constructor(props) {
     super(props);
@@ -26,6 +28,11 @@ export default class Contact extends Component {
             style={{ fontSize: 80, color: "white", marginTop: 30 }}
           ></i>
         </div>
+        <LightSpeed left>
+          <div style={{ marginTop: 20 }}>
+            <span className="form-label">Leave me a message!</span>
+          </div>
+        </LightSpeed>
 
         <div className="contact-form-container">
           <Jump>
