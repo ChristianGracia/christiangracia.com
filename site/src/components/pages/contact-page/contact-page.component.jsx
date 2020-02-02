@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Jump from "react-reveal/Jump";
-import { Card } from "react-bootstrap";
+import { Card, Button } from "react-bootstrap";
 import "./contact-page.styles.css";
 export default class Contact extends Component {
   constructor(props) {
@@ -20,6 +20,19 @@ export default class Contact extends Component {
     const { body, email } = this.state;
     return (
       <div className="contact-page-container">
+        <div
+          className="row"
+          style={{
+            alignItems: "center",
+            justifyContent: "center"
+          }}
+        >
+          <i
+            className="fas fa-mail-bulk"
+            style={{ fontSize: 80, color: "white", marginTop: 30 }}
+          ></i>
+        </div>
+
         <div className="contact-form-container">
           <Jump>
             <form action="https://sendpoint.io/id/gWFzbxh9O" method="POST">
@@ -28,20 +41,6 @@ export default class Contact extends Component {
                 style={{
                   alignItems: "center",
                   justifyContent: "center"
-                }}
-              >
-                <i
-                  className="fas fa-mail-bulk"
-                  style={{ fontSize: 80, color: "white" }}
-                ></i>
-              </div>
-
-              <div
-                className="row"
-                style={{
-                  alignItems: "center",
-                  justifyContent: "center",
-                  marginTop: 20
                 }}
               >
                 {this.state.email === "" ? null : (
@@ -111,18 +110,17 @@ export default class Contact extends Component {
                   marginTop: 20
                 }}
               >
-                <input
-                  className=""
+                <Button
                   type="submit"
-                  value="send"
-                  style={{ backgroundColor: "white", borderRadius: 19 }}
                   onClick={e => {
                     if (body === "" || email === "") {
                       e.preventDefault();
                       window.alert("Please fill out form");
                     }
                   }}
-                />
+                >
+                  Send
+                </Button>
               </div>
             </form>
           </Jump>
