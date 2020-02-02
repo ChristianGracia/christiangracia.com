@@ -20,13 +20,7 @@ export default class Contact extends Component {
     const { body, email } = this.state;
     return (
       <div className="contact-page-container">
-        <div
-          className="row"
-          style={{
-            alignItems: "center",
-            justifyContent: "center"
-          }}
-        >
+        <div className="row" style={{}}>
           <i
             className="fas fa-mail-bulk"
             style={{ fontSize: 80, color: "white", marginTop: 30 }}
@@ -36,23 +30,9 @@ export default class Contact extends Component {
         <div className="contact-form-container">
           <Jump>
             <form action="https://sendpoint.io/id/gWFzbxh9O" method="POST">
-              <div
-                className="row"
-                style={{
-                  alignItems: "center",
-                  justifyContent: "center"
-                }}
-              >
+              <div className="row form-row-aligner">
                 {this.state.email === "" ? null : (
-                  <span
-                    style={{
-                      fontWeight: "bold",
-                      color: "#fff",
-                      paddingRight: 5
-                    }}
-                  >
-                    Email:{" "}
-                  </span>
+                  <span className="form-label">Email: </span>
                 )}
                 <input
                   type="email"
@@ -63,35 +43,11 @@ export default class Contact extends Component {
                 />
               </div>
               {this.state.body === "" ? null : (
-                <div
-                  className="row"
-                  style={{
-                    textAlign: "center",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    marginTop: 5
-                  }}
-                >
-                  <span
-                    style={{
-                      textAlign: "center",
-                      fontWeight: "bold",
-                      color: "white",
-                      fontSize: 15
-                    }}
-                  >
-                    Message
-                  </span>
+                <div className="row form-row">
+                  <span className="form-label">Message</span>
                 </div>
               )}
-              <div
-                className="row"
-                style={{
-                  alignItems: "center",
-                  justifyContent: "center",
-                  marginTop: 20
-                }}
-              >
+              <div className="row form-row">
                 <textarea
                   rows="4"
                   cols="30"
@@ -102,15 +58,9 @@ export default class Contact extends Component {
                   onChange={this.onChange}
                 />
               </div>
-              <div
-                className="row"
-                style={{
-                  alignItems: "center",
-                  justifyContent: "center",
-                  marginTop: 20
-                }}
-              >
+              <div className="row form-row">
                 <Button
+                  variant="danger"
                   type="submit"
                   onClick={e => {
                     if (body === "" || email === "") {

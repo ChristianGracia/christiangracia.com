@@ -1,6 +1,6 @@
 .contact-page-container {
   display: flex;
-  flex: 1;
+
   justify-content: center;
   flex-direction: column;
   align-items: center;
@@ -8,6 +8,22 @@
 
 .contact-form-container {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -25px;
+}
+.form-label {
+  font-weight: bold;
+  color: #fff;
+  padding-right: 5px;
+}
+.form-row {
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.form-row-aligner {
   justify-content: center;
   align-items: center;
 }
