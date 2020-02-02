@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import Jump from "react-reveal/Jump";
+import { Card } from "react-bootstrap";
 
 export default class Contact extends Component {
   constructor(props) {
     super(props);
     this.state = {
       body: "",
-      name: "",
       email: ""
     };
     this.onChange = this.onChange.bind(this);
@@ -17,7 +17,7 @@ export default class Contact extends Component {
   }
 
   render() {
-    const { body, name, email } = this.state;
+    const { body, email } = this.state;
     return (
       <div
         style={{

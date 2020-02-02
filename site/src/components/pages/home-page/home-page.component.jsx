@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import Headline from "../headline/headline-component";
-import PageCombiner from "../page-combiner/page-combiner.component";
-import ParticleBackground from "../particles/ParticleBackground";
+import Headline from "../../headline/headline-component";
+import PageCombiner from "../../page-combiner/page-combiner.component";
+import ParticleBackground from "../../particles/ParticleBackground";
 import Fade from "react-reveal/Fade";
 import { Button } from "react-bootstrap";
 
