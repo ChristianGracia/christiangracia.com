@@ -55,33 +55,7 @@ export default class Contact extends Component {
                     style={{ fontSize: 80, color: "white" }}
                   ></i>
                 </div>
-                <div
-                  className="row"
-                  style={{
-                    alignItems: "center",
-                    justifyContent: "center",
-                    marginTop: 30
-                  }}
-                >
-                  {this.state.name === "" ? null : (
-                    <span
-                      style={{
-                        fontWeight: "bold",
-                        color: "#fff",
-                        paddingRight: 5
-                      }}
-                    >
-                      Name:{" "}
-                    </span>
-                  )}
-                  <input
-                    type="text"
-                    name="name"
-                    value={this.state.name}
-                    onChange={this.onChange}
-                    placeholder="Name"
-                  />
-                </div>
+
                 <div
                   className="row"
                   style={{
@@ -163,7 +137,7 @@ export default class Contact extends Component {
                     value="send"
                     style={{ backgroundColor: "white", borderRadius: 19 }}
                     onClick={e => {
-                      if (body === "" || email === "" || name === "") {
+                      if (body === "" || email === "") {
                         e.preventDefault();
                         window.alert("Please fill out form");
                       }
