@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import Fade from "react-reveal/Fade";
 import { Button } from "react-bootstrap";
+import "./github.styles.css";
 
 class Github extends Component {
   constructor(props) {
@@ -20,7 +21,9 @@ class Github extends Component {
     const { count, sort, clientId, clientSecret } = this.state;
     const url = `https://api.github.com/users/ChristianGracia/repos?per_page=${count}&sort=${sort}&client_id=${clientId}&client_secret=${clientSecret}`;
 
-    const github = await fetch(url, { accept: "application/vnd.github.v3+json" });
+    const github = await fetch(url, {
+      accept: "application/vnd.github.v3+json"
+    });
     const repos = await github.json();
     this.setState({ repos: repos });
   }
@@ -71,21 +74,12 @@ class Github extends Component {
       <div ref="myRef">
         <div style={{ padding: 15, marginTop: 20 }}>
           <div>
-            <h3
-              className="mb-4"
-              style={{
-                color: "white",
-                textAlign: "center",
-                fontWeight: "bold"
-              }}
-            >
+            <h3 className="mb-4 page-text">
               Latest Github Repos <i class="fab fa-github"></i>
             </h3>
             <p
+              className="page-text"
               style={{
-                color: "white",
-                textAlign: "center",
-                fontWeight: "bold",
                 position: "relative"
               }}
             >
