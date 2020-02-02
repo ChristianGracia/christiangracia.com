@@ -3,3 +3,7 @@
   text-align: center;
   font-weight: bold;
 }
+.item-aligner {
+  align-items: center;
+  justify-content: center;
+}

@@ -95,11 +95,10 @@ class Github extends Component {
           <div
             style={{
               display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
               paddingBottom: 20,
               marginTop: -10
             }}
+            className="item-aligner"
           >
             <Fade bottom>
               <Button
@@ -112,15 +111,7 @@ class Github extends Component {
                   }
                 }}
               >
-                <span
-                  style={{
-                    alignItems: "center",
-                    justifyContent: "center",
-                    alignContent: "center"
-                  }}
-                >
-                  Show/Hide Github repos
-                </span>
+                <span className="item-aligner">Show/Hide Github repos</span>
                 <span style={{ paddingLeft: 10 }}></span>
                 <span style={{ padingLeft: 5, color: "black" }}>
                   <i class="fas fa-chevron-down"> </i>
@@ -130,9 +121,7 @@ class Github extends Component {
           </div>
 
           {this.state.showRepo ? (
-            <div style={{ justifyContent: "center", alignItems: "center" }}>
-              {repoItems}
-            </div>
+            <div className="item-aligner">{repoItems}</div>
           ) : null}
         </div>
       </div>
