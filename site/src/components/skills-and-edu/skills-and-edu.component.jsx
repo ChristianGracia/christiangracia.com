@@ -78,7 +78,7 @@ export default class SkillsAndEdu extends Component {
                   <p className="skillHeader">Technologies</p>
                   <span className="skillsText">
                     NET, .NET Core, ASP.NET MVC, Maven, Sprint Boot, Docker,
-                    Git, Eclipse, Visual Studio Code, Linux
+                    Git, Eclipse, Visual Studio Code, Linux, Salesforce
                   </span>
                 </div>
 
