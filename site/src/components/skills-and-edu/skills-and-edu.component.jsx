@@ -2,9 +2,9 @@ import React, { Component } from "react";
 import Fade from "react-reveal/Fade";
 import LightSpeed from "react-reveal/LightSpeed";
 import Skills from "../cards/Skills";
-import Education from "../cards/Education";
-import "./skills-and-edu.styles.css"
-import Slide from 'react-reveal/Slide';
+import Education from "../education/education.component";
+import "./skills-and-edu.styles.css";
+import Slide from "react-reveal/Slide";
 
 export default class SkillsAndEdu extends Component {
   constructor(props) {
@@ -62,25 +62,38 @@ export default class SkillsAndEdu extends Component {
                   </p>
 
                   <p className="skillsText">
-                    <span style={{ color: "yellow" }}>Database:</span> SQL, NoSQL, MongoDB, MySQL, SQL Server
+                    <span style={{ color: "yellow" }}>Database:</span> SQL,
+                    NoSQL, MongoDB, MySQL, SQL Server
                   </p>
 
                   <p className="skillsText">
-                    <span style={{ color: "yellow" }}>API:</span> RESTful, GraphQL, AWS Amplify Serverless
+                    <span style={{ color: "yellow" }}>API:</span> RESTful,
+                    GraphQL, AWS Amplify Serverless
                   </p>
                 </div>
               </LightSpeed>
 
-
               <Slide right cascade>
+                <div className="container">
+                  <p className="skillHeader">Technologies</p>
+                  <span className="skillsText">
+                    NET, .NET Core, ASP.NET MVC, Maven, Sprint Boot, Docker,
+                    Git, Eclipse, Visual Studio Code, Linux
+                  </span>
+                </div>
 
-                <div className="container"><p className="skillHeader">Technologies</p><span className="skillsText">NET, .NET Core, ASP.NET MVC, Maven, Sprint Boot, Docker, Git, Eclipse, Visual Studio Code, Linux</span></div>
-
-                <div className="container"><p className="skillHeader">Skills</p><span className="skillsText"> Unit testing, MERN stack, API design, OOP, TDD, SOLID, Design Patterns, UI/UX, Data Structures, Algorithms, Agile, Scrum</span></div>
+                <div className="container">
+                  <p className="skillHeader">Skills</p>
+                  <span className="skillsText">
+                    {" "}
+                    Unit testing, MERN stack, API design, OOP, TDD, SOLID,
+                    Design Patterns, UI/UX, Data Structures, Algorithms, Agile,
+                    Scrum
+                  </span>
+                </div>
 
                 <span style={{ padding: 30 }}></span>
               </Slide>
-
 
               <LightSpeed left>
                 <div
@@ -142,10 +155,10 @@ export default class SkillsAndEdu extends Component {
                     <i style={{ fontSize: 200 }} class="far fa-lightbulb"></i>
                   </span>
                 ) : (
-                    <span style={{ color: "grey" }}>
-                      <i style={{ fontSize: 200 }} class="far fa-lightbulb"></i>
-                    </span>
-                  )}
+                  <span style={{ color: "grey" }}>
+                    <i style={{ fontSize: 200 }} class="far fa-lightbulb"></i>
+                  </span>
+                )}
               </div>{" "}
               <div style={{ paddingBottom: 30 }}></div>
               <Fade right>
