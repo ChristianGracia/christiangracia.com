@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Fade from "react-reveal/Fade";
 import LightSpeed from "react-reveal/LightSpeed";
-import Skills from "../cards/Skills";
+import Skills from "../skills/skills.component";
 import Education from "../education/education.component";
 import "./skills-and-edu.styles.css";
 import Slide from "react-reveal/Slide";
