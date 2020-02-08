@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Jump from "react-reveal/Jump";
-import { Card, Button } from "react-bootstrap";
+import { Button } from "react-bootstrap";
 import "./contact-page.styles.css";
 import LightSpeed from "react-reveal/LightSpeed";
 
