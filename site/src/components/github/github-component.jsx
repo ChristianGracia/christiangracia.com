@@ -8,8 +8,6 @@ class Github extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      clientId: "46b8392fd79883d79872",
-      clientSecret: "dca20f02bb83bb007e422c0a1e96573ad5c107a0",
       count: 5,
       sort: "created asc",
       repos: [],
@@ -18,7 +16,9 @@ class Github extends Component {
   }
 
   async componentDidMount() {
-    const { count, sort, clientId, clientSecret } = this.state;
+    const { count, sort } = this.state;
+    const clientId = require("../../config/keys").clientId;
+    const clientSecret = require("../../config/keys").clientSecret;
     const url = `https://api.github.com/users/ChristianGracia/repos?per_page=${count}&sort=${sort}&client_id=${clientId}&client_secret=${clientSecret}`;
 
     const github = await fetch(url, {
