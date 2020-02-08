@@ -106,6 +106,7 @@ export default class Work extends Component {
           </p>
 
           <Button
+            className="btn-danger"
             style={{ maxWidth: 320, margin: "0 auto" }}
             onClick={() =>
               this.setState({ showTwitter: !this.state.showTwitter })
