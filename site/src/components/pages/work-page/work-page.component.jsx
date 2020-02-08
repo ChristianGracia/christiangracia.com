@@ -37,13 +37,14 @@ export default class Work extends Component {
                 style={{
                   color: "white",
                   textAlign: "center",
-                  margin: "auto"
+                  margin: "auto",
+                  maxWidth: 720
                 }}
               >
                 I like to build websites, applications, and mobile apps. I built
                 this site on a virtual ubuntu linux server from scratch and am
                 hosting it myself. Currently mostly working with Java, React,
-                and C#.
+                Angular, and C#.
               </p>
             </div>
           </Fade>
