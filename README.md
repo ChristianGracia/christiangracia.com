@@ -2,6 +2,7 @@
 
 www.christiangracia.com
 
+frontend + backend
 
 ## Installation
 
@@ -30,4 +31,5 @@ run the front-end and back-end with:
 ```bash
  npm start
 ```
+
 (run in root folder)
