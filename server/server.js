@@ -16,7 +16,7 @@ const staticFiles = express.static(path.join(__dirname, "../../client/build"));
 app.use(staticFiles);
 
 router.get("/api", (req, res) => {
-  res.send("Welcome to my API made by Christian Gracia");
+  res.send("Welcome to my API :)");
 });
 
 app.use(router);
