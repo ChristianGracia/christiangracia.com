@@ -29,8 +29,8 @@ app.listen(app.get("port"), () => {
   console.log("mongodb: " + process.env.MONGO);
 });
 
-local;
-const database = require("./config/keys").mongoURI;
+// local
+// const database = require("./config/keys").mongoURI;
 
 //heroku
 const database = process.env.MONGO;
