@@ -2,7 +2,9 @@
 
 www.christiangracia.com
 
-frontend + backend
+100% pure react
+
+React frontend + NodeJs backend
 
 ## Installation
 
