@@ -1,7 +1,7 @@
 import React from "react";
 import AppPicSlides from "../app-pic-caro/app-pic-carousel.component";
 
-import "./current-projects.styles.css";
+import "./current-projects.styles.scss";
 import ProjectBox from "../common/project-box/project-box.component";
 
 

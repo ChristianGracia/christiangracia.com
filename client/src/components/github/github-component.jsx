@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import Fade from "react-reveal/Fade";
 import { Button } from "react-bootstrap";
-import "./github.styles.css";
+import "./github.styles.scss";
 
 class Github extends Component {
   constructor(props) {
