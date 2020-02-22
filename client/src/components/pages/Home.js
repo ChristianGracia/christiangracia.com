@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import Headline from "../headline/headline-component";
 import PageCombiner from "../page-combiner/page-combiner.component";
 import ParticleBackground from "../particles/ParticleBackground";
-import Fade from "react-reveal/Fade"
-import { Button } from "react-bootstrap"
+import Fade from "react-reveal/Fade";
+import { Button } from "react-bootstrap";
 
 export default class Home extends Component {
   state = { isShow: true };
@@ -33,7 +33,6 @@ export default class Home extends Component {
       >
         {this.state.isShow ? (
           <div style={{ flex: 1, paddingTop: 10 }}>
-
             <ParticleBackground style={{}} />
             <Headline />
 
@@ -95,10 +94,10 @@ export default class Home extends Component {
             </div>
           </div>
         ) : (
-            <div style={{ margin: "auto" }}>
-              <PageCombiner />
-            </div>
-          )}{" "}
+          <div style={{ margin: "auto" }}>
+            <PageCombiner />
+          </div>
+        )}{" "}
       </div>
     );
   }
