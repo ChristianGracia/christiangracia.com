@@ -24,7 +24,7 @@ export default class Home extends Component {
         }}
       >
         {this.state.isShow ? (
-          <div style={{ flex: 1, paddingTop: 10 }}>
+          <div style={{ flex: 1, marginTop: 10 }}>
             <ParticleBackground style={{}} />
             <Headline />
 
@@ -60,23 +60,24 @@ export default class Home extends Component {
                   flex: 1
                 }}
               >
-                <Fade right>
-                  <Button
-                    onClick={() => this.setState({ isShow: false })}
-                    style={{
-                      textAlign: "center",
-                      color: "white",
-                      fontWeight: "bold",
-                      backgroundColor: "transparent",
-                      border: "none",
-                      fontSize: 20
-                    }}
-                    variant="dark"
-                  >
-                    Click here to see what I do{" "}
-                    <span style={{ color: "#FEFF01" }}>Here</span>
-                  </Button>
-                </Fade>
+                {" "}
+                <div className="exploreButton">
+                  <Fade right>
+                    <Button
+                      onClick={() => this.setState({ isShow: false })}
+                      style={{
+                        textAlign: "center",
+
+                        fontWeight: "bold",
+
+                        fontSize: 20
+                      }}
+                      variant="light"
+                    >
+                      <span style={{}}>Click here to see what I do</span>
+                    </Button>
+                  </Fade>
+                </div>
               </div>
             </div>
           </div>
