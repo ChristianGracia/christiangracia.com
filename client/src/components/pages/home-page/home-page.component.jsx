@@ -9,18 +9,10 @@ export default class Home extends Component {
   state = { isShow: true };
 
   hideArrow = () => {
-    if (this.state.isShow && window.scrollY < 100) {
+    if (this.state.isShow) {
       this.setState({ isShow: false });
     }
   };
-
-  componentDidMount() {
-    window.addEventListener("scroll", this.hideArrow);
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener("scroll", this.hideArrow);
-  }
 
   render() {
     return (
@@ -81,7 +73,7 @@ export default class Home extends Component {
                     }}
                     variant="dark"
                   >
-                    Scroll down or click{" "}
+                    Click here to see what I do{" "}
                     <span style={{ color: "#FEFF01" }}>Here</span>
                   </Button>
                 </Fade>
